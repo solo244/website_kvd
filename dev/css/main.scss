@@ -1,0 +1,14 @@
+// Importing templates
+@import "bower_components/font-awesome/css/font-awesome.min";
+@import "template/reset";
+@import "template/vars";
+@import "template/global";
+@import "bower_components/prism/themes/prism";
+
+// Importing modules
+@import "modules/layout";
+@import "modules/menu";
+@import "modules/footer";
+
+// Importing pages
+@import "pages/home";

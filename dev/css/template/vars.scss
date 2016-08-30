@@ -1,0 +1,30 @@
+// Colors general
+$__grey        : #f3f3f3;
+$_grey         : #CCCCCC;
+$grey          : #999999;
+$grey_         : #666666;
+$grey__        : #333333;
+$white         : #FFFFFF;
+$shadow        : #DDDDDD;
+$black         : #000000;
+
+// Colors specific
+$yellow        : #fbda59;
+
+// General
+$corner        : 4px;
+$circle        : 50%;
+
+// Font(s)
+$font          : "Karla";
+$size          : 17px;
+$font-weight   : normal;
+$line-height   : 22px;
+
+// Media queries
+$xs            : "(min-width: 0px) and (max-width: 499px)";
+$s             : "(min-width: 500px) and (max-width: 767px)";
+$m             : "(min-width: 768px) and (max-width: 989px)";
+$l             : "(min-width: 990px) and (max-width: 1299px)";
+$xl            : "(min-width: 1300px) and (max-width: 1699px)";
+$xxl           : "(min-width: 1700px)";
