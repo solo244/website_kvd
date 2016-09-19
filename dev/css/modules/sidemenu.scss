@@ -1,0 +1,59 @@
+.sideMenu{
+  position: absolute;
+  top: 530px;
+  left: 0;
+
+  .bars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 45px;
+
+    .bar{
+      background-color: $primary;
+      width: 15px;
+      height: 2px;
+      margin-bottom: 28px;
+
+      &:hover{
+        width: 35px;
+      }
+    }
+    .current_bar{
+      width: 35px;
+      background-color: $blue;
+    }
+  }
+
+  .list{
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    padding-left: 50px;
+    line-height: 30px;
+
+    li{
+      list-style-type: none;
+
+      a{
+        color: $primary;
+
+        &:hover{
+          color: $blue;
+        }
+      }
+      .active(
+        color: $blue;
+      )
+    }
+  }
+
+  &:hover{
+    opacity: 1;
+
+    .list{
+      left: 0px;
+    }
+  }
+}

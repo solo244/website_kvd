@@ -1,16 +1,22 @@
 .header{
   height: 100px;
   background-color: $white;
-  //overflow: hidden;
+  position: relative;
 
   .logo{
-    display: none;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: url(../images/logo.svg) no-repeat center center;
+    background-size: auto 40px;
+    width: 40px;
+    height: 40px;
   }
 
   .mainMenu{
     float: right;
     list-style-type: none;
-    //width: 600px;
 
     li{
       display: inline-block;
