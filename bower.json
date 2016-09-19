@@ -18,5 +18,13 @@
     "font-awesome": "^4.6.3",
     "jquery": "^3.1.0",
     "prism": "^1.5.1"
+  },
+  "devDependencies": {
+    "Dripicons": "dripicons2#^2.0.2",
+    "sweetalert2": "^5.0.3",
+    "es6-promise": "^3.3.1"
+  },
+  "resolutions": {
+    "sweetalert2": "^5.0.3"
   }
 }

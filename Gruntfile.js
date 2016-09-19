@@ -140,7 +140,7 @@ module.exports = function(grunt) {
       fonts: {
         bower_files: [{
           expand: true,
-          cwd: 'bower_components/fonts/',
+          cwd: 'bower_components/dripicons/fonts/',
           src: '**',
           dest: 'build/css/fonts/'
         }],
