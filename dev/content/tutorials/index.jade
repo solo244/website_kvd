@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    title Title - about
+    include /header.jade
+  body.about
+    include /nav.jade
+    
+    .top
+      .container
+        h1 
+          span tutorials
+          | We can't help everyone, but everyone can help someone.
+          
+    .container.divider
+      p My path to webdesigner & webdeveloper has been that of self study, suffering, frustration, sweating and the complete and utter hate of CSS floats, Internet Explorer 8 and all things WYSIWYG.. There have been many a reason why you have to do things a certain way in building stuff for the web. Most of them that I know, I've come to on my own, after a long but fun, 7 year experience on the web. Maybe I can pass some of my knowlegde on to you.
+      
+    .container.grid.divider
+      .grid-item
+        .grid-c
+          .icon
+            img(src="../images/tutorials/simple.svg" width="" height="40")
+          h3 Building simple website
+          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
+      .grid-item
+        .grid-c
+          .icon
+            img(src="../images/tutorials/css.svg" width="" height="40")
+          h3 Cascading Style Sheets
+          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
+      .grid-item
+        .grid-c
+          .icon
+            img(src="../images/tutorials/photoshop.svg" width="" height="40")
+          h3 Adobe Photoshop
+          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
+      .grid-item
+        .grid-c
+          .icon
+            img(src="../images/tutorials/frameworks.svg" width="" height="40")
+          h3 Frameworks
+          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
+      .grid-item
+        .grid-c
+          .icon
+            img(src="../images/tutorials/need.svg" width="" height="40")
+          h3 Webdesign: need to know
+          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
+          
+    
+    //https://sproutfunding.com.au/revenue-based-funding
+      
+    include /footer.jade

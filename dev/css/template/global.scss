@@ -4,32 +4,50 @@ body{
   font-size: $size;
   line-height: $line-height;
   font-weight: $font-weight;
-  color: $grey__;
+  color: $grey_;
 }
 
 .container{
-  max-width: 1300px;
+  max-width: 960px;
   margin: 0 auto;
+  text-align: center;
 }
 
 h1{
-
+  color: $white;
+  font-weight: normal;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 h2{
-
+  color: $grey__;
+  font-size: 30px;
+  font-weight: normal;
+  max-width: 700px;
+  margin: 30px auto;
 }
 
 h3{
-
+  max-width: 700px;
+  margin: 10px auto;
+  color: $grey__;
+  font-size: 18px;
 }
 
 h4{
 
 }
 
-p{
+a.c{
+  p{
+    color: $grey_;
+  }
+}
 
+p{
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 a{
@@ -38,4 +56,8 @@ a{
 
 ul{
 
+}
+
+.clear{
+  clear: both;
 }
