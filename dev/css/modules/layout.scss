@@ -54,6 +54,8 @@
       border-radius: $corner;
       background-color: $_blue;
       display: block;
+      color: $grey_;
+      text-align: center;
 
       h3{
         color: $blue;
@@ -61,4 +63,16 @@
       }
     }
   }
+}
+
+.rightText{
+  float: right;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.leftText{
+  float: right;
+  display: block;
 }
