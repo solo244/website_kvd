@@ -30,17 +30,17 @@ html
         .grid-item
           a(href="simple_website").grid-c
             .icon
-              img(src="../images/tutorials/simple.svg" width="" height="40")
+              img(src="" width="" height="40")
             h3 Sublime Text (3.0)
         .grid-item
           a(href="").grid-c
             .icon
-              img(src="../images/tutorials/css.svg" width="" height="40")
+              img(src="" width="" height="40")
             h3 Brackets (Adobe Edge Code)
         .grid-item
           a(href="").grid-c
             .icon
-              img(src="../images/tutorials/photoshop.svg" width="" height="40")
+              img(src="" width="" height="40")
             h3 Notepad++
         .clear
       //.divider
@@ -53,46 +53,10 @@ html
       
       p Sublime text: options, Brackets: code hinting, Dreamweaver: design view, Komodo Edit: preview, Muse: speed, Notepad++: macro's, EW: 60 days of trail period, Blue griffon: free, With some alternatives thrown in there. 
       p Feel free to explore:
-      p Aptana Studio, Eclipse, BBEdit, TextWrangler, Smultron
-      
-    .container.grid.divider
-      .grid-item
-        a(href="simple_website").grid-c
-          .icon
-            img(src="../images/tutorials/simple.svg" width="" height="40")
-          h3 Building simple website
-          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
-      .grid-item
-        a(href="").grid-c
-          .icon
-            img(src="../images/tutorials/css.svg" width="" height="40")
-          h3 Cascading Style Sheets
-          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
-      .grid-item
-        a(href="").grid-c
-          .icon
-            img(src="../images/tutorials/photoshop.svg" width="" height="40")
-          h3 Adobe Photoshop
-          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
-      .grid-item
-        a(href="").grid-c
-          .icon
-            img(src="../images/tutorials/frameworks.svg" width="" height="40")
-          h3 Frameworks
-          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
-      .grid-item
-        a(href="").grid-c
-          .icon
-            img(src="../images/tutorials/need.svg" width="" height="40")
-          h3 Webdesign: need to know
-          p In this tutorial we'll learn how to make a website using simple code from scratch. No pre-knowledge needed.
-          
-    
-    //https://sproutfunding.com.au/revenue-based-funding
+      p Aptana Studio, Eclipse, BBEdit, TextWrangler, Smultron      
       
     include /footer.jade
     
     script
-      $(".bar:nth-child(1)").addClass("current_bar");
-      $(".sideMenu .intro").addClass("active");
-      $(".mainMenu .tutorialMenu").addClass("active");
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .simple1").addClass("active");
