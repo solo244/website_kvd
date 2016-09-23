@@ -1,22 +1,15 @@
-(function ($) {
+/*
+ * Vars
+ */
+var $doc = $("html, body"),
+    $tweets = $doc.find(".tweets"),
+    $tweets_btn = $tweets.find(".twit"),
+    $overlay = $doc.find(".tweets_overlay");
 
-    /*
-     * Vars
-     */
-    var $body = $("html, body");
-
-    /*
-     * OMG, it's a function
-     */
-    function started(e){
-
-    }
-
-    /*
-     * Let's get ready to rumble
-     */
-    $(document).ready(function(){
-      console.log("File main.js is loaded");
-    });
-
-})(jQuery);
+/*
+ * Let's get ready to rumble
+ */
+$(document).ready(function(){
+  $tweets_btn.on("click", toggleTweet);
+  $overlay.on("click", toggleTweet);
+});
