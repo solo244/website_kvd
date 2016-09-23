@@ -61,3 +61,10 @@ ul{
 .clear{
   clear: both;
 }
+
+.dividing{
+  margin: 40px auto 0 auto;
+  max-width: 200px;
+  height: 1px;
+  background-color: $_grey;
+}
