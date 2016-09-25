@@ -7,6 +7,10 @@ body{
   color: $grey_;
 }
 
+.body_overflow{
+  overflow: hidden;
+}
+
 .container{
   max-width: 960px;
   margin: 0 auto;
