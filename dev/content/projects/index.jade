@@ -16,9 +16,9 @@ html
     .container.divider
       p You'd be surprised how many kids and young people come to my website and send me an email that they are actually going to do something meaningful with their lives because of something that I said or did. It's zero. I think that's mostly because I've got an overly protective spam filter. But I still like to think that I'm making a difference. I've been making websites for years and it's something I love doing, despite global warming and horrible traffic. Sidenote: I'm not the best at writing welcome texts. Anyways, just click on any of these to look at the websites that I've made or help create in a new tab.
       
-    .container.grid.divider
+    .container.grid.divider.projects_portfolio
       .grid-item
-        .grid-c
+        .grid-c.project_website
           .icon
             img(src="../images/projects/website.svg" width="" height="40")
           h3 Websites
@@ -34,33 +34,7 @@ html
           .icon
             img(src="../images/projects/dnd.svg" width="" height="40")
           h3 D&D
-          p I love playing Dungeons & Dragons as the Dungeon Master. But yo do need tools to do so. So I build some. Free to use.
-      .grid-item
-        .grid-c
-          .icon
-            img(src="../images/projects/random.svg" width="" height="40")
-          h3 Random & funny
-          p It's just fun to play around with technology. And fun stuff is something people like to see right ?
-          
-    .container.grid.divider.grid_websites
-      .grid-item
-        .grid-c
-          .icon
-            img(src="../images/projects/website.svg" width="" height="40")
-          h3 Websites
-          p I'm a webdesigner first. So a lot of projects of mine involve the building of websites. From design to development.
-      .grid-item
-        .grid-c
-          .icon
-            img(src="../images/projects/github.svg" width="" height="40")
-          h3 Github
-          p Projects that I've started and thought, maybe others can use this as well? So I posted the on Github for you to use.
-      .grid-item
-        .grid-c
-          .icon
-            img(src="../images/projects/dnd.svg" width="" height="40")
-          h3 D&D
-          p I love playing Dungeons & Dragons as the Dungeon Master. But yo do need tools to do so. So I build some. Free to use.
+          p I love playing Dungeons & Dragons as the Dungeon Master. But yo do need tools to do so. So I build some.
       .grid-item
         .grid-c
           .icon
@@ -71,4 +45,4 @@ html
     include /footer.jade
 
     script
-      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".mainMenu .menuProjects").addClass("selected");
