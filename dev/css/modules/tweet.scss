@@ -1,16 +1,15 @@
 .tweets{
   position: fixed;
   bottom: 0;
-  right: -270px;
+  right: -350px;
   top: 0;
   width: 350px;
-  overflow: hidden;
   z-index: 5;
 
   .feed{
     height: 100%;
     position: relative;
-    left: 90px;
+    left: 0px;
 
     iframe{
       height: 100%;
@@ -26,7 +25,7 @@
     height: 50px;
     position: absolute;
     bottom: 30px;
-    left: 0px;
+    left: -90px;
     cursor: pointer;
     background: $white url("../images/twitter.svg") no-repeat;
     background-size: 50px auto;
