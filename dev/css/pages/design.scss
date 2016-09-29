@@ -36,6 +36,7 @@
         &:hover{
           box-shadow: 0 0 10px $_grey;
           border: 1px solid $primary;
+          transform: scale(1);
 
           a{
             bottom: 0;

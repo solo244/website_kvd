@@ -46,7 +46,7 @@
 .grid{
   .grid-item{
     float: left;
-    width: 33%;
+    width: 33.33%;
 
     .grid-c{
       margin: 10px;
@@ -56,10 +56,19 @@
       display: block;
       color: $grey_;
       text-align: center;
+      border: 1px solid $_blue;
+      cursor: pointer;
 
       h3{
         color: $blue;
         font-weight: normal;
+      }
+
+      &:hover{
+        background-color: $white;
+        border: 1px solid $primary;
+        box-shadow: 0 0 10px $_grey;
+        transform: scale(1.025);
       }
     }
   }

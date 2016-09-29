@@ -6,7 +6,10 @@ function focusProjectsGrid(e){
       $class = $this.attr("class").replace("grid-c ", "");
 
   if($class == "project_website"){
-    //toggleWebsiteGrid
-    // Show back button as well
+    $project_websites.addClass("grid_websites_active");
   }
+}
+
+function closeProjectFocus(e){
+  $project_websites.removeClass("grid_websites_active");
 }

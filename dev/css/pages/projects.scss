@@ -1,12 +1,77 @@
 .project{
 
-  .grid_websites{
+  .containerHolderProjects{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
 
-    .grid-item{
+    .grid_websites{
+      background-color: rgba(255,255,255,0.9);
+      position: absolute;
+      top: -100%;
+      min-height: 0px;
+      width: 100%;
+      left: 0;
+      overflow: hidden;
+      transform: rotate(30deg) scale(0.1);
 
-      .grid-c{
-        
+      .overview{
+        margin-bottom: 30px;
       }
+
+      .grid-item{
+
+        .grid-c{
+          padding-top: 25px;
+          background-color: $white;
+          border: 1px solid $_grey;
+
+          .icon{
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            float: left;
+          }
+
+          h3{
+            text-align: left;
+            font-size: 18px;
+            color: $grey__;
+            margin-top: 0;
+          }
+
+          p{
+            text-align: left;
+            color: $grey_;
+          }
+
+          &:hover{
+
+          }
+        }
+      }
+
+      .back{
+        cursor: pointer;
+        max-width: 200px;
+        margin: 0 auto;
+
+        i{
+          margin-right: 10px;
+        }
+
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+
+    .grid_websites_active{
+      top: 60px;
+      min-height: 510px;
+      transform: rotate(0deg) scale(1);
     }
   }
 }
