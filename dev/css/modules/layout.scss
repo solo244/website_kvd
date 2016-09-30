@@ -17,6 +17,44 @@
   }
 }
 
+.image-header{
+  position: relative;
+
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h2{
+
+  }
+}
+
+
+.container-full{
+  background-color: $___grey;
+  padding-bottom: 100px;
+
+  .col .c{
+
+    &:hover{
+      .icon{
+        transform: scale(1.2);
+        transform: rotateZ(1.5);
+      }
+
+      h3{
+        color: $primary;
+      }
+
+      p{
+        color: $blue;
+      }
+    }
+  }
+}
+
 .container{
   .colums-3{
     .col{
@@ -29,8 +67,8 @@
       }
     }
     .col:nth-child(2){
-      border-right: 1px solid $__grey;
-      border-left: 1px solid $__grey;
+      border-right: 1px solid $_grey;
+      border-left: 1px solid $_grey;
     }
   }
 }
