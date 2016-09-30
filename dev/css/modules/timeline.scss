@@ -1,14 +1,61 @@
 .timeline{
 
   .c1{
+    float: left;
+    width: 50%;
 
+    .date{
+      float: left;
+      clear: left;
+
+      &:after{
+        content: "";
+        
+      }
+    }
   }
 
   .c2{
+    position: absolute;
+    width: 0px;
+    left: 50%;
+    margin-left: -1px;
+    border-right: 2px dashed $grey;
 
+    &:before{
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: $circle;
+      position: absolute;
+      top: -6px;
+      left: -5px;
+      display: block;
+      background: $grey;
+    }
   }
 
   .c3{
+    padding-top: 80px;
+    float: right;
+    width: 50%;
 
+    .date{
+      float: right;
+      clear: right;
+    }
+  }
+
+  .c1, .c2, .c3{
+    min-height: 300px;
+  }
+
+  .date{
+    width: 80%;
+    background-color: $white;
+    border: 2px solid $blue;
+    border-radius: $corner;
+    margin-bottom: 250px;
+    padding: 10px 20px 15px 20px;
   }
 }
