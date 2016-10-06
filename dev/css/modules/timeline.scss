@@ -10,7 +10,7 @@
 
       &:after{
         content: "";
-        
+
       }
     }
   }
@@ -57,5 +57,20 @@
     border-radius: $corner;
     margin-bottom: 250px;
     padding: 10px 20px 15px 20px;
+    position: relative;
+
+    &:hover{
+      background-color: $_blue;
+      border: 2px solid $_blue;
+    }
+
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right: 2px dashed $grey;
+    }
   }
 }
