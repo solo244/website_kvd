@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    title Web Languages - Simple website - Tutorials - KVD
+    include /header.jade
+  body.tutorial-content
+    include /nav.jade
+    include /tweets.jade
+    include _side_simple.jade
+    
+    .top
+      .container
+        h1 
+          span CODING FROM SCRATCH: 4. WEB LANGUAGES
+          | Is building a website actually that difficult?
+          
+    .container.divider
+      p What do you need to know about the web... Well, web language(s), duh. There’s two you need to know. You can’t get away from that. You’ll have to code in those, there’s no way around this. Well, you can go and use WordPress or something like that. Sure. But remember, if you want to move your menu above your slideshow because otherwise people can’t click on certain buttons, you’ll need CSS. And that’s a web language. You can start building websites using tools that you don’t necessarily understand, nor know how they work. Or you get a basic feel and know-how of the two web languages that we will speaking about now. These will give you the option to customise to an extent that tools such as WordPress are not even made for.
+      p It’s better to know them, or least get a basic feel and know how to work, than to just start building websites using tools from which you don’t even know how or why they work.
+      p First off: there are two main languages that you’ll commonly see on websites. One defines the structure and content of your pages. The other defines the style of your entire website. In the old days people just wrote a HTML page, adding a table and some text, some pretty colors and that was that. Copy and paste that every time I need a new page. 130 copies further, I have a nice looking website. After a short 2 months, the client asks you to change the color of the text, opposing to the bright red they first decided on. This requires you to open all pages one at a time and to change the color text manually. This might take a while. An easy job, but a lot of repetition. In this case maybe even a full hour. And that’s kinda silly. Now I’ll tell you: a good ICT guy is lazy. I always say this in the courses I teach. It’s true. A good web designer should be lazy. Lazy doesn’t mean something bad here. It just tells you they want things done fast and efficient. And adjusting 130 pages one by one is not very efficient. Can’t we do it faster ? Well yes, using CSS. We’ll define our content and structure in those 130 pages and we’ll define all our visual styles in a different file. One different file. Just one. In that file we will simply write what color the text should be, and that’ll be applied to all our pages at once. We can make styles for all our text, titles, images.. or we can define exceptions. There’s a lot of options and possibilities. It’s the modern way of building websites. Therefore, if you want to be/become a web designer, you’ll need to learn at least two languages: HTML, which defines your entire structure and then CSS, that defines all visual style of those elements.
+      
+      img
+      
+      p Is that it ? No. There’s so much out there we can use to make out site bigger and better. Actually, those are wrong words. We can make our site have more features. But some of those only work from the server. They are called server side languages, whilst CSS and HTML are client side languages. The difference is that some actions require you to make connection to a server and do something. If you go to a contact page, your browser pretty much downloads and then shows the HTML and CSS code, rendering you a nice looking contact form with fields to fill in data. But the moment you click send, it has go somewhere, preferably. Otherwise your mail might disappear into nothing, leaving you without any response from said mail and the company that was supposed to receive it is none the wiser. To send that mail we’ll have to send it to the server, which will then, in its own turn, send it to a specific mail address. All this will be done with a server side language. To name just one that is open source (which means free) and commonly used, PHP (Hypertext Preprocessor – and in case you also don’t get how that transforms to ‘PHP’; apparently it is a recursive acronym.)
+      p PHP is one of those extra languages you can learn and apply to your pages to give them more features. You can send a contact form, or load in data from a database (like in a web shop) or you can let people log in or off using PHP, password protect certain files, .. There’s obviously a lot of possibilities, but we’ll explore those a bit later.
+      p Because making a nice looking website with good content and some cool features might not be enough - we also want is some interaction. Maybe an animation or some click events ? If I click there, that other thing moves. Well, that’s cool. Hey, is that sound in the background and is that a video playing ? If I click on that image, it scales up and I can browse all the other pictures as well ? That’s a cool looking slideshow... You get the point. Making your site interactive requires you to know a third language. It’s a name that’s commonly known, even if you have never made a website before, and that’s JavaScript. Not to be mixed with Java, which is something completely different. JavaScript will give you the option of interacting with your elements. Making them dance, light up or to add data. Now, when I say JavaScript, I actually mean jQuery, which is it’s framework. We’ll be seeing what the difference is but for now you need to know that jQuery preeetty much uses the same functionalities but it’s easier to write and you have a few more options. So jQuery is a more awesome version of JavaScript.
+      
+      
+      .container.grid
+        .grid-item
+          a(href="simple_website").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Sublime Text (3.0)
+        .grid-item
+          a(href="").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Brackets (Adobe Edge Code)
+        .grid-item
+          a(href="").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Notepad++    
+      
+    include /footer.jade
+    
+    script
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .simple4").addClass("active");

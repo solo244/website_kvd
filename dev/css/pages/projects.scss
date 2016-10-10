@@ -7,7 +7,7 @@
     text-align: center;
     overflow: hidden;
 
-    .grid_websites{
+    .grid_websites, .grid_github, .grid_dnd, .grid_random{
       background-color: rgba(255,255,255,0.9);
       position: absolute;
       top: -100%;
@@ -31,8 +31,10 @@
           .icon{
             width: 60px;
             height: 60px;
-            margin-right: 20px;
-            float: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
           }
 
           h3{
@@ -68,7 +70,7 @@
       }
     }
 
-    .grid_websites_active{
+    .grid_websites_active, .grid_github_active, .grid_dnd_active, .grid_random_active{
       top: 55px;
       min-height: 515px;
       transform: rotate(0deg) scale(1);
