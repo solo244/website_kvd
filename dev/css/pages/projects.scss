@@ -25,16 +25,23 @@
 
         .grid-c{
           padding-top: 25px;
-          background-color: $white;
+          background-color: $_blue;
           border: 1px solid $_grey;
+          position: relative;
+          overflow: hidden;
 
-          .icon{
-            width: 60px;
-            height: 60px;
+          .bg{
+            display: block;
+            width: 150px;
+            height: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            display: none;
+            background-color: $white;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 80%;
+            opacity: 0;
           }
 
           h3{
@@ -42,15 +49,25 @@
             font-size: 18px;
             color: $grey__;
             margin-top: 0;
+            position: relative;
+            left: 0;
           }
 
           p{
             text-align: left;
             color: $grey_;
+            position: relative;
+            left: 0;
           }
 
           &:hover{
+            h3, p{
+              left: 145px;
+            }
 
+            .bg{
+              opacity: 1;
+            }
           }
         }
       }

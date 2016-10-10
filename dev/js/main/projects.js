@@ -31,3 +31,16 @@ function closeProjectFocus(e){
   $project_dnd.removeClass("grid_dnd_active");
   $project_random.removeClass("grid_random_active");
 }
+
+/*
+ * Set background-images
+ */
+function setBackgrounds(e){
+  console.log("enter");
+  var $this = $(this),
+      $this_id = $this.prop("id"),
+      $this_grid = $this.find(".grid-c .bg"),
+      name_url = "url(../images/projects/backgrounds/" + $this_id + ".png)";
+
+  $this_grid.css("background-image", name_url);
+}

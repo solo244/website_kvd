@@ -16,6 +16,7 @@ var $doc = $("html, body"), // General
     $project_dnd = $project.find(".grid_dnd"),
     $project_random = $project.find(".grid_random"),
     $project_back = $project.find(".back"),
+    $project_bg = $project.find(".grid-item"),
     $news = $doc.find(".news"), // News
     $news_items = $news.find(".news-items"),
     $news_bell = $news.find(".bell");
@@ -33,4 +34,5 @@ $(document).ready(function(){
   $project_grid_random.on("click", focusProjectsGrid);
   $project_back.on("click", closeProjectFocus);
   $news_bell.on("click", toggleNews);
+  $project_bg.each(setBackgrounds);
 });
