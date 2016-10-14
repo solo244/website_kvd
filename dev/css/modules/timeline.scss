@@ -20,7 +20,7 @@
     width: 0px;
     left: 50%;
     margin-left: -1px;
-    border-right: 2px dashed $grey;
+    border-right: 1px dashed $grey;
 
     &:before{
       content: "";
@@ -31,7 +31,7 @@
       top: -6px;
       left: -5px;
       display: block;
-      background: $grey;
+      background: $primary;
     }
   }
 
@@ -60,17 +60,44 @@
     position: relative;
 
     &:hover{
-      background-color: $_blue;
-      border: 2px solid $_blue;
+      //background-color: $_blue;
+      border: 2px solid $primary;
     }
 
     &:after{
       content: "";
       display: block;
       position: absolute;
-      top: 0;
-      left: 0;
-      border-right: 2px dashed $grey;
+      top: 50%;
+      right: -12%;
+      border-top: 1px dashed $grey;
+      width: 12%;
+      height: 0;
+    }
+
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -5px;
+      right: -6px;
+      background-color: $blue;
+      width: 7px;
+      height: 7px;
+      border: 2px solid $white;
+      border-radius: $circle;
+      z-index: 9;
+    }
+  }
+
+  .c3 .date{
+    &:after{
+      left: -12%;
+    }
+
+    &:before{
+      left: -6px;
     }
   }
 }
