@@ -1,0 +1,72 @@
+doctype html
+html
+  head
+    title First files - Simple website - Tutorials - KVD
+    include /header.jade
+  body.tutorial-content
+    include /nav.jade
+    include /tweets.jade
+    include _side_simple.jade
+    
+    .top
+      .container
+        h1 
+          span CODING FROM SCRATCH: 5. THE FIRST FILES
+          | Is building a website actually that difficult?
+          
+    .container.divider
+      p People that rather watch a video can find it at the bottom of the page. Made for those that prefer a video over reading.
+      p We’ll be making this awesome looking site. It’s a basic one, but that is what you’ll be able to make after this course. Feel free to play around with colors and the text to make it your own.
+      
+      img
+      
+      p Well, let’s start with code. No need to panic, I’ll be here and I’ll hold your metaphorical hand. Just follow along with what I’m doing and always check if your result matches mine. Feel free to alter anything if you don’t agree with something I’m doing.
+      p We’ll be making a simple website with a couple of pages. Almost identical but that’s okay, it’s more about the lesson, then the result. Now this part requires you to have some knowledge of HTML and CSS. You can follow along, but it’ll be useful if you know what I’m talking about. You can read up on it on the many others that exist online and then come back to this tutorial. But if you keep an open mind, you should be fine following along.
+      p Good! Now let’s get started looking at the layout a bit. We’ll need to use the div elements to define our blocks. Then we’ll position them correctly on the page. Let’s break our exercise down into steps:
+      
+      h2 1. Making the files
+      p Now when we start making a website, there is a fixed sets of steps you should follow, all joined by specific rules. Let’s say you make website and you have the most common pages that a website should have: a home page, contact page and about us page. You would like it if the user sees your home page first. But how does the browser know what page to show first? Well, that’s one of those rules you have to follow. Your homepage should have the name index. Because the web is case sensitive it’s important you don’t just write capital "I" here, otherwise your website will not work, and the visitor will get a nice, "page not found, access forbidden" message.
+      p So we make a folder, in a place we’ll easily find it later and give it a name that we can remember. Obviously the name and location of this folder is completely up to you. I’ll call it "webdesign".
+      p In this folder we’ll need a couple of things. But we’ll start, like we said, with a homepage. So we open up Sublime Text (if you haven’t downloaded it yet – do it now!) and create a new file. A general rule in webdesign and one you should always try to follow, is to save your documents the moment you create them. So let’s save this document as "index.html" and we’ll put it in the folder "webdesign". Don’t forget the extension html as it is important for Sublime Text to know what type of file we’re dealing with. We now have an empty homepage. You can give yourself a little round of applause and let’s continue by creating another page. We’ll save this one as "style.css". This will be the file where we’ll define most (if not all) of our styling code, our css. The name "style" is free to be altered by you if you wish. But don’t forget to avoid spaces, capitals or numbers as much as possible when deciding on file names (one of those rules again).
+      p Now that we have two files, one for content and one for style, we’ll still have to introduce them to each other. Because CSS is by definition optional, and not required (but highly recommended) for a website, if you don’t make a link between both files, they’ll just ignore each other and live peacefully next to each other without communication, like an old married couple. And that’s not what we want.
+      p So we’ll have to provide a link from the HTML file to the CSS one. But first we’ll write some code that is required to be in the HTML file.
+      
+      code
+      
+      p Now, let’s look at this code from top to bottom. For people that are not familiar with this, I recommend you look into the basics of HTML a bit more or try to follow along as close as possible.
+      ol
+        li The first line of code refers to the type, or rather the version, of HTML we’re going to use. This doctype defines our document to be HTML 5, which is the latest version. Preferably the best because it’ll provide us with the most and best of possibilities.
+        li The second line defines the start on the HTML content, it then later closes it again at line 9. In that HTML content there will always two main elements:
+        li The head: which defines everything that the visitor of the website doesn’t need to know and doesn’t see.
+        li The body: all the information on the website itself, that is visible for the user.
+      
+      p That means that the link to the CSS file will be put in the head. Why? Because the user doesn’t need to know what CSS you are using. It just has to look pretty. To hide this information from your user, we’ll link the style.css file in the head of our document. So I’ll add this code after the head starts, which is at line 3.
+      p The only thing that will vary here is the href property which just refers to the location and name of your file. If you would have given your file a different name, you’d have to fill that name in here, instead of "style".
+      p So we’re done with the initial setup of our documents but there is one more step we can’t forget and that’s to include any image that we would like to use on our website. So let’s copy the needed images that I’ve zipped for you.
+      p And let’s copy them to the folder “webdesign”. It is up to you to define and use subfolders for images. If we were making a big website I might even make multiple folders to organise my images a bit better. I could make one folder with the name “imagesHome” and another one "imagesContact" if I wanted to. That part is up to you but I’ll, for now, won’t make a separate folder, so you can see how it all works just a bit better.
+
+
+      
+      
+      .container.grid
+        .grid-item
+          a(href="simple_website").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Sublime Text (3.0)
+        .grid-item
+          a(href="").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Brackets (Adobe Edge Code)
+        .grid-item
+          a(href="").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Notepad++    
+      
+    include /footer.jade
+    
+    script.
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .simple5").addClass("active");

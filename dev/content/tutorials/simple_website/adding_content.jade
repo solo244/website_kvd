@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title Adding content - Simple website - Tutorials - KVD
+    include /header.jade
+  body.tutorial-content
+    include /nav.jade
+    include /tweets.jade
+    include _side_simple.jade
+    
+    .top
+      .container
+        h1 
+          span CODING FROM SCRATCH: 7. ADDING SOME CONTENT
+          | Is building a website actually that difficult?
+          
+    .container.divider
+      
+      
+      .container.grid
+        .grid-item
+          a(href="simple_website").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Sublime Text (3.0)
+        .grid-item
+          a(href="").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Brackets (Adobe Edge Code)
+        .grid-item
+          a(href="").grid-c
+            .icon
+              img(src="" width="" height="40")
+            h3 Notepad++    
+      
+    include /footer.jade
+    
+    script.
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .simple7").addClass("active");
