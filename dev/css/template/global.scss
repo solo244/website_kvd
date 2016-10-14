@@ -78,3 +78,13 @@ ul{
   height: 1px;
   background-color: $_grey;
 }
+
+mark{
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  color: #a71d5d;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 85%;
+  padding: 4px 6px;
+  border: 1px solid #CECECE;
+}
