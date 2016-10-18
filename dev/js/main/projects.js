@@ -36,7 +36,6 @@ function closeProjectFocus(e){
  * Set background-images
  */
 function setBackgrounds(e){
-  console.log("enter");
   var $this = $(this),
       $this_id = $this.prop("id"),
       $this_grid = $this.find(".grid-c .bg"),
