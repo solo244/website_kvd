@@ -19,7 +19,9 @@ var $doc = $("html, body"), // General
     $project_bg = $project.find(".grid-item"),
     $news = $doc.find(".news"), // News
     $news_items = $news.find(".news-items"),
-    $news_bell = $news.find(".bell");
+    $news_bell = $news.find(".bell"),
+    $tutorials = $doc.find(".tutorial-content"), // Tutorials
+    $side_menu = $tutorials.find(".sideMenu");
 
 
 /*
@@ -35,4 +37,5 @@ $(document).ready(function(){
   $project_back.on("click", closeProjectFocus);
   $news_bell.on("click", toggleNews);
   $project_bg.each(setBackgrounds);
+  $(window).scroll(setSideMenu);
 });
