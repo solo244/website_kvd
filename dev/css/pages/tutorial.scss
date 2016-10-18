@@ -1,5 +1,5 @@
 .tutorial{
-  
+
 }
 
 .tutorial-content{
@@ -9,6 +9,16 @@
 
     p{
       margin: 30px auto;
+    }
+
+    a{
+      color: $primary;
+      border-bottom: 1px solid $__grey;
+
+      &:hover{
+        color: $blue;
+        border-bottom: 1px solid $blue;
+      }
     }
   }
 }
