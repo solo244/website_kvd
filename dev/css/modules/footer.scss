@@ -27,8 +27,16 @@
     }
   }
 
-  .between_logo{
+  .container .between_logo{
     margin: 40px auto;
+
+    a, img{
+      border: none;
+
+      &:hover{
+        border: none;
+      }
+    }
   }
 
   .social_footer{
@@ -42,6 +50,7 @@
         width: 25px;
         margin: 0 5px;
         opacity: 0.5;
+        border-bottom: none;
 
         img{
           display: block;
@@ -51,6 +60,7 @@
 
         &:hover{
           opacity: 1;
+          border: none;
 
           img{
             transform: scale(1.5);
