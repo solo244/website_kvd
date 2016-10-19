@@ -25,6 +25,7 @@
     "es6-promise": "^3.3.1"
   },
   "resolutions": {
-    "sweetalert2": "^5.0.3"
+    "sweetalert2": "^5.0.3",
+    "Dripicons": "^2.0.2"
   }
 }
