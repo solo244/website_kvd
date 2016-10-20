@@ -33,7 +33,11 @@
 
 .container-full{
   background-color: $___grey;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+
+  .space{
+    margin-bottom: 60px;
+  }
 
   .col .c{
 
