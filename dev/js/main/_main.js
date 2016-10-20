@@ -21,8 +21,12 @@ var $doc = $("html, body"), // General
     $news_items = $news.find(".news-items"),
     $news_bell = $news.find(".bell"),
     $tutorials = $doc.find(".tutorial-content"), // Tutorials
-    $side_menu = $tutorials.find(".sideMenu");
-
+    $side_menu = $tutorials.find(".sideMenu"),
+    $timeline = $doc.find(".timeline"), // Timeline
+    $timeline_c1 = $timeline.find(".c1"),
+    $timeline_dates = $timeline_c1.find(".date"),
+    $timeline_c2 = $timeline.find(".c2"),
+    $timeline_c3 = $timeline.find(".c3");
 
 /*
  * Let's get ready to rumble
@@ -37,5 +41,7 @@ $(document).ready(function(){
   $project_back.on("click", closeProjectFocus);
   $news_bell.on("click", toggleNews);
   $project_bg.each(setBackgrounds);
+  $timeline_dates.hover(lineDown, lineUp);
   $(window).scroll(setSideMenu);
+  setLengthTimeline();
 });

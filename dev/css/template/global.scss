@@ -72,6 +72,12 @@ ul{
   clear: both;
 }
 
+.cleared:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .dividing{
   margin: 40px auto 0 auto;
   max-width: 200px;
