@@ -46,9 +46,28 @@
     padding: 10px 20px 15px 20px;
     position: relative;
 
+    img{
+      margin: 20px 0 0 0;
+      opacity: 0.3;
+    }
+
     &:hover{
       //background-color: $_blue;
       border: 2px solid $primary;
+      color: $primary;
+
+      img{
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      &:after{
+        border-top: 1px dashed $primary;
+      }
+
+      &:before{
+        background-color: $primary;
+      }
     }
 
     &:after{
@@ -68,7 +87,7 @@
       position: absolute;
       top: 50%;
       margin-top: -5px;
-      right: -6px;
+      right: -14%;
       background-color: $blue;
       width: 7px;
       height: 7px;
@@ -86,8 +105,13 @@
       }
 
       &:before{
-        left: -6px;
+        left: -14%;
       }
     }
+  }
+
+  .present{
+    background-color: $_blue;
+    color: $grey_;
   }
 }
