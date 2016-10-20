@@ -1,3 +1,11 @@
 .home{
-  
+  .github_contributions{
+    border: 1px solid $_grey;
+    background-color: $white;
+    border-radius: $corner;
+    clear: both;
+    max-width: 790px;
+    padding: 20px 0 30px 0;
+    margin: 60px auto -170px auto;
+  }
 }
