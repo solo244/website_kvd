@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Fullscreen background - CSS - Tutorials - KVD
+    include /header.jade
+  body.tutorial-content
+    include /nav.jade
+    include /tweets.jade
+    include _side.jade
+    
+    .top
+      .container
+        h1 
+          span CSS: FULLSCREEN BACKGROUNDS
+          | Is building a website actually that difficult?
+          
+    .container.divider
+      p Google.
+      
+      img(src="../../images/tutorials/simple/random_minion_1.png", class="rightText")
+      
+      h2 What to use?   
+      
+    include /footer.jade
+    
+    script.
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .css4").addClass("active");
