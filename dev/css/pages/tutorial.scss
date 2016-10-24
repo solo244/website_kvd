@@ -1,5 +1,42 @@
 .tutorial{
+  .search-tut{
+    .search-block{
+      max-width: 700px;
+      margin: 40px auto 0 auto;
+      position: relative;
+      overflow: hidden;
 
+      input{
+        background-color: $__grey;
+        display: block;
+        padding: 15px 50px;
+        font-family: $font;
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $font-weight;
+        color: $grey_;
+        border-radius: $corner;
+        width: 100%;
+      }
+
+      .search{
+        position: absolute;
+        top: 0;
+        left: 15px;
+        font-size: 23px;
+        line-height: 59px;
+      }
+
+      .clear{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 19px;
+        line-height: 61px;
+      }
+    }
+  }
 }
 
 .tutorial-content{
@@ -20,5 +57,32 @@
         border-bottom: 1px solid $blue;
       }
     }
+  }
+}
+
+.all-tuts{
+  .grid-item{
+    transform: scale(0.1);
+    max-height: 0;
+    overflow: hidden;
+    
+    .grid-c{
+      background-color: #FFF;
+      border: 1px solid #CCC;
+      position: relative;
+      overflow: hidden;
+      padding: 20px 30px;
+
+      h3{
+        color: $grey_;
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+
+  .show_result{
+    transform: scale(1);
+    max-height: 400px;
   }
 }

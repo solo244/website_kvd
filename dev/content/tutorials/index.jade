@@ -16,13 +16,24 @@ html
     .container.divider
       p My path to webdesigner & webdeveloper has been that of self study, suffering, frustration, sweating and the complete and utter hate of CSS #[mark floats], Internet Explorer 8 and all things #[mark WYSIWYG].. There have been many a reason why you have to do things a certain way in building stuff for the web. Most of them that I know, I've come to on my own, after a long but fun, great many years experience on the web. Maybe I can pass some of #[strong my knowlegde on to you].
       
-      pre
+      //pre
         code(class="language-js")
           | if(this == "Sparta"){
           |   this = "Maddness";
           | }
+    
+    .search-tut
+      .search-block
+        input(placeholder="Search for a topic")
+        .search
+          i(class="icon dripicons-search")
+        .clear 
+          i(class="icon dripicons-cross")
+    
+    include all_tutorials.jade
       
     .container.grid.divider
+      h2 All topics
       .grid-item
         a(href="simple_website").grid-c
           .icon
