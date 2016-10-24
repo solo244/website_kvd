@@ -6,6 +6,8 @@ var $doc = $("html, body"), // General
     $tweets_btn = $tweets.find(".twit"),
     $overlay = $doc.find(".tweets_overlay"),
     $project = $doc.find(".project"), // Projects
+    $reset_project_view = $project.find(".containerHolderProjects .overview"),
+    $reset_project_grid = $project.find(".back"),
     $project_grid = $project.find(".projects_portfolio"),
     $project_grid_website = $project_grid.find(".project_website"),
     $project_grid_github = $project_grid.find(".project_github"),
@@ -38,10 +40,10 @@ $(document).ready(function(){
   $project_grid_github.on("click", focusProjectsGrid);
   $project_grid_dnd.on("click", focusProjectsGrid);
   $project_grid_random.on("click", focusProjectsGrid);
-  $project_back.on("click", closeProjectFocus);
   $news_bell.on("click", toggleNews);
   $project_bg.each(setBackgrounds);
   $timeline_dates.hover(lineDown, lineUp);
+  $reset_project_grid.on("click", resetSmallGrid);
   $(window).scroll(setSideMenu);
   setLengthTimeline();
 });

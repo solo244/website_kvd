@@ -7,21 +7,35 @@
     text-align: center;
     overflow: hidden;
 
-    .grid_websites, .grid_github, .grid_dnd, .grid_random{
-      background-color: rgba(255,255,255,0.9);
+    .overview{
       position: absolute;
-      top: -100%;
-      min-height: 0px;
-      width: 100%;
-      left: 0;
-      overflow: hidden;
-      transform: rotate(30deg) scale(0.1);
+      top: 47px;
+      opacity: 0.2;
+      left: -100%;
+      z-index: 10;
+      text-align: left;
+      cursor: pointer;
 
-      .overview{
-        margin-bottom: 30px;
+      i{
+        display: block;
       }
 
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    .overview_active{
+      left: 10px;
+    }
+
+    .grid_websites, .grid_github, .grid_dnd, .grid_random{
+      overflow: hidden;
+      max-height: 0;
+
       .grid-item{
+        max-width: 500px;
+        max-height: 800px;
 
         .grid-c{
           padding-top: 25px;
@@ -65,10 +79,57 @@
       }
     }
 
+    .small_grid{
+      max-width: 720px;
+      margin-bottom: 40px;
+
+      .grid-item{
+        max-width: 180px;
+        max-height: 100px;
+        overflow: hidden;
+
+        .grid-c{
+          background-color: transparent;
+          padding: 0;
+          border: none;
+          opacity: 0.5;
+
+          &:hover{
+            box-shadow: none;
+            opacity: 1;
+          }
+        }
+
+        .grid_active{
+          opacity: 1;
+          transform: scale(1.05);
+
+          h3{
+            color: $primary;
+          }
+
+          &:after{
+            content: "";
+            width: 20px;
+            height: 3px;
+            background-color: $primary;
+            display: block;
+            position: absolute;
+            top: 90px;
+            left: 70px;
+          }
+        }
+
+        p{
+          opacity: 0;
+        }
+      }
+    }
+
     .grid_websites_active, .grid_github_active, .grid_dnd_active, .grid_random_active{
       top: 55px;
-      min-height: 515px;
-      transform: rotate(0deg) scale(1);
+      max-height: 800px;
+      z-index: 8;
     }
   }
 }
