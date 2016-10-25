@@ -23,9 +23,6 @@ function getResults(e){
 }
 
 function emptySearch(){
-  var $this = $(this),
-      $input = $this.closest(".search-block").find("input");
-
-  $input.val("");
+  $tut_search.val("");
   $all_tutorials_blocks.removeClass("show_result");
 }
