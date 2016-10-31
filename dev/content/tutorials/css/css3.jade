@@ -15,11 +15,70 @@ html
           | Is building a website actually that difficult?
           
     .container.divider
-      p Google.
+      p This is all in the assumption that you know a little bit of CSS already. So you know that it takes care of all the visuals and style for your website. However, there are some things that are new that you can use to make life, building websites, a lot easier.
+
+      p These new things are possible because of CSS version 3. It supports a lot of fun extra’s like shadows, animations, shapes, … Let’s explore a little bit where they can be huge timesavers. Note that CSS 3 is fully backward compatible so what ends up happening is this: we use previous version of CSS for the basics and the newer version for newer functions. You’re always using the entire possible CSS options, not one specific version.
       
       img(src="../../images/tutorials/simple/random_minion_1.png", class="rightText")
       
-      h2 What to use?   
+      h2 1. Border-radius (rounded corners)
+      
+      p A fun thing to do with elements or photos is giving them rounded corners. We can easily do it with one line of code:
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   border-radius: 20px;
+          | }
+          
+          
+      p We can take it one step further and instead of using a pixel value, we could use a certain percentage:
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   border-radius: 50%;
+          | }
+      
+      p Note that not all sides need the same value. You can specify 4 different values. The values given represent top-right-bottom-left:
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   border-radius: 20px 50px 10px 20px;
+          | }
+      
+      h3 Browser support
+      
+      table.support
+        tr
+          th &nbsp;
+          th 
+            img(src="../../images/browsers/chrome.svg", alt="Browser Chrome")
+          th
+            img(src="../../images/browsers/firefox.svg", alt="Browser Firefox")
+          th
+            img(src="../../images/browsers/explorer.svg", alt="Browser internet Explorer")
+          th
+            img(src="../../images/browsers/safari.svg", alt="Browser Safari")
+          th
+            img(src="../../images/browsers/opera.svg", alt="Browser Opera")
+        tr
+          td 
+            strong Supported
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-cross")
+          td 
+            strong 8
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+        
+
+
       
     include /footer.jade
     

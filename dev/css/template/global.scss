@@ -100,3 +100,34 @@ mark{
   max-width: 600px;
   margin: 0 auto;
 }
+
+table.support{
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: center;
+  max-width: 750px;
+  margin: 30px 88px;
+
+  .dripicons-checkmark{
+    color: $green;
+  }
+
+  .dripicons-cross{
+    color: $red;
+  }
+
+  tr{
+
+  }
+
+  td, th{
+    border: 1px solid $_grey;
+    background-color: $__grey;
+    padding: 10px 15px;
+  }
+
+  td{
+    background-color: $white;
+  }
+}
