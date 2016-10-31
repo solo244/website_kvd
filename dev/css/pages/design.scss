@@ -27,7 +27,6 @@
         img{
           display: block;
           width: 100%;
-          //border-radius: $corner;
           position: relative;
           opacity: 1;
           top: 0;
@@ -58,14 +57,62 @@
   }
 
   .sold_items{
+    margin: 0 auto;
+    width: 360px;
 
-    img{
-      opacity: 0.1;
-      margin: 0 20px;
+    .s_item{
+      position: relative;
+      float: left;
+      width: 60px;
+
+      img{
+        opacity: 0.3;
+      }
+
+      .tooltip{
+        background-color: $grey__;
+        color: $white;
+        border-radius: $corner;
+        position: absolute;
+        top: -70px;
+        left: 0;
+        padding: 10px 15px;
+        z-index: 2;
+        opacity: 0;
+        transform: scale(0.2);
+
+        &:after{
+          content: "";
+          display: block;
+          position: absolute;
+          left: 50%;
+          top: 30px;
+          z-index: -1;
+          width: 20px;
+          height: 20px;
+          background-color: $grey__;
+          transform: translate(-50%, 0) rotate(45deg);
+        }
+      }
+
+      #tooltip1{ left: 0; display: block; }
+      #tooltip2{ left: 0; display: none; }
+      #tooltip3{ left: 0; display: none; }
+      #tooltip4{ left: 0; display: none; }
+      #tooltip5{ left: 0; display: none; }
+      #tooltip6{ left: 0; display: none; }
+      #tooltip7{ left: 0; display: none; }
 
       &:hover{
-        opacity: 1;
-        transform: scale(1.5);
+        img{
+          opacity: 1;
+          transform: scale(1.5);
+        }
+
+        .tooltip{
+          opacity: 1;
+          transform: scale(1);
+        }
       }
     }
   }
