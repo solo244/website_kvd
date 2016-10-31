@@ -56,4 +56,17 @@
       }
     }
   }
+
+  .sold_items{
+
+    img{
+      opacity: 0.1;
+      margin: 0 20px;
+
+      &:hover{
+        opacity: 1;
+        transform: scale(1.5);
+      }
+    }
+  }
 }
