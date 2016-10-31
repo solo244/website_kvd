@@ -34,7 +34,9 @@ var $doc = $("html, body"), // General
     $timeline_c1 = $timeline.find(".c1"),
     $timeline_dates = $timeline_c1.find(".date"),
     $timeline_c2 = $timeline.find(".c2"),
-    $timeline_c3 = $timeline.find(".c3");
+    $timeline_c3 = $timeline.find(".c3"),
+    $design = $doc.find(".design"), // Designs
+    $design_grid = $design.find(".design_portfolio");
 
 /*
  * Let's get ready to rumble
@@ -61,4 +63,5 @@ $(document).ready(function(){
   $(window).scroll(setSideMenu);
   setLengthTimeline();
   emptySearch();
+  setDesignImages();
 });
