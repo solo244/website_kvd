@@ -1,10 +1,6 @@
 /*
  * Show different results on search
  */
-function hideAllTutorials(){
-  //$all_tutorials_blocks.animate({"transform" : "scale(0.1)"}, 500);
-}
-
 function getResults(e){
   var $this = $(this).val().toLowerCase();
 

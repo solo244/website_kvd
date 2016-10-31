@@ -60,6 +60,5 @@ $(document).ready(function(){
   // Initiate
   $(window).scroll(setSideMenu);
   setLengthTimeline();
-  hideAllTutorials();
   emptySearch();
 });
