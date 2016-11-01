@@ -95,13 +95,12 @@
         }
       }
 
-      #tooltip1{ left: 0; display: block; }
-      #tooltip2{ left: 0; display: none; }
-      #tooltip3{ left: 0; display: none; }
-      #tooltip4{ left: 0; display: none; }
-      #tooltip5{ left: 0; display: none; }
-      #tooltip6{ left: 0; display: none; }
-      #tooltip7{ left: 0; display: none; }
+      #tooltip1{ left: 2px; }
+      #tooltip2{ left: -2px; }
+      #tooltip3{ left: -6px; }
+      #tooltip4{ left: -5px; }
+      #tooltip5{ left: -3px; }
+      #tooltip6{ left: -12px; }
 
       &:hover{
         img{
