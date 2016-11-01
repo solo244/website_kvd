@@ -42,40 +42,41 @@ html
           |   width: 100px;
           |   height: 100px;
           | }
-          |
+          | &nbsp;
           | #box1{
           |   background-color: red;
           | }
-          |
+          | &nbsp;
           | #box2{
           |   background-color: yellow;
           | }
 
-1
-2
-I'll change the float property of box2 to right because I want it to be positioned on the right side. What you'll see now is that box2 floats as right as it possibly can but it doesn’t move up. This is not the result we wanted. We want box2 to be next to box1, as left as possible. But to put two elements next to each other we'll have to let both elements float. So I'll add a float property to box1. Although box1 is already in the right place and I don't want to actually move it, I still have to give it the float property in order to float other elements next to it.
-
-#box1{
-    float: left;
-}
-
-#box2{
-    float: right;
-}
-12
-After letting box1 float left, I'll notice that box2 still has to be moved to the left side. It has to float as left as possible, next to box1. Luckily for us, floating elements will never be stacked on top of each other but rather next to each other. You'll also notice that we'll be using float left more often than float right. The simple reason for this is that we read from left to right and usually start by putting our elements on the left side of our page.
-
-#box1{
-    float: left;
-}
-
-#box2{
-    float: left;
-}
-12
-We finally have our elements next to each other. You'll notice that adding new boxes next to box1 and box2 is simple. Just add an element with the float left property and it will automatically be positioned next to the other boxes. That all fun and games, but I haven’t talked about why making elements float is so annoying. So far everything was easy right? Well yes, but making elements float has its consequences. Imagine we would be using this on a website and wanted to add a footer underneath these two boxes. As is often the case with modern websites. Floating elements have some nasty behaviours and will actually no longer fit in the "normal flow" of the document. That means that elements added behind it will position themselves differently. I'll show this by adding a footer after box1 and box2. Notice where the footer ends up.
+      //1
+      //2
       
-      */
+      p I'll change the float property of box2 to right because I want it to be positioned on the right side. What you'll see now is that box2 floats as right as it possibly can but it doesn’t move up. This is not the result we wanted. We want box2 to be next to box1, as left as possible. But to put two elements next to each other we'll have to let both elements float. So I'll add a float property to box1. Although box1 is already in the right place and I don't want to actually move it, I still have to give it the float property in order to float other elements next to it.
+
+      //#box1{
+        float: left;
+        }
+
+        #box2{
+        float: right;
+        }
+        12
+      
+      p After letting box1 float left, I'll notice that box2 still has to be moved to the left side. It has to float as left as possible, next to box1. Luckily for us, floating elements will never be stacked on top of each other but rather next to each other. You'll also notice that we'll be using float left more often than float right. The simple reason for this is that we read from left to right and usually start by putting our elements on the left side of our page.
+      
+      //#box1{
+        float: left;
+        }
+
+        #box2{
+        float: left;
+        }
+        12
+          
+      p We finally have our elements next to each other. You'll notice that adding new boxes next to box1 and box2 is simple. Just add an element with the float left property and it will automatically be positioned next to the other boxes. That all fun and games, but I haven’t talked about why making elements float is so annoying. So far everything was easy right? Well yes, but making elements float has its consequences. Imagine we would be using this on a website and wanted to add a footer underneath these two boxes. As is often the case with modern websites. Floating elements have some nasty behaviours and will actually no longer fit in the "normal flow" of the document. That means that elements added behind it will position themselves differently. I'll show this by adding a footer after box1 and box2. Notice where the footer ends up.
       
     include /footer.jade
     
