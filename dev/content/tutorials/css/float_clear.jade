@@ -21,7 +21,7 @@ html
       
       p So, in the previous tutorial we used two blocks and placed them next to each other. Let’s do the same thing now, but with a bit more boxes. This will make our example a bit more realistic. So imagine, we have 4 elements. A header (for the logo and menu), the submenu on the left, the content on the right and the footer at the bottom. We’ll define colors for each of them.
       
-      ul
+      ul.conlist
         li Header: green
         li Submenu: yellow
         li Content: red
@@ -31,71 +31,79 @@ html
       
       p So first things first; let’s make our elements in HTML. I will give each of them an ID, as they will only appear once.
       
-      // <div id="header"></div>
-        <div id="submenu"></div>
-        <div id="content"></div>
-        <div id="footer"></div>
+      pre
+        code(class="language-html")
+          | &lt;div id="header"&gt;&lt;/div&gt;
+          | &lt;div id="submenu"&gt;&lt;/div&gt;
+          | &lt;div id="content"&gt;&lt;/div&gt;
+          | &lt;div id="footer"&gt;&lt;/div&gt;
       
       p After making all of these, we’ll have to style them too. Here’s the css code for the colors and dimensions.
       
-      // #header{
-          height: 100px;
-          background-color: green;
-        }
-
-        #submenu{
-          height: 200px;
-          background-color: yellow;
-        }
-
-        #content{
-          height: 200px;
-          background-color: red;
-        }
-
-        #footer{
-          height: 100px;
-          background-color: blue;
-        }
+      pre
+        code(class="language-css")
+          | #header{
+          |   height: 100px;
+          |   background-color: green;
+          | }
+          | &nbsp;
+          | #submenu{
+          |   height: 200px;
+          |   background-color: yellow;
+          | }
+          | &nbsp;
+          | #content{
+          |   height: 200px;
+          |   background-color: red;
+          | }
+          | &nbsp;
+          | #footer{
+          |   height: 100px;
+          |   background-color: blue;
+          | }
         
       p Result: So much pain for the eyes
       
       p As off now, the header and footer are perfect. But the submenu and content divs should be next to each other, with the content on the right and the submenu on the left. Let’s use the float property to do this.
       
-      // #header{
-            height: 100px;
-            background-color: green;
-        }
-
-        #submenu{
-            height: 200px;
-            background-color: yellow;
-            float: left;
-            width: 30%;
-        }
-
-        #content{
-            height: 200px;
-            background-color: red;
-            float: left;
-            width: 70%;
-        }
-
-        #footer{
-            height: 100px;
-            background-color: blue;
-        }
+      pre
+        code(class="language-css")
+          | #header{
+          |   height: 100px;
+          |   background-color: green;
+          | }
+          | &nbsp;
+          | #submenu{
+          |   height: 200px;
+          |   background-color: yellow;
+          |   float: left;
+          |   width: 30%;
+          | }
+          | &nbsp;
+          | #content{
+          |   height: 200px;
+          |   background-color: red;
+          |   float: left;
+          |   width: 70%;
+          | }
+          | &nbsp;
+          | #footer{
+          |   height: 100px;
+          |   background-color: blue;
+          | }
       
       p After adding this code we’ll have some good news and some bad news. The thing we wanted; both divs next to each other, worked and we’re very happy about that (the kind of happy you get when receiving a new toy as a kid). But the bad news is, something has disappeared. Or that’s what it looks like. But the footer (now invisible) has actually moved up, behind the submenu and content div. Because these two are floating and are no longer part of the normal flow, they get ignored by all the other elements. So the footer notices free space above itself, and moves up.
       
       p We can force it to show itself by making the content div a bit smaller (width wise).
       
-      // #content{
-            height: 200px;
-            background-color: red;
-            float: left;
-            width: 50%;
-        }
+      pre
+        code(class="language-css")
+          | #content{
+          |   height: 200px;
+          |   background-color: red;
+          |   float: left;
+          |   width: 50%;
+          | }
         
       p Because of the ugly.. I mean practical colors we’ve given to all our elements, it’s easy to spot the blue footer. It’s just below the header. It actually doesn’t belong there and has to position itself below the content and submenu divs. But because these are floating, the positioning will be off.
       
@@ -103,11 +111,13 @@ html
       
       p Simple. We use the clear property. Try to remember those two as one (float and clear), as they will always be used at the same time (or almost always). The clear property is an easy way to force elements to be positioned below floating elements. General rule: you use the float property on an element. The element underneath you do not want to float (the footer), you clear. And as with floating, you can give a left and right value to your clear property. It all depends on what you’ve chosen as the float value. Because our submenu and content div both use the float value: left, we also have to use that value for our clear property. If we would have made an element float left and another element right, we would have to use the both value for our clear property.
       
-      // #footer{
-            height: 100px;
-            background-color: blue;
-            clear: left;
-        }
+      pre
+        code(class="language-css")
+          | #footer{
+          |   height: 100px;
+          |   background-color: blue;
+          |   clear: left;
+          | }
         
       p Proverbial tadaah!. There we go, we placed the footer at the bottom and the submenu & content are next to each other. As a final touch, you can now change the width of the content div back to 70%.
       

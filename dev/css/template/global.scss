@@ -131,3 +131,11 @@ table.support{
     background-color: $white;
   }
 }
+
+.quote{
+  font-style: italic;
+  line-height: 30px;
+  padding-left: 20px;
+  border-left: 1px solid $primary;
+  max-width: 800px;
+}
