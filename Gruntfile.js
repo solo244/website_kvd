@@ -151,6 +151,14 @@ module.exports = function(grunt) {
           dest: 'build/css/fonts/'
         }]
       },
+      favicon: {
+        files: [{
+          expand: true,
+          cwd: 'dev/favicon/',
+          src: '**',
+          dest: 'build/'
+        }]
+      },
       ftp: {
         files: [{
           expand: true,
@@ -263,7 +271,7 @@ module.exports = function(grunt) {
 
   grunt.task.run('notify_hooks');
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'imagemin', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'copy:favicon', 'imagemin', 'browserSync', 'watch']);
   grunt.registerTask('dist', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'imagemin', 'copy:ftp', 'string-replace', 'replace']);
   grunt.registerTask('ftp', ['copy:ftp', 'string-replace', 'replace', 'ftp-deploy']);
 };
