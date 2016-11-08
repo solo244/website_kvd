@@ -60,10 +60,11 @@
   }
 
   .code_example{
+    padding: 1.2em;
     overflow: auto;
     margin: 30px auto;
     border-radius: 3px;
-    max-width: 780px;
+    max-width: 745px;
     border: 1px solid $_grey;
   }
 }
