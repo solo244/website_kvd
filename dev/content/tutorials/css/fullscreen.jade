@@ -12,14 +12,62 @@ html
       .container
         h1 
           span CSS: FULLSCREEN BACKGROUNDS
-          | Is building a website actually that difficult?
+          | OMG, this image is everywhere! It's all over the place!
           
     .container.divider
-      p Google.
+      p So, having a full background on your page is awesome ? I agree, but the problem is the size of the image versus the size of the browser window. What if you make the picture big enough for a HD resolution it might be way too big for a person with an older screen. The idea is to scale the image down so everyone sees the same image. But it has to be scaled proportionally. To program this in jQuery is tricky, same as in CSS with a width and a height of a 100%, .. Luckily for us, there is a new CSS property that does this for us.
       
-      img(src="../../images/tutorials/simple/random_minion_1.png", class="rightText")
+      h2 Pro's
       
-      h2 What to use?   
+      p So, this way will make the image appear, if done correctly:
+      
+      ul.conlist
+        li without any extra whitespace
+        li and scale proportionally to the users screen resolution
+        li centered on the page
+        li without any scrollbars
+        li without using anything mike jQuery, JavaScript or Flash
+        
+      h2 CSS 3: cover
+      
+      p First off, here is an example of a finished product. Don't forget to scale the browser window down and see what happens to the image.
+      
+      p So, one of the awesome things about CSS3 is the value cover we can give to the background-size porpery. It implies already to use a background image as a full screen image. I prefer adding it to my HTML element itself so it fills the browser window with the image. You can also add this to the body or a self made div element, but you can't forget to make sure both have a width and height of a 100%. The HTML element already is the full width and height of the screen, that makes it easier on us. So here's the magic (the CSS code that is):
+      
+      pre
+        code(class="language-css")
+          | html{
+          |   background: url(images/bg.jpg) no-repeat center center fixed;
+          |   -webkit-background-size: cover;
+          |   -moz-background-size: cover;
+          |   -o-background-size: cover;
+          |   background-size: cover;
+          | }
+      
+      p Note that the image will be scale and positioned from the centered. If you feel like there is more crucial information somewhere else you can change this to, for instance right bottom. In my example the object of importance is also in the right bottom, so it makes more sense to work from that spot. Also don't forget that my path is "images/bg.jpg". If you use a different file name and directory, change that as well. Seeing as the cover property is rather new, I add all the prefixes just to make sure it'll work in all browsers.
+      
+      table.support
+        include /support_table.jade
+        tr
+          td 
+            strong Supported
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            strong 9
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark") 
+      
+      p People that have to make it work in older version of IE, not to worry. There is a way to do just that, by using this code:
+      
+      pre
+        code(class="language-css")
+          | filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+          | -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
       
     include /footer.jade
     

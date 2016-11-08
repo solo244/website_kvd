@@ -12,14 +12,98 @@ html
       .container
         h1 
           span CSS: POSITIONING #1
-          | Is building a website actually that difficult?
+          | ..And we'll call it baby. So let's put it in the corner.
           
     .container.divider
-      p Google.
+      p Let's assume that you understand the normal flow of elements and that you have some experience with #[mark div] tags, #[mark selectors] and a #[mark doctype]. Sometimes you don't want to put that specific element in the normal flow on the left. You need to put that element in the corner at the top or at the bottom. Well, you will need to use positioning. Positioned elements are placed in a certain way and mostly in a certain location. They are exceptions to the normal flow (and normal elements) and are therefore more rare to your pages. You might have a social media menu at the top on the right or you might have a back to top button positioned in the corner on the left. Let's take a look at what types of positioning exists.
       
-      img(src="../../images/tutorials/simple/random_minion_1.png", class="rightText")
+      h2 1. Absolute positioning
       
-      h2 What to use?   
+      p The easiest positioning to explain is #[mark absolute]. Because #[mark absolute] positions your elements on your page via certain coordinates. You can even decide to work from the left or right and from the top or bottom. #[strong But not both]. I can't tell an element to go stand on the right and on the left, any more than I can tell you to go stand in the right corner of your room and the left corner. You'll have to decide on just one.
+      
+      p #[strong Let's assume you have made the world's most amazing submenu] and that it had to be positioned in the right corner of your page.
+      
+      p.quote We'll represent our menu via a red box and we'll call it baby. So let's put it in the corner.
+      
+      p The HTML:
+             
+      pre
+        code(class="language-html")
+          | &lt;div id="baby"&gt;&lt;/div&gt;
+      
+      p The CSS:
+      
+      pre
+        code(class="language-css")
+          | #baby{
+          |   position: absolute;
+          |   top: 0px;
+          |   right: 0px;
+          | }
+      
+      p Result:
+      
+      .code_example(style="min-height: 150px")
+        .div(style="background-color: red; width: 50px; height: 50px; float: right")
+          
+      p You'll notice that I only have to state the distance the box is from a certain side. So I'll tell it to be positioned 0 #[mark pixels] away from the top and 0 #[mark pixels] from the right side. So now, it's sticking to the top right corner. Pretty easy right ? You'll also notice that for other elements that are or were already in that location, the red box will appear on top of them, as if pasted on top. #[strong Absolute positioned elements always appear on top] (above) of normal flow elements. This is the default setting, but can easily be overruled later on.
+      
+      h2 2. Fixed positioning
+      
+      p A fixed positioning works exactly the same as the #[mark absolute] positioning. But it has one major difference. It doesn't move. So, when the user scrolls, it stays at its defined position. This can be handy if you have a menu at the top, that always has to stay at the top, even if the user scrolls down. Or if you have a back to top button that always has to appear in the bottom right corner of your page. As with #[mark absolute] positioning, you define it's coordinates and that's it.
+      
+      pre
+        code(class="language-css")
+          | #baby{
+          |   position: fixed;
+          |   top: 0px;
+          |   right: 0px;
+          | }
+          
+      p Try scrolling in this example. You'll notice that the button stays where it's suppose to be. In the bottom right.
+      
+      h2 3. Relative positioning
+      
+      p #[mark Relative] positioning works a bit different then the #[mark absolute] and #[mark fixed]. You don't have to define any coordinates. It will always starts from its current position and moves the number of #[mark pixels] you make it move. You can again decide if you want to move it right or left, top or right. It's important to note that if you move your box a lot, it will never influence any other element on the page. So if you move a box to the right and all of a sudden there would be space enough for other boxes to move up or down, #[strong they will still not budge]. They don't notice the change. Every element you move via the #[mark relative] positioning doesn't change the flow of your document. It's the easiest way to move elements around without having any negative results towards the rest of your elements (take that, #[a(href="index.html") floats]!).
+
+      p The HTML:
+      
+      pre
+        code(class="language-html")
+          | &lt;div id="box1"&gt;&lt;/div&gt;
+          | &lt;div id="box2"&gt;&lt;/div&gt;
+          | &lt;div id="box3"&gt;&lt;/div&gt;
+          
+      p The CSS:
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   width: 50px;
+          |   height: 50px;
+          | }
+          | &nbsp;
+          | #box1{
+          |   background-color: red;
+          |   position: relative;
+          |   top: 0px;
+          |   left: 100px;
+          | }
+          | &nbsp;
+          | #box2{
+          |   background-color: blue;
+          | }
+          | &nbsp;
+          | #box3{
+          |   background-color: green;
+          | }
+          
+      .code_example
+        .div(style="background-color: red; width: 50px; height: 50px; position: relative; left: 120px")
+        .div(style="background-color: blue; width: 50px; height: 50px; ")
+        .div(style="background-color: green; width: 50px; height: 50px; ")
+          
+      p So, explained simple: the code dictated that the box has to move a 100 #[mark pixels] to the right. And 0 to the bottom. The other boxes stay and don't move. Even though there is space to move up.
       
     include /footer.jade
     
