@@ -19,8 +19,6 @@ html
 
       p These new things are possible because of CSS version 3. It supports a lot of fun extra’s like shadows, animations, shapes, … Let’s explore a little bit where they can be huge timesavers. Note that CSS 3 is fully backward compatible so what ends up happening is this: we use previous version of CSS for the basics and the newer version for newer functions. You’re always using the entire possible CSS options, not one specific version.
       
-      img(src="../../images/tutorials/simple/random_minion_1.png", class="rightText")
-      
       h2 1. Border-radius (rounded corners)
       
       p A fun thing to do with elements or photos is giving them rounded corners. We can easily do it with one line of code:
@@ -57,16 +55,163 @@ html
           td 
             i(class="icon dripicons-checkmark")
           td 
+            i(class="icon dripicons-checkmark")
+          td 
+            strong 9+
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+      
+      h2 2. Box-shadow
+      
+      p You can easily add a shadow to an element or an image. You can even decide how big, strong or what color it has to be:
+        
+      pre
+        code(class="language-css")
+          | div{
+          |   box-shadow: 0 0 10px #333;
+          | }
+          
+      p The first two values are the location of the shadow. The first is the horizontal position (along the x-axis) and the second is the vertical position (along the y-axis). The third value defines the blur of the shadow. The higher this values, the bigger, but at the same time, the more subtle your shadow will become. The final value is the color of the shadow. If you want to keep it all realistic (as much as is even possible), you put this to a dark(er) color.
+      
+      h3 Browser support
+      
+      table.support
+        include /support_table.jade
+        tr
+          td 
+            strong Supported
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            strong 9+
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+      
+      h2 3. Text-shadow
+      
+      p Similar to box-shadow, you can apply a shadow around some text:
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   text-shadow: 0 0 10px #333;
+          | }
+          
+      h3 Browser support
+      
+      table.support
+        include /support_table.jade
+        tr
+          td 
+            strong Supported
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
             i(class="icon dripicons-cross")
           td 
-            strong 8
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+              
+      h2 4. 2D Transformations
+      
+      p You can perform some transormation on objects in order to position or scale them to your liking. I'll show you two of these transformations: rotate and scale.
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   width: 85px; 
+          |   height: 85px; 
+          |   background-color: #fbda59;
+          |   transform: rotate(45deg) scale(0.5, 0.5);
+          | }
+      
+      h3 Browser support
+      
+      table.support
+        include /support_table.jade
+        tr
+          td 
+            strong Supported
           td 
             i(class="icon dripicons-checkmark")
           td 
             i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+              
+      h2 5. Animations
+      
+      p You can animate elements using just CSS3 transitions. You can animate every property known to CSS. To check out the animation I prepared here, roll over the yellow box:
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   transition: width, 2s;
+          | }
+          
+      h3 Browser support
+      
+      table.support
+        include /support_table.jade
+        tr
+          td 
+            strong Supported
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-cross")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+              
+      h2 6. Colums
+      
+      p If you want to create some colums out of one single paragraph, you're in luck. This next option lets you start with one block of text and cuts it into different colums for you:
+      
+      pre
+        code(class="language-css")
+          | div{
+          |   column-count: 3;
+          |   column-gap: 40px;
+          |   column-rule: 3px outset #fbda59;
+          | }
+      
+      .code_example
+        div(style="column-count: 3; column-gap: 40px; column-rule: 1px outset #333;") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam, libero ac tempus feugiat, lacus risus egestas justo, at lobortis dui neque in magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus auctor diam vitae nisl sagittis cursus. Vivamus quis est quis massa ultricies tristique. Praesent nec arcu mi, sed gravida nisi. Morbi eros libero, iaculis sed tristique a, imperdiet a diam. Sed hendrerit lorem vel erat volutpat placerat. Proin ullamcorper arcu in lectus laoreet vel tristique nisi molestie. Nullam mollis rutrum fermentum. Morbi adipiscing ornare libero, nec vehicula orci tristique nec. Suspendisse tempor quam eget erat lacinia vehicula at ullamcorper ipsum. Maecenas dolor nulla, euismod consequat malesuada non, aliquam ut nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer gravida lacinia metus, non dictum dui semper vitae.
         
-
-
+      h3 Browser support
+      
+      table.support
+        include /support_table.jade
+        tr
+          td 
+            strong Supported
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-cross")
+          td 
+            i(class="icon dripicons-checkmark")
+          td 
+            i(class="icon dripicons-checkmark")
       
     include /footer.jade
     

@@ -23,11 +23,13 @@ html
       
       p For the purpose of this tutorial I'll be using the most random image on the internet, shown below.
       
-      img(src="../../images/tutorials/simple/random_minion_1.png", class="rightText")
+      img(src="../../images/tutorials/simple/random.jpg", class="centerText", style="")
       
       p #[strong So, what filters are available? Here is my top 5:]
-      
+        
       h3 1. GRAYSCALE
+      
+      img(src="../../images/tutorials/simple/random.jpg", class="centerText", style="filter: grayscale(1)")
       
       p The grayscale filter converts your image into its grayscale equivalent. This can be done from 0 to a 100 percent, 0 being complete colourful and 100 being full black and white.
       
@@ -39,6 +41,8 @@ html
           
       h3 2. BLUR
       
+      img(src="../../images/tutorials/simple/random.jpg", class="centerText", style="filter: blur(5px)")
+      
       p The blur filter applies an unsharpen effect to your image. This effect will be a Gaussian blur and you need to define a pixel value for the size of the blur. The bigger the value, the less sharp and thinner your effect will be.
       
       pre
@@ -48,6 +52,8 @@ html
           | }
           
       h3 3. SEPIA
+      
+      img(src="../../images/tutorials/simple/random.jpg", class="centerText", style="filter: sepia(1)")
       
       p The sepia filter applies a sepia effect to your image, changing it to a sepia one-color scheme. This can be done from 0 to a 100 percent, 0 being no visible effect and a 100 overlaying your image with a sepia colour.
       
@@ -59,6 +65,8 @@ html
           
       h3 4. BRIGHTNESS
       
+      img(src="../../images/tutorials/simple/random.jpg", class="centerText", style="filter: brightness(300%)")
+      
       p The brightness filter applies a shine or light, even darken effect to your image, changing its brightness levels. Every image has a standard of 100% light and can be made darker by using values lower than 100%, 0% being completely dark. They can even be given very high values to lighten up your image to extreme heights.
       
       pre
@@ -68,6 +76,8 @@ html
           | }
           
       h3 5. DROP-SHADOW
+      
+      img(src="../../images/tutorials/simple/random.jpg", class="centerText", style="box-shadow: 0 0 20px black")
       
       p The drop-shadow filter is important because it works a little bit different then your ordenairy box-shadow. Whereas box-shadow will always create a shadow in the shape of a box (rectangle), hence the name, the drop-shadow filter will take over the shape of an image or vector perfectly, making it a better choice for unique shapes.
       
