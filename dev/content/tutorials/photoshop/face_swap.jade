@@ -15,6 +15,83 @@ html
           | You get a face, you get a face. Everyone get's a face!
     
     .container.divider
+      p Famous for its merits, the face swap is a well common humoristic element, mostly applied to any combination of celebrities, animals or babies. Although, preferable, all of the above.
+      
+      p What the most difficult thing about this is, is using different blends. You might have two pictures where people have different skin tones or where the quality is significantly different. That makes this process harder. But luckily for us, Photoshop has found a way to make it a bit easier. We’ll see how. Let’s start with an example immediately. This example is easy because I picked one image with two faces. In this case the light, quality and colors of the image will be the same, including the two faces. Let’s take a look at the result.
+        
+      img(src="../../images/tutorials/photoshop/skyfall-result.jpg", class="centerText")
+        
+      p We focused on speed rather than accuracy. But hopefully you’ve noticed something wrong with this picture. Let’s divide our example exercise into different steps and let’s get swapping.
+
+      h2 Step 1: Open the file and make the backups
+      
+      img(src="../../images/tutorials/photoshop/skyfall.jpg", class="centerText")
+        
+      p We’ll have to mess up some stuff from our image and we’ll end up deleting some pixels. To avoid losing the source file(s), we’ll make copies of our background layer. The moment Photoshop has booted, open the image and make two copies of the background layer (right click on the layer + duplicate layer).
+        
+      img(src="../../images/tutorials/photoshop/duplicate.png", class="centerText")
+        
+      p We’ll name our layers: original, source M and source B (from bottom to top). You can name a layer by double clicking its current name and retyping a new one.
+        
+      img(src="../../images/tutorials/photoshop/layers.png", class="centerText")
+        
+      h2 Step 2: Bond’s face
+      
+      p So, what we’ll have to do is copy Bond's face and copy it onto M's face. A selection will have to be made and as a hint, I would advise to include any key features (scars, wrinkles, shadow, make-up, …) when making this selection. I’m using the Polygonal Lasso Tool to do this, but any selection tool will do.
+        
+      img(src="../../images/tutorials/photoshop/lassoTool.png", class="centerText")
+        
+      img(src="../../images/tutorials/photoshop/bondSelection.png", class="centerText")
+        
+      p When this selection is made, we'll copy and paste it. A new layer pops up and we’ll name it B face. Now let’s move and scale this layer so it overlaps with M’s face. I actually scaled it down a bit as the proportions were a bit off. Focus on eyes and mouth. These should be about the same size and, if possible, on the same location.
+        
+      img(src="../../images/tutorials/photoshop/BonM.png", class="centerText")
+        
+      h2 Step 3: Making space
+      
+      p Before we can blend the layers we'll have to make some space for the Bond head on top of M's head. Make a selection of the layer B Face (via SHIFT + clicking the layer icon). Then, with this selection, go to the layer source B. We'll be deleting M's head out in a second, but first we need to optimize our selection. Blending requires some overlapping parts and now our selection is too wide. So go to Select -&gt; Modify -&gt; Contract and opt to contract by 4 pixels (that did the trick for me). Now press delete or backspace to delete these pixels (just make sure that the layer source B is active).
+        
+      img(src="../../images/tutorials/photoshop/contractSelection.png", class="centerText")
+        
+      h2 Step 4: Blending layers
+      
+      p If you've made a good selection you should already have a pretty good result. But the problem is that the colouring and shadows are off. Not to mention you can clearly see where you've cut into the image. We'll now have to blend these two layers together, as a whole. Select both layers (source B + B face via holding CTRL + clicking on the layers) and go to Edit -&gt; Auto-Blend Layers...
+        
+      img(src="../../images/tutorials/photoshop/auto-blendLayers.png", class="centerText")
+        
+      p We'll pick Panorama as we want the two layers to combine. Also make sure that the option at the bottom Seamless Tones and Colors is checked on.
+      
+      img(src="../../images/tutorials/photoshop/auto-blendDetails.png", class="centerText")
+        
+      h2 Step 5: Clean up layers
+
+      p Let's assume we did well and want to do M's face on Bond as well, then we'll have to first clean up a bit. Now you're left with this:
+        
+      img(src="../../images/tutorials/photoshop/maskers.png", class="centerText")
+        
+      p Let's clean that up a bit via a right click on one of the selected layers and picking merge layers from the options.
+        
+      img(src="../../images/tutorials/photoshop/mergeLayers.png", class="centerText")
+        
+      p Now select the left side of the image and delete it. You do this pretty fast with the Rectangular Marquee Tool. Now we only have M on this side.
+      
+      img(src="../../images/tutorials/photoshop/deleteTheLeft.png", class="centerText")
+        
+      h2 Step 6: Repeat
+      
+      p We'll have to do the same thing if we want to copy M's face over Bond's face. But before you begin, you can temporarily hide the top layer B face (with the finished product), by clicking the eye icon in front of it. Then you can try this one yourself. Here are the steps:
+      
+      ul.conlist
+        li Go to layer source M and make a selection with the Polygonal Lasso Tool
+        li Copy and paste this selection and call the new layer M face
+        li Scale, rotate and position this new floating head in the desired location
+        li Select the layer again (SHIFT click the icon of the layer) and contract it by 4 pixels
+        li Go to the source M layer and delete this information
+        li Select both layers and blend them (Edit -> Auto-Blend Layers...)
+        li Merge the layers
+        li Delete the right side
+        li Make sure all the layer are set to visible again
+        li And there you have it, both faces swapped. Try it on different pictures if this worked.
   
     include /footer.jade
 
