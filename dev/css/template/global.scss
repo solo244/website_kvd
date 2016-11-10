@@ -68,6 +68,15 @@ ul{
 
 }
 
+::selection {
+  background-color: $yellow;
+  color: $black;
+}
+::-moz-selection {
+  background-color: $yellow;
+  color: $black;
+}
+
 .clear{
   clear: both;
 }
