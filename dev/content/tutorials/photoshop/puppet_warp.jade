@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Puppet warp - Photoshop - Tutorials - KVD
+    include /header.jade
+  body.tutorial-content
+    include /nav.jade
+    include /tweets.jade
+    include _side.jade
+    
+    .top
+      .container
+        h1 
+          span Photoshop: Puppet warp
+          | We will make the puppets dance in the name of Photoshop
+    
+    .container.divider
+  
+    include /footer.jade
+
+    script.
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .photoshop5").addClass("active");

@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Selections #2 - Photoshop - Tutorials - KVD
+    include /header.jade
+  body.tutorial-content
+    include /nav.jade
+    include /tweets.jade
+    include _side.jade
+    
+    .top
+      .container
+        h1 
+          span Photoshop: Selections #2
+          | Let's select even more selections as before!
+    
+    .container.divider
+  
+    include /footer.jade
+
+    script.
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .photoshop3").addClass("active");
