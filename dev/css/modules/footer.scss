@@ -10,6 +10,15 @@
       display: inline-block;
       margin: 0 20px;
 
+      @media screen and(max-width: 460px){
+        margin: 10px;
+      }
+
+      @media screen and(max-width: 380px){
+        margin: 0px;
+        display: block;
+      }
+
       a{
         color: $white;
         text-transform: uppercase;
