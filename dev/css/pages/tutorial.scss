@@ -100,3 +100,17 @@
   background: url(../images/tutorials/simple/bg.jpg) no-repeat center center fixed;
   background-size: cover;
 }
+
+/* Unique for Bootstrap page */
+.font-example{
+  font-size: 30px;
+
+  i{
+    cursor: pointer;
+    margin-right: 20px;
+    
+    &:hover{
+      color: $primary;
+    }
+  }
+}

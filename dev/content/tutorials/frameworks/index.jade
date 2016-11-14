@@ -82,8 +82,11 @@ html
       
       p Pretty easy and not to mention fast. Another amazing thing is the existence of Glyphicons. You can choose from a wide variety of icons and they are rendered (used) as a font. I’ve been using this technique for print work for years but now we can also do it for web. You can alter the color of the icon by simply changing the text color. That on its own, is amazing! Try rolling over the icons below with your cursor.
       
-      .code_example
-        span()
+      .code_example.font-example
+        i(class="fa fa-search", aria-hidden="true")
+        i(class="fa fa-apple", aria-hidden="true")
+        i(class="fa fa-heart", aria-hidden="true")
+        i(class="fa fa-tint", aria-hidden="true")
       
       p And here is the HTML code:
       
@@ -91,13 +94,26 @@ html
         code(class="language-html")
           | &lt;span class="glyphicon glyphicon-search" aria-hidden="true"&gt;&lt;/span&gt;
           | &lt;span class="glyphicon glyphicon-apple" aria-hidden="true"&gt;&lt;/span&gt;
-          | &lt;span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"&gt;&lt;/span&gt;
-          | &lt;span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"&gt;&lt;/span&gt;
+          | &lt;span class="glyphicon glyphicon-heart" aria-hidden="true"&gt;&lt;/span&gt;
           | &lt;span class="glyphicon glyphicon-tint" aria-hidden="true"&gt;&lt;/span&gt;
+      
+      p And the CSS:
+      
+      pre
+        code(class="language-css")
+          | .glyphicon{
+          |   color: black;
+          | }
+          | &nbsp;
+          | .glyphicon:hover{
+          |   color: red;
+          | }
+      
+      p Looks easy enough right? Well a lot more where that came from. I’ll be doing more tutorials on this in the future but you can just check out the Bootstrap website for now and look at the CSS or Components page, from there, it’s all copy and paste.
   
     include /footer.jade
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .frameworks1").addClass("active");
-    script(src="https://use.fontawesome.com/d2c9f526aa.js)
+    script(src="https://use.fontawesome.com/d2c9f526aa.js")
