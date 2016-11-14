@@ -15,6 +15,61 @@ html
           | Use this framework to make a slideshow/zoom in seconds
     
     .container.divider
+      p A basic rule in webdesign (and probably other stuff as well) is this:
+      
+      p.quote You have to try and be as lazy as possible!
+      
+      p I don’t mean that you shouldn’t work hard or be thorough, but just to avoid repetition. Every website is different, but there are foundations that will be the same. The stuff that you always need. You can work with templates or frameworks to save yourself this “basic” work. Every project is different but that reflects mostly on the content. We always use the same code the same ways. Maybe this time it’s more elaborate or faster, maybe better, ..
+      
+      p But sometimes you want free functionality that everyone recognises. I’ll give you an example with the image below. This is something you might have seen on a lot of websites. That makes sense, as it’s a free service, fairly easy to implement and it’s well known. That usually means people will know how to use it, increasing the usability of your site. So, do me a favour and click on the image below.
+      
+      img(src="../../images/tutorials/frameworks/design19.jpg", class="normalImg")
+      
+      p Did you see that box popping up ? You didn’t? What are you using, Internet Explorer 6 ? That was a joke and I genuinely hope you’re not. If you are, #[a(href="https://www.google.com/chrome/browser/desktop/index.html", target="_blank") escape to here and download] literally anything else!
+      
+      h2 Plugin Lightbox
+
+      p So the name of this plugin is Lightbox and gives you the option to make an image clickable and enlarge it. But it does it in the middle of your page and blackens all other content out. You can even have a little photo album if you want. Let’s look on how to implement it shall we ?
+      
+      h2 1. Download the plugin
+      
+      p #[a(href="http://lokeshdhakar.com/projects/lightbox2/", target="_blank") Go to the website] and make use of that download button. You’ll now be downloading a zip file. When you’re done, open it up and copy the folder dist to a place you’ll find it later. This is the one that we’ll be using. We don’t need the documentation or examples files. In the dist folder you’ll find a css and js folder. Those contain files we’ll need. So open up the css folder and copy/paste the lightbox.css file to your project css folder. Do the same thing for the js folder with the lightbox.min.js file. I assume you have an HTML file with some code in there, but if you don’t, you’ll have to make one. Name it index if it’s your first file. If you don’t know why the name index is important #[a(href="../simple_website/first_files.html", target="_blank") go check out my previous tutorial].
+      
+      p I’ll give you a screenshot on what you should have by now:
+      
+      img(src="../../images/tutorials/frameworks/lightboxStart.png", class="normalImg")
+      
+      h2 2. Including the files and dependencies
+      
+      p So, basically, Lightbox gives us two files to include: a css file and a js file. The css file handles all of the styling of the plugin. The colors, the arrows, .. It’s often the way you like and don’t need to make any changes. Even if you would, you shouldn’t make them in this file, rather you should be using your own file to overrule the plugins styles. This limits problems you might get with specificity in css or when updates for the plugin overwrite your changes.
+
+      p The js files contains all functionality and makes sure everything moves accordingly. But it is dependent on jQuery. That means, that before you can use the Lightbox plugin, jQuery needs to be added to your project. But not to worry, we’ll do that by linking to the online hosted version (CDN) of Google. Lightbox also has its images combined in the images folder. Don’t forget to also copy these over to your images folder or to copy and keep the folder as is. But you need those images. So let’s take a look at our code in the index.html file:
+      
+      pre
+        code(class="language-html")
+          | &lt;!DOCTYPE html&gt;
+          | &lt;html&gt;
+          | &lt;head&gt;
+          |     &lt;title&gt;&lt;/title&gt;
+          |     &lt;meta charset='UTF-8' /&gt;
+          |     &lt;link rel="stylesheet" type="text/css" href="css/lightbox.css"&gt;
+          |   &lt;/head&gt;
+          |   &lt;body&gt;
+          | &nbsp;	
+          |     &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;
+          |     &lt;script type="text/javascript" src="js/lightbox.min.js"&gt;&lt;/script&gt;
+          |   &lt;/body&gt;
+          | &lt;/html&gt;  
+        
+      h2 3. Using the code
+
+      p This means that everything is set up and ready to use but we never actually implement the plugin anywhere. If we go and have the docs on the website, the only we need to do is set our images up in a link tag. An example below:      
+      
+      pre
+        code(class="language-html")
+          | &lt;a href="http://kenvandamme.be/stuff/images/design19.jpg" data-lightbox="image-1" data-title="My caption&ht;
+          |   &lt;img src="http://kenvandamme.be/stuff/images/design19.jpg" width="100"&gt;
+          | &lt;/a&gt;
   
     include /footer.jade
 
