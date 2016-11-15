@@ -15,6 +15,132 @@ html
           | Don't be using Comic Sans you fool! 
     
     .container.divider
+      p As we all know: fonts can make or break your website. Picking the right font for the right job is difficult, as the vast majority of fonts are unreadable, not user friendly, not web safe and frankly, shouldn’t be used on websites. But they are. So let's set a couple of things straight.
+      
+      h2 Why are fonts difficult?
+      
+      p Because they are not web safe. Maybe you've heard me use that term before but the main problem with fonts is that you need to have them installed in order to see them. So if I, as a web designer, download and install a cool font and use it on my site, I'll have a problem. It'll look good on my system, but the visitor of my website, who doesn’t have this font installed, can't see it. A standard, default font will be shown instead. This might mess up your website and it will lower the immersion of your visitors.
+      
+      h2 How can we avoid this?
+
+      p Well, in the old days we had to pick from a certain amount of fonts that everyone had. We called them the 18 web safe fonts. The most used ones were Verdana, Arial and Times New Roman. We recognised two major types: serif (with the lines around the letters) and sans-serif (without the lines around the letters).
+
+      p Normally the extra lines around the letters helped make the text more readable, resulting in faster reading. But on a screen everting shows a bit less sharp and those thin lines caused reading problems and so, the sans-serif font type was chosen as best for screen. Introducing Verdana and Arial for websites, rather than Times New Roman and Courier New.
+
+      p Using those 18 fonts has proven easy and handy these past years, but the trend nowadays is to use a more unique font. Not only to let your site stand out more but also to make sure your design and fonts matches perfectly. If chosen correctly, it can increase the experience for a user, making him/her more prominent to stay and read your text. And that all just because it looks pretty, can you imagine?
+      
+      h2 My own custom font
+      
+      p So, let's elaborate on this. When the user visits yours site, he or she will be redirected to a place where a specific font will be downloaded and then shown. No actual download occurs but the fonts is merely rendered on the screen of the user. That does mean however that the font has to be put somewhere online to be able to get "downloaded" by your user. But how do we put something onlline to be used in an easy way. Well nowadays it's pretty straightforward and more importantly, can be free, depending on the font you decide on using.
+      
+      h2 Way #1: CDN
+
+      p So, instead of doing the work yourself, you could use a free service that offers fonts online. One of those is #[a(href="https://fonts.google.com/", target="_blank") Google Web fonts]. The way this works is that you just include a link to a specific font in your HTML, CSS or JavaScript and boom, you can now use that font. It’s very easy as the website itself provides a tutorial of sorts.
+      
+      h3 Step 1: pick a font
+
+      p So, surf to the website of #[a(href="https://fonts.google.com/", target="_blank") Google Web fonts] and decide on a specific font. Note that you can sort by font by using the filter function on the left. If you're looking for a font to use on a lot of text on the web, I suggest looking for something sans-serif.
+      
+      img(src="../../images/tutorials/need-to-know/filterFont.png", class="normalImg", alt="")
+        
+      p When finding that one perfect font, click on the quick use button you’ll find on the left. You’ll be redirect to another page that will show you the next necessary steps to make.
+      
+      img(src="../../images/tutorials/need-to-know/quickUse.png", class="normalImg", alt="")
+        
+      h3 Step 2: picking the variants
+
+      p Do you want a font that you can make italic or bold? Or maybe a font that has a lot of different weights? Well, that's the first thing you'll have to decide on. But note that not all fonts have many options. Some have only one, some have three (regular, italic and bold) and some have many more. The more you include here, the more you can use later, but the longer the load will be before you’re page is completely done (so, you're site might get a bit slower if you use to many). So don’t go overboard and use an average of 2 fonts with 3 variants for your entire website if you want to be safe.
+
+      h3 Step 3: character sets
+
+      p Here you can decide what set you would like to use. The most common option is "Latin" or sometimes "Latin Extended". Obviously it depends on what your going for language wise but "Latin extended" (or just Latin) will be the most common pick. There is also: Greek, Vietnamese or Cyrillic. Basically, you’re just picking the alphabet you want to use.
+
+      h3 Step 4: paste this code
+
+      p Next, based on your previous choices, you’ll need to copy and paste some code. You have three choices in this regard. HTML, CSS or JavaScript. I would recommend you also pick them in that order. Give priority to using HTML code but if you for some reason couldn’t, then use CSS and so on and so forth.
+
+      p Note that if you copy the HTML code, it should end up on every page where you need the font and you should paste it in the head of your document. If you are copying the CSS code, you should paste in your general CSS sheet once, preferable all the way at the top.
+      
+      p
+        strong HTML
+      
+      pre
+        code(class="language-html")
+          | &lt;link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'&gt;
+      p
+        strong CSS
+      
+      pre
+        code(class="language-css")
+          | @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+          
+      h3 STEP 5: USE YOUR FONT
+
+      p We’ve set everything up to be used but actually never implement it. So in your CSS code, just utilise your font at some point. This code is also given to you on the website, as a last step.
+      
+      pre
+        code(class="language-css")
+          | body{
+          |   font-family: 'Open Sans', sans-serif;
+          | }
+          
+      h2 Way #2: Font-face kit
+
+      p If the first way is so easy, why do we need a second one? Well, the first way isn’t always going to give you the best result. And this really depends on the font itself. Some fonts render improper and make your text appear blurry and sometimes even unreadable. Unfortunately, there is nothing you can do to avoid this. This problem might not even occur in all instances and might only happen to people using a Windows machine or a specific browser. A far more secure way of doing it, is to provide the font yourself by uploading it to your server.
+
+      p But we can’t just use the standard ttf or otf font types because they are not recognised by all browsers. Actually, almost every browser has their own preferred extension for fonts. What we’ll have to do is provide all the alternative font types, to make sure it works in every browser and on every system.
+      
+      h3 Step 1: pick a font
+      
+      p Download any font from #[a(href="https://fonts.google.com/", target="_blank") Google Web fonts], #[a(href="https://www.fontsquirrel.com/", target="_blank") Font Squirrel], #[a(href="http://www.dafont.com/", target="_blank") dafont], #[a(href="http://www.1001fonts.com/", target="_blank") 1001 fonts], ... and copy it to your desktop. Let’s start with one ttf or otf file. So ignore all bold and italic formats for now.
+      
+      h3 Step 2: compile a font-face kit
+      
+      p This means that, from that one file, we’ll make a copy of variants for all browsers. But luckily, we don’t have to do this ourselves. Go to this #[a(href="https://www.fontsquirrel.com/tools/webfont-generator", target="_blank") webfont generator] and upload the font you’ve copied to the desktop. Pick optimal, as it’s the most logical choice for now, and you’ll have to check the "Yes, the fonts I'm uploading are legally eligible for web embedding" option. This mean that the fonts you’re uploading are legal and suitable for web. After checking that you can download your font-face kit.
+      
+      img(src="../../images/tutorials/need-to-know/downloadYourKit.jpg", class="normalImg", alt="")
+        
+      h3 Step 3: unzip it
+
+      p After you downloaded the zip, unpack it and make sure it’s content gets copied to the same folder as your CSS file. In that location make a folder named font and move your files in there. This is a common practice and just makes it easier to stay organised and keep things clean and simple. You’ll notice the following files (and the rest you can delete):
+      
+      img(src="../../images/tutorials/need-to-know/filesFont.png", class="normalImg", alt="")
+      
+      p These are the once you keep, including the CSS file. You don’t need to ultimately have this stylesheet.css file but it contains the code you need to copy and paste. So open up this file and copy paste it’s contents to our CSS file.
+      
+      h3 Step 4: changing the code
+
+      p You can cope and paste this code to the top of your own style.css file. But because we added that one folder "font" we'll have to adjust the URL. The code should look like this:
+      
+      pre
+        code(class="language-css")
+          | @font-face {
+          | font-family: 'your_font';
+          | src: url('font/your_font.eot');
+          | src: url('font/your_font.eot?#iefix') format('embedded-opentype'),
+          |      url('font/your_font.woff2') format('woff2'),
+          |      url('font/your_font.woff') format('woff'),
+          |      url('font/your_font.ttf') format('truetype'),
+          |      url('font/your_font.svg#open_sansregular') format('svg');
+          | font-weight: normal;
+          | font-style: normal;
+          | }
+          
+      h3 Step 5: use your font
+      
+      p We’ve set everything up to be used but actually never implement it. So in your CSS code, just utilise your font at some point.
+      
+      p
+        strong CSS:
+      
+      pre
+        code(class="language-css")
+          | body{
+          |   font-family: 'your_font', sans-serif;
+          | }
+      
+      p.quote Careful: Do not use Comic Sans! It was a joke when it was created, not a real font.
+
   
     include /footer.jade
 

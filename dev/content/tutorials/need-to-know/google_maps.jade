@@ -15,6 +15,79 @@ html
           | People need to find you. So let Big Brother find you!
     
     .container.divider
+      p A big part of making a website is following conventions. Using stuff in such a way that everyone knows what to do and how to use your product. Whether that be a website or an app or a microwave. That’s why following certain guides is important. You want to create content everyone can use without any thought. But at the same time, that makes it difficult to introduce new stuff.
+
+      p Luckily for us, there are a couple of things that are common practice now a days on ‘every’ website. One of those is using a map on your contact page, disclosing your location. And that map is often interactive. You can scroll to zoom in, click and drag to move the map around,.. And more than not, the system used for these maps is premade: introducing Google Maps.
+      
+      p Using Google Maps has its benefits (like a lot of them) and I’ll sum up the most important ones:
+
+      ul.conlist
+        li Everyone knows it and can, in most cases, use it.
+        li It’s made and owned by Google. Using stuff from Google for your site is also a big yes yes.
+        li It’s easy to use, implement, adapt, or update on your website.
+        li It’s free.
+        li Spoiler alert: I like it.
+        
+      p You might need to have some HTML knowledge if you want to implement this, because we will be using an iframe to embed our map onto our page. But the knowledge is basic, and is mostly needed to define the location of our map.
+
+      p There are two main ways to add a map (from Google) to your website. You can directly use the API to add and customize some code form the Google Developers website or you can find a location on the site Google Maps and embed it on your site. Admittedly they both end up looking the same, but the way you set it up, will differ. We’ll use the easier method and embed our map. You can follow this link on more
+      
+      p #[a(href="https://developers.google.com/maps/documentation/javascript/adding-a-google-map", target="_blank") information regarding using the API].
+      
+      h2 Step 1: Get location
+      
+      p Go to Google Maps and look for a desired location.
+      
+      img(src="../../images/tutorials/need-to-know/googlemaps1.jpg", class="centerText")
+        
+      h2 Step 2: Get code
+
+      p After finding the location in question look at the bottom right of your screen and try to find this icon.
+      
+      img(src="../../images/tutorials/need-to-know/googlemaps2.png", class="normalImg")
+        
+      p It represents options or setting and will allow you to embed or share the map. Click on Share or embed map.
+      
+      img(src="../../images/tutorials/need-to-know/googlemaps3.jpg", class="normalImg")
+        
+      p Sharing the map will only copy the link that you can now show to others. It will not actually put the map on your site, so what we have to do here is embed the map, not share it.
+      
+      p You’ll notice that the code that you have to copy will start with &lt;iframe... This symbolizes that interactivity of Google Maps that will be copied with it. So go ahead and copy the code by just clicking on it once (it gets selected for you) and then pressing CTRL + C.
+      
+      img(src="../../images/tutorials/need-to-know/googlemaps4.jpg", class="normalImg")
+        
+      p You’ve now successfully copied the code needed and are able to put the map on your website. If you already have a page ready, you can now just paste it in there, in the desired location. What we’ll do, is make a new page and show the map there. So open up an editor to write code in. I prefer using #[a(href="http://www.sublimetext.com/", target="_blank") Sublime text, which you can download for free].
+
+      h2 Step 3: Paste code
+
+      p Open it up (or any other HTML/PHP file) and add some code to it:
+      
+      pre
+        code(class="language-html")
+          | &lt;!DOCTYPE html&gt;
+          | &lt;html&gt;
+          |     &lt;head&gt;
+          |         &lt;title&gt;&lt;/title&gt;
+          |         &lt;meta charset='UTF-8' /&gt;
+          |     &lt;/head&gt;
+          |     &lt;body&gt;
+          | 
+          |     &lt;/body&gt;
+          | &lt;/html&gt;
+          
+      p This is the standard HTML code to set up your document. More information about this via this tutorial: #[a(href="../simple_website/first_files.html", target="_blank") The First Files].
+
+      p So, now we'll paste the code in the body.
+      
+      pre
+        code(class="language-html")
+          | &lt;body&gt;
+          |     &lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d322503.952803216!2d4.380928999999991!3d50.839273999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4988a44f775%3A0x6592d69e9c8773fb!2sGoogle+Belgium!5e0!3m2!1sen!2sbe!4v1430375933247" width="400" height="300" frameborder="0" style="border:0"&gt;&lt;/iframe&gt;
+          | &lt;/body&gt;
+          
+      p It's worth mentioning that the src attribute will be unreadable for any normal human being. But if you scroll to the end of the code, you’ll notice a couple of properties we can understand and change. The width and height symbolize.. well, the with and the height of your map. You can also add a border via frameborder or border if you so desire, although you can also complete this via css. That is a bit easier and more reliable.
+      
+      p There you go, you know have a fee and interactive map on your contact page. Your stalkers will be pleased.
   
     include /footer.jade
 
