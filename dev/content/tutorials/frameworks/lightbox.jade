@@ -3,6 +3,8 @@ html
   head
     title Lightbox - Frameworks - Tutorials - KVD
     include /header.jade
+    link(rel="stylesheet", type="text/css", href="vendors/lightbox/dist/css/lightbox.min.css")
+    
   body.tutorial-content
     include /nav.jade
     include /tweets.jade
@@ -23,7 +25,8 @@ html
       
       p But sometimes you want free functionality that everyone recognises. I’ll give you an example with the image below. This is something you might have seen on a lot of websites. That makes sense, as it’s a free service, fairly easy to implement and it’s well known. That usually means people will know how to use it, increasing the usability of your site. So, do me a favour and click on the image below.
       
-      img(src="../../images/tutorials/frameworks/design19.jpg", class="normalImg")
+      a(href="../../images/tutorials/frameworks/design19.jpg", data-lightbox="image-1", data-title="My caption")
+        img(src="../../images/tutorials/frameworks/design19.jpg", class="normalImg", width="100")
       
       p Did you see that box popping up ? You didn’t? What are you using, Internet Explorer 6 ? That was a joke and I genuinely hope you’re not. If you are, #[a(href="https://www.google.com/chrome/browser/desktop/index.html", target="_blank") escape to here and download] literally anything else!
       
@@ -70,9 +73,14 @@ html
           | &lt;a href="http://kenvandamme.be/stuff/images/design19.jpg" data-lightbox="image-1" data-title="My caption&ht;
           |   &lt;img src="http://kenvandamme.be/stuff/images/design19.jpg" width="100"&gt;
           | &lt;/a&gt;
+          
+      p I just added a link tag (a) with an image inside. So you could use two images here: a thumbnail and a bigger version of the same image.
+      
+      p To do more and explore all the options, #[a(href="http://lokeshdhakar.com/projects/lightbox2/#getting-started", target="_blank") check out the documentation on the website].
   
     include /footer.jade
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .frameworks2").addClass("active");
+    script(src="vendors/lightbox/dist/js/lightbox.min.js")
