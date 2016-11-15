@@ -61,6 +61,7 @@ $(document).ready(function(){
   $tut_empty.on("click", emptySearch);
   // Initiate
   $(window).scroll(setSideMenu);
+  $(window).on("resize", setLengthTimeline);
   setLengthTimeline();
   emptySearch();
   setDesignImages();

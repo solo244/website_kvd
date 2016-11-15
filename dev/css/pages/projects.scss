@@ -88,6 +88,10 @@
         max-height: 100px;
         overflow: hidden;
 
+        @media screen and (max-width: 770px){
+          max-width: 100%;
+        }
+
         .grid-c{
           background-color: transparent;
           padding: 0;
