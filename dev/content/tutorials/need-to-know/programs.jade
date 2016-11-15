@@ -15,6 +15,57 @@ html
           | So many choices, so many programs. What to use?
     
     .container.divider
+      p An important question you should be asking yourself is what programs to use. I get that a lot from people that are starting in webdesign. They don’t know what languages to learn or what software to buy or use. Well, let me give you a summary of the stuff that I use and the programs that I would consider paying for. I’m approaching this from a webdesign standpoint and I’m going to focus on the whole rather than just the graphic design or programming. Let’s split it up in different categories though.
+
+      p So imagine you’re making a website and you’re making it completely from scratch. You’ll have to write code and you’ll need a design.
+      
+      h2 Step 1: Making a design
+      
+      p Making a website is like making software (but a bit more simple). The visitor needs to understand what he/she can do and how to do it. It needs to be pretty but at the same time easy to scan, to read and to navigate. Making a sketch on paper of the pages you need, or how stuff will work when you click on them is recommended. Most people work that out in their heads (present company included) but the moment you’re in a team or working on different projects at the same time, you’ll mix or forget those things and that might end up in doing double work.
+      
+      img(src="../../images/tutorials/need-to-know/ps.png", class="normalImg", width="150")
+        
+      p After making the general sketches we’ll need to work out a couple of templates. What I usually do is: I make a couple of pages of my website #[a(href="http://www.photoshop.com/", target="_blank") in the graphical program Photoshop]. I usually end up designing a home page (mostly a very unique page), a common page with general info and a contact page.
+
+      p Photoshop might be a little bit overkill to use to design for web but it does the job. It can do everything you need it to and has loads of ways to do it fast. If you’re used to it, you can make these design extremely fast. Unfortunately it’s not free software. It’s part of the Adobe scene and because of that, it requires a monthly subscription to be used.
+      
+      img(src="../../images/tutorials/need-to-know/gimp.png", class="normalImg", width="150")
+        
+      p There are free alternatives like #[a(href="https://www.gimp.org/", target="_blank") GIMP] but it’s not the same. There are not a lot of programs like Photoshop out there.
+
+      h2 Step 2: Writing the code
+      
+      p After having a design (whether you made it yourself or not), you’ll want to transform it into web code. There are a couple of ways to do this, but first you’ll need to know what language to use. Let’s assume you’re doing the basics and are making a normal site with a couple of pages, then you’ll need the following:
+      
+      ul.conlist
+        li #[strong HTML]: Defines structure and content of your page. Is the universal language to build websites. Current version: HTML5.
+        li #[strong CSS]: Sets up #[strong ALL] the visuals for your web projects. Current version: CSS3.
+        li #[strong Javascript]: Adds interactivity or functionality to your web-based projects. Popular framework: jQuery.
+        
+      p If you want to create a template or you want to sync your menu (that way you only have to change it once for the entire website) you can use a server side language like PHP.
+      
+      img(src="../../images/tutorials/need-to-know/wamp.png", class="normalImg", width="150")
+        
+      p But to test out files where you use PHP code, you’ll need a server. You can buy a server (more on that later) or you can make your very own computer your server. With, let’s say, software like #[a(href="http://www.wampserver.com/en/", target="_blank") WAMP (MAMP or LAMP)]. More on that in a different (future) tutorial.
+      
+      img(src="../../images/tutorials/need-to-know/sublime.png", class="normalImg", width="150")
+        
+      p All of these you can write in one program: an IDE. There are Adobe variants of those like: Dreamweaver or Adobe Edge Code, but there are also a lot of free standalone programs you can download online. My favourite software tool to #[a(href="http://www.sublimetext.com/", target="_blank") write code in is Sublime Text]. It’s fast, free, does what it is supposed to and you can change the visuals and functionality with plugins and add-ons.
+      
+      h2 Step 3: Putting it online
+
+      p After making the website: you’ll be putting the website online (well in most scenario’s this is your goal). To do this, you’ll need two things: a server and the right program to transfer your data. The server is something I can’t (really) help you with if it’s already set (very situational). However, if you decide to look for one and you’re main goal is to keep it cheap but still good, I propose: #[a(href="https://www.godaddy.com/", target="_blank") GodDaddy], #[a(href="https://www.one.com/en/", target="_blank") One.com] or #[a(href="https://www.webreus.nl/", target="_blank") Webreus]. They offer quite cheap solutions. There you can take a gander at webhosting. After buying (or renting) web space, you’ll receive an e-mail containing the FTP information. And that’s what we’ll need.
+      
+      img(src="../../images/tutorials/need-to-know/filezilla.png", class="normalImg", width="150")
+      img(src="../../images/tutorials/need-to-know/duck.png", class="normalImg", width="150")
+        
+      p FTP (File Transfer Protocol) is transferring files offline – online and vice versa. You’ll need specific software for it, but there exist free ones. The two main programs that I use are #[a(href="https://filezilla-project.org/", target="_blank") Filezilla] and #[a(href="https://cyberduck.io/?l=en", target="_blank") Cyberduck]. Whith a preference to Filezilla if you’re on a Windows system. Cyberduck is just awesome because their icon is a duck. Who doesn’t like ducks ? The internet is a strange place.
+
+      p You’ll just have to install it and add your server. Luckily it’s just a matter of copy/pasting the information you’ve gotten in the e-mail.
+
+      h2 Step 4: Repeat
+
+      p Now it’s all a matter of keeping your site up-to-date and adding new information on there. It’s only when your website is online, that the fun starts!
   
     include /footer.jade
 
