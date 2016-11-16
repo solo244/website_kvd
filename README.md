@@ -7,12 +7,12 @@
 - Designs
 
 ## Features to add
-- Align the number "1" better for the submenu Tutorials
-- Tutorial needs an overview to go back to
 - Use more clear icons for links on "Updates"
+- The updates on the home page needs to be a slideshow
+- Tutorial needs an overview to go back to
 - Provide a page to collect all links
 - When switching projects, the animation is "spotty"
-- The updates on the home page needs to be a slideshow
+- Align the number "1" better for the submenu Tutorials
 
 ## About
 Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you.
