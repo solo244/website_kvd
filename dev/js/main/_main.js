@@ -21,6 +21,7 @@ var $doc = $("html, body"), // General
     $project_bg = $project.find(".grid-item"),
     $news = $doc.find(".news"), // News
     $news_items = $news.find(".news-items"),
+    $news_holder = $doc.find(".news_holder"),
     $news_bell = $news.find(".bell"),
     $tutorials = $doc.find(".tutorial-content"), // Tutorials
     $side_menu = $tutorials.find(".sideMenu"),
@@ -65,4 +66,5 @@ $(document).ready(function(){
   setLengthTimeline();
   emptySearch();
   setDesignImages();
+  setNewsItems();
 });

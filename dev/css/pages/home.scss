@@ -7,12 +7,12 @@
     max-width: 790px;
     padding: 20px 0 30px 0;
     margin: 60px auto -170px auto;
+    display: block;
 
     @media screen and (max-width: 780px){
       border: none;
       border-top: 1px solid $_grey;
       border-bottom: 1px solid $_grey;
-      //width: calc(100% + 20px);
       border-radius: 0;
       margin: 60px -20px -170px -20px;
 
@@ -45,5 +45,16 @@
       border-bottom: 1px solid $_grey;
       padding: 30px 0;
     }
+  }
+
+  .news_holder h2 span{
+    background-color: $red;
+    color: $white;
+    font-size: 20px;
+    border-radius: $circle;
+    padding: 2px 7px;
+    position: relative;
+    top: -8px;
+    right: -10px;
   }
 }
