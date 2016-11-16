@@ -15,7 +15,7 @@ html
           | OMG, this image is everywhere! It's all over the place!
           
     .container.divider
-      p So, having a full background on your page is awesome ? I agree, but the problem is the size of the image versus the size of the browser window. What if you make the picture big enough for a HD resolution it might be way too big for a person with an older screen. The idea is to scale the image down so everyone sees the same image. But it has to be scaled proportionally. To program this in jQuery is tricky, same as in CSS with a width and a height of a 100%, .. Luckily for us, there is a new CSS property that does this for us.
+      p So, having a full background on your page is awesome ? I agree, but the problem is the size of the image versus the size of the browser window. What if you make the picture big enough for a HD resolution it might be #[strong way too big] for a person with an older screen. The idea is to scale the image down so everyone sees the same image. But it has to be scaled proportionally. To program this in #[mark jQuery] is tricky, same as in #[mark CSS] with a #[mark width] and a #[mark height] of a 100%, .. Luckily for us, there is a new #[mark CSS] property that does this for us.
       
       h2 Pro's
       
@@ -26,13 +26,13 @@ html
         li and scale proportionally to the users screen resolution
         li centered on the page
         li without any scrollbars
-        li without using anything mike jQuery, JavaScript or Flash
+        li without using anything like #[mark jQuery], #[mark JavaScript] or #[mark Flash]
         
       h2 CSS 3: cover
       
       p First off, #[a(href="fullscreen_example.html", target="_blank") here is an example of a finished product]. Don't forget to scale the browser window down and see what happens to the image.
       
-      p So, one of the awesome things about CSS3 is the value cover we can give to the background-size porpery. It implies already to use a background image as a full screen image. I prefer adding it to my HTML element itself so it fills the browser window with the image. You can also add this to the body or a self made div element, but you can't forget to make sure both have a width and height of a 100%. The HTML element already is the full width and height of the screen, that makes it easier on us. So here's the magic (the CSS code that is):
+      p So, one of the awesome things about #[mark CSS3] is the value cover we can give to the #[mark background-size] porpery. It implies already to use a background image as a full screen image. I prefer adding it to my #[mark HTML] element itself so it fills the browser window with the image. You can also add this to the #[mark body] or a self made #[mark div] element, but you can't forget to make sure both have a width and height of a 100%. The #[mark HTML] element already is the full width and height of the screen, that makes it easier on us. So here's the magic (the #[mark CSS] code that is):
       
       pre
         code(class="language-css")
@@ -44,7 +44,7 @@ html
           |   background-size: cover;
           | }
       
-      p Note that the image will be scale and positioned from the centered. If you feel like there is more crucial information somewhere else you can change this to, for instance right bottom. In my example the object of importance is also in the right bottom, so it makes more sense to work from that spot. Also don't forget that my path is "images/bg.jpg". If you use a different file name and directory, change that as well. Seeing as the cover property is rather new, I add all the prefixes just to make sure it'll work in all browsers.
+      p Note that the image will be scale and positioned from the centered. If you feel like there is more crucial information somewhere else you can change this to, for instance right bottom. #[strong In my example the object of importance is also in the right bottom], so it makes more sense to work from that spot. Also don't forget that my path is "#[mark images/bg.jpg]". If you use a different file name and directory, change that as well. Seeing as the cover property is rather new, I add all the prefixes just to make sure it'll work in all browsers.
       
       table.support
         include /support_table.jade
@@ -62,7 +62,7 @@ html
           td 
             i(class="icon dripicons-checkmark") 3+
       
-      p People that have to make it work in older version of IE, not to worry. There is a way to do just that, by using this code:
+      p People that have to make it work in older version of #[mark IE], #[strong not to worry]. There is a way to do just that, by using this code:
       
       pre
         code(class="language-css")
