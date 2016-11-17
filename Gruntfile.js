@@ -6,10 +6,10 @@ module.exports = function(grunt) {
   var root_project_name = "/" + project_name; // Local folder containing the project. Prefix with an "/"! Default = project_name
 
   // Optional FTP settings
-  var server_key = "serverA"; // Defined in your .ftppass file
-  var ftp_host = "ftp.someserver.com"; // Host location
-  var upload_location = "/httpdocs/folder"; // Destination folder for ftp
-  var server = "/folder"; // Online subfolder containing the project. Prefix with an "/"!
+  var server_key = "kvd"; // Defined in your .ftppass file
+  var ftp_host = "ftp.kenvandamme.be"; // Host location
+  var upload_location = "/httpdocs/test_v2"; // Destination folder for ftp
+  var server = "/test_v2"; // Online subfolder containing the project. Prefix with an "/"!
 
   require('time-grunt')(grunt);
 
@@ -192,7 +192,7 @@ module.exports = function(grunt) {
               replacement: '<link rel="stylesheet" type="text/css" href="' + server + '/css/style.min.css">'
             },
             {
-              pattern: '<script src="' + root_project_name + '/build/js/main.min.js"></script>',
+              pattern: '<script src="' + root_project_name + '/build/js/app.min.js"></script>',
               replacement: '<script src="' + server + '/js/app.min.js"></script>'
             }
           ]
@@ -207,6 +207,10 @@ module.exports = function(grunt) {
         replacements: [{
           from: 'href="' + root_project_name + '/build',
           to: 'href="' + server
+        },
+        {
+          from: 'src="' + root_project_name + '/build',
+          to: 'src="' + server
         }]
       }
     },
