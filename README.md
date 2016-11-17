@@ -6,8 +6,7 @@
 - Projects
 - Designs
 
-## Features to add
-- Use more clear icons for links on "Updates"
+## Features to add (v1.1)
 - The updates on the home page needs to be a slideshow
 - Tutorial needs an overview to go back to
 - Provide a page to collect all links

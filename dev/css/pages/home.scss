@@ -47,14 +47,44 @@
     }
   }
 
-  .news_holder h2 span{
-    background-color: $red;
-    color: $white;
-    font-size: 20px;
-    border-radius: $circle;
-    padding: 2px 7px;
-    position: relative;
-    top: -8px;
-    right: -10px;
+  .news_holder{
+
+    .grid-item a{
+      position: relative;
+      overflow: hidden;
+
+      span{
+        color: $primary;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 13px;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        display: block;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover{
+        span{
+          top: 40px;
+        }
+
+        .icon{
+          opacity: 0.3;
+        }
+      }
+    }
+
+    h2 span{
+      background-color: $blue;
+      color: $white;
+      font-size: 20px;
+      border-radius: $circle;
+      padding: 2px 7px;
+      position: relative;
+      top: -8px;
+      right: -10px;
+    }
   }
 }
