@@ -1,10 +1,7 @@
 # Personal website 2016 attempt nr. 36
 
 ## Version 1.0
-- Homepage
-- Tutorials
-- Projects
-- Designs
+Is now live since December 2016: [http://kenvandamme.be/](http://kenvandamme.be/) & [http://kenvandamme.com/](http://kenvandamme.com/)
 
 ## Features to add (v1.1)
 - The updates on the home page needs to be a slideshow
