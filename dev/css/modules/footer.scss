@@ -40,7 +40,7 @@
   .container .between_logo{
     margin: 40px auto;
 
-    a, img{
+    a, svg{
       border: none;
 
       &:hover{
@@ -62,7 +62,7 @@
         opacity: 0.5;
         border-bottom: none;
 
-        img{
+        svg{
           display: block;
           max-width: 50px;
           max-height: 50px;
@@ -72,7 +72,7 @@
           opacity: 1;
           border: none;
 
-          img{
+          svg{
             transform: scale(1.5);
           }
         }

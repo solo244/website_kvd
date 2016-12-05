@@ -36,7 +36,7 @@
           margin-right: 30px;
         }
 
-        img{
+        svg{
           opacity: 0.8;
           height: 25px;
           position: relative;
@@ -58,7 +58,7 @@
         &:hover{
           border-top: 3px solid $primary;
 
-          img{
+          svg{
             opacity: 0.3;
           }
 
@@ -78,7 +78,7 @@
       a{
         border-top: 3px solid $primary;
 
-        img{
+        svg{
           opacity: 0.3;
         }
 

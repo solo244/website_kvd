@@ -1,19 +1,15 @@
 .header
   a(href="/website_kvd/build/").logo
   ul.mainMenu
-    //li.menuHome
-      a(href="/website_kvd/build/") 
-        img(src="/website_kvd/build/images/menu/home.svg") 
-        span Home
     li.menuTutorials
-      a(href="/website_kvd/build/tutorials") 
-        img(src="/website_kvd/build/images/menu/tutorial.svg") 
+      a(href="/website_kvd/build/tutorials")
+        include /svg/menu/tutorial.html
         span Tutorials
     li.menuProjects
       a(href="/website_kvd/build/projects") 
-        img(src="/website_kvd/build/images/menu/project.svg") 
+        include /svg/menu/project.html
         span Projects
     li.menuDesigns
       a(href="/website_kvd/build/designs") 
-        img(src="/website_kvd/build/images/menu/design.svg") 
+        include /svg/menu/design.html
         span Designs
