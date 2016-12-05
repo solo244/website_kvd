@@ -9,6 +9,7 @@ Is now live since December 2016: [http://kenvandamme.be/](http://kenvandamme.be/
 - Provide a page to collect all links
 - When switching projects, the animation is "spotty"
 - Align the number "1" better for the submenu Tutorials
+- Add a fallback for older browsers
 
 ## About
 Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you.
