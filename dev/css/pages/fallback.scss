@@ -1,0 +1,64 @@
+.fallback{
+  position: fixed;
+  background: rgba($black, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 250;
+  color: white;
+
+  p.joke{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    max-width: 100%;
+  }
+
+  p.update{
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: $primary;
+
+    &:after{
+      content: "";
+      width: 1px;
+      height: 30px;
+      background: $primary;
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+    }
+  }
+
+  .pick{
+    position: absolute;
+    bottom: 50px;
+    list-style-type: none;
+    width: 320px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    li{
+      display: inline-block;
+
+      a{
+        svg{
+          width: 40px;
+          margin: 0 10px;
+        }
+
+        &:hover{
+          svg{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
