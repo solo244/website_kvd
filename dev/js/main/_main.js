@@ -67,4 +67,5 @@ $(document).ready(function(){
   emptySearch();
   setDesignImages();
   setNewsItems();
+  IEVersionCheck();
 });
