@@ -37,7 +37,8 @@ var $doc = $("html, body"), // General
     $timeline_c2 = $timeline.find(".c2"),
     $timeline_c3 = $timeline.find(".c3"),
     $design = $doc.find(".design"), // Designs
-    $design_grid = $design.find(".design_portfolio");
+    $design_grid = $design.find(".design_portfolio"),
+    $fallback_close = $doc.find(".fallback .close");
 
 /*
  * Let's get ready to rumble
@@ -60,6 +61,8 @@ $(document).ready(function(){
   // Tutorials
   $tut_search.on("keyup", getResults);
   $tut_empty.on("click", emptySearch);
+  // Fallback
+  $fallback_close.on("click", closeFallback);
   // Initiate
   $(window).scroll(setSideMenu);
   $(window).on("resize", setLengthTimeline);

@@ -1,5 +1,6 @@
 .fallback{
   position: fixed;
+  background-color: $black;
   background: rgba($black, 0.9);
   top: 0;
   bottom: 0;
@@ -8,6 +9,31 @@
   z-index: 250;
   color: white;
   display: block;
+
+  .close{
+    position: absolute;
+    width: 350px;
+    top: 30px;
+    left: 50%;
+    text-align: center;
+    margin-left: -150px;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 1;
+    }
+
+    p{
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    span{
+      font-style: italic;
+    }
+  }
 
   p.joke{
     position: absolute;
@@ -43,7 +69,7 @@
     list-style-type: none;
     width: 320px;
     left: 50%;
-    transform: translate(-50%, 0);
+    margin-left: -160px;
 
     li{
       display: inline-block;
