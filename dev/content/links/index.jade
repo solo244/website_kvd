@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Links - KVD
+    meta(description="")
+    include /header.jade
+  body.home
+    include /nav.jade
+    include /tweets.jade
+    
+    .top
+      .container
+        h1 
+          span Random interesting links
+          | I changed my password everywhere to 'incorrect.' That way when I forget it, it always reminds me, 'Your password is incorrect'. 
+    
+    .container.divider.news_holder
+      h2 
+        | Links
+      .grid
+        .grid-item
+          a(href="http://www.flaticon.com/", target="_blank").grid-c
+            .icon
+              include /svg/news/link.html
+            h3 New Interesting Link
+            p Free flaticon(s) database
+            span December 2016
+    .content
+
+    
+    include /footer.jade
+
+    script.
+      $(".mainMenu .menuHome").addClass("selected");
