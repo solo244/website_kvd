@@ -4,12 +4,12 @@
 Is now live since December 2016: [http://kenvandamme.be/](http://kenvandamme.be/) & [http://kenvandamme.com/](http://kenvandamme.com/)
 
 ## Features to add (v1.1)
-- The updates on the home page needs to be a slideshow
-- Tutorial needs an overview to go back to
 - Provide a page to collect all links
-- When switching projects, the animation is "spotty"
 - Align the number "1" better for the submenu Tutorials
 - Add a fallback for older browsers
+- Tutorial needs an overview to go back to
+- The updates on the home page needs to be a slideshow
+- When switching projects, the animation is "spotty"
 
 ## About
 Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you.
