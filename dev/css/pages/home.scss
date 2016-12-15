@@ -22,12 +22,12 @@
     }
   }
 
-  .grid-item{
+  /*.grid-item{
     @media screen and (max-width: 700px){
       float: none;
       width: 100%;
     }
-  }
+  }*/
 
   .container .colums-3 .col{
     @media screen and (max-width: 700px){
@@ -85,6 +85,87 @@
       position: relative;
       top: -8px;
       right: -10px;
+    }
+  }
+
+  .slideshow{
+    position: relative;
+    max-width: 960px;
+    height: 179px;
+    overflow: hidden;
+
+    .tri{
+      background-color: $white;
+      height: 250px;
+      width: 100px;
+      transform: rotate(12deg);
+      box-shadow: 0 0 20px $_grey;
+    }
+
+    .arrow{
+      width: 20px;
+      opacity: 0;
+      transform: scale(0.2);
+    }
+
+    .next{
+      position: absolute;
+      top: 0;
+      right: -60px;
+      z-index: 5;
+      cursor: pointer;
+
+      &:hover{
+        .tri{
+          box-shadow: 0 0 20px $grey;
+        }
+
+        .arrow{
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .arrow{
+        position: absolute;
+        top: 135px;
+        left: 10px;
+      }
+    }
+
+    .previous{
+      position: absolute;
+      top: -30px;
+      left: -75px;
+      z-index: 5;
+      cursor: pointer;
+
+      &:hover{
+        .tri{
+          box-shadow: 0 0 20px $grey;
+        }
+
+        .arrow{
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .arrow{
+        position: absolute;
+        top: 50px;
+        right: 5px;
+      }
+    }
+
+    .sliders{
+      position: absolute;
+      width: 5000px;
+      left: 0;
+
+      .grid-item{
+        width: 320px;
+      }
     }
   }
 }
