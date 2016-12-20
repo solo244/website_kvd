@@ -20,6 +20,9 @@ var $doc = $("html, body"), // General
     $project_back = $project.find(".back"),
     $project_bg = $project.find(".grid-item"),
     $news = $doc.find(".news"), // News
+    currentNews = 1,
+    $news_next = $news.find(".next"),
+    $news_prev = $news.find(".previous"),
     $news_items = $news.find(".news-items"),
     $news_holder = $doc.find(".news_holder"),
     $news_bell = $news.find(".bell"),
@@ -56,6 +59,10 @@ $(document).ready(function(){
   $reset_project_grid.on("click", resetSmallGrid);
   // News
   $news_bell.on("click", toggleNews);
+  $news_next.find(".tri").on("click", gotoNextNews);
+  $news_next.find(".arro").on("click", gotoNextNews);
+  $news_prev.find(".tri").on("click", gotoNextPrev);
+  $news_prev.find(".arro").on("click", gotoNextPrev);
   // Timeline
   $timeline_dates.hover(lineDown, lineUp);
   // Tutorials
@@ -71,4 +78,6 @@ $(document).ready(function(){
   setDesignImages();
   setNewsItems();
   IEVersionCheck();
+
+  console.log($news_bell);
 });

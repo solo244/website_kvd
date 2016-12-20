@@ -12,6 +12,23 @@ function toggleNews(e){
 */
 function setNewsItems(){
   var number = $news_holder.find(".grid-item").length;
-  
+
   $news_holder.find("h2 span").html(number);
+}
+
+/* Slideshow navigation */
+function gotoNextNews(){
+  var number = $news_holder.find(".grid-item").length;
+
+  console.log(number);
+}
+
+function gotoNextPrev(){
+  var number = $news_holder.find(".grid-item").length;
+
+  console.log(number);
+}
+
+function navigateSlideshow(){
+
 }
