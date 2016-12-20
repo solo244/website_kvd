@@ -175,3 +175,17 @@
     margin: 20px 0;
   }
 }
+
+.tutorial-content .container p.breadcrumb{
+  padding: 10px 15px;
+  background-color: $_blue;
+  border-radius: $corner;
+
+  span{
+    color: $grey;
+  }
+
+  &:hover{
+
+  }
+}

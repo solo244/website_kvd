@@ -15,6 +15,13 @@ html
           | OMG, this image is everywhere! It's all over the place!
           
     .container.divider
+      p.breadcrumb
+        a(href="../") tutorials
+        | &nbsp;&nbsp;&gt;&nbsp; 
+        span css
+        | &nbsp;&nbsp;&gt;&nbsp; 
+        span fullscreen backgrounds
+        
       p So, having a full background on your page is awesome ? I agree, but the problem is the size of the image versus the size of the browser window. What if you make the picture big enough for a HD resolution it might be #[strong way too big] for a person with an older screen. The idea is to scale the image down so everyone sees the same image. But it has to be scaled proportionally. To program this in #[mark jQuery] is tricky, same as in #[mark CSS] with a #[mark width] and a #[mark height] of a 100%, .. Luckily for us, there is a new #[mark CSS] property that does this for us.
       
       h2 Pro's

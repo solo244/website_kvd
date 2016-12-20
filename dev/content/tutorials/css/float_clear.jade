@@ -15,6 +15,13 @@ html
           | Is it a plane? Is it a bird? Something's a float!
           
     .container.divider
+      p.breadcrumb
+        a(href="../") tutorials
+        | &nbsp;&nbsp;&gt;&nbsp; 
+        span css
+        | &nbsp;&nbsp;&gt;&nbsp; 
+        span floats and clears #2
+        
       p After explaining #[mark floats] in the previous tutorial you might have noticed that #[mark floats] are trouble. In the sense that they give you the option to position elements next to each other yes, but by doing so, they completely mess up the “flow” off your document. The normal flow simply dictates that every elements is positioned underneath the previous element. That way, you get a stack of #[mark HTML] elements.
       
       p But because we wanted them next to each other, instead of underneath each other (that’s just boring), we activated the #[mark float] property and every other element below the #[mark floating] one(s), suddenly moves up. Then even disappear behind the #[mark floating] elements if they are smaller. This is a problem and needs to be fixed. But allow me to demonstrate via an example.
