@@ -3,13 +3,14 @@
 ## Version 1.0
 Is now live since December 2016: [http://kenvandamme.be/](http://kenvandamme.be/) & [http://kenvandamme.com/](http://kenvandamme.com/)
 
-## Features to add (v1.1)
+## Features/Changes to add (v1.1)
 - Provide a page to collect all links
 - Align the number "1" better for the submenu Tutorials
 - Add a fallback for older browsers
 - Tutorial needs an overview to go back to
 - The updates on the home page needs to be a slideshow
 - When switching projects, the animation is "spotty"
+- Limited the number of social media (to only active ones)
 
 ## About
 Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you.
