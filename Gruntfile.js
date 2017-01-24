@@ -39,6 +39,7 @@ module.exports = function(grunt) {
           'dev/js/analytics.js',
           'bower_components/jquery/dist/jquery.min.js',
           'bower_components/prism/prism.js',
+          'bower_components/siema/dist/siema.min.js',
         ],
         dest: 'build/js/vendor.js',
       },
