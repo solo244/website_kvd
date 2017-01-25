@@ -43,5 +43,6 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - The updates on the home page needs to be a slideshow
 - When switching projects, the animation is "spotty"
 - Limited the number of social media (to only active ones)
+- Update jade to pug files
 
 
