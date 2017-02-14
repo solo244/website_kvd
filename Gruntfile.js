@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   // Change these local settings
   var project_name = "website_kvd"; // Name of the project - for notifications
-  var localhost = "http://localhost/" + project_name + "/build/"; // Define if your using a server, default = project_name
+  var localhost = "./" + project_name + "/build/"; // Define if your using a server, default = project_name
   var root_project_name = "/" + project_name; // Local folder containing the project. Prefix with an "/"! Default = project_name
 
   // Optional FTP settings
@@ -38,8 +38,7 @@ module.exports = function(grunt) {
         src: [
           'dev/js/analytics.js',
           'bower_components/jquery/dist/jquery.min.js',
-          'bower_components/prism/prism.js',
-          'bower_components/siema/dist/siema.min.js',
+          'bower_components/prism/prism.js'
         ],
         dest: 'build/js/vendor.js',
       },
@@ -106,7 +105,10 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
-          proxy: localhost
+          server: {
+            baseDir: "./build"
+          },
+          startPath: "/"
         }
       }
     },
@@ -161,14 +163,6 @@ module.exports = function(grunt) {
           dest: 'build/'
         }]
       },
-      ftp: {
-        files: [{
-          expand: true,
-          cwd: 'build/',
-          src: '**',
-          dest: 'dist/'
-        }]
-      }
     },
 
     imagemin: {
@@ -178,41 +172,6 @@ module.exports = function(grunt) {
           cwd: 'build/images/',
           src: ['**/*.{png,jpg,gif,ico}'],
           dest: 'build/images/'
-        }]
-      }
-    },
-
-    'string-replace': {
-      inline: {
-        files: {
-          'dist/': 'dist/**/*.html',
-        },
-        options: {
-          replacements: [
-            {
-              pattern: '<link rel="stylesheet" type="text/css" href="' + root_project_name + '/build/css/style.min.css">',
-              replacement: '<link rel="stylesheet" type="text/css" href="' + server + '/css/style.min.css">'
-            },
-            {
-              pattern: '<script src="' + root_project_name + '/build/js/app.min.js"></script>',
-              replacement: '<script src="' + server + '/js/app.min.js"></script>'
-            }
-          ]
-        }
-      }
-    },
-
-    replace: {
-      another_example: {
-        src: ['dist/**/*.html'],
-        overwrite: true,
-        replacements: [{
-          from: 'href="' + root_project_name + '/build',
-          to: 'href="' + server
-        },
-        {
-          from: 'src="' + root_project_name + '/build',
-          to: 'src="' + server
         }]
       }
     },
@@ -253,7 +212,7 @@ module.exports = function(grunt) {
           port: 21,
           authKey: server_key
         },
-        src: 'dist',
+        src: 'build',
         dest: upload_location,
         exclusions: ['dist/**/.DS_Store', 'dist/**/Thumbs.db', 'dist/tmp']
       }
@@ -278,6 +237,6 @@ module.exports = function(grunt) {
   grunt.task.run('notify_hooks');
 
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'copy:favicon', 'imagemin', 'browserSync', 'watch']);
-  grunt.registerTask('dist', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'imagemin', 'copy:ftp', 'string-replace', 'replace']);
-  grunt.registerTask('ftp', ['copy:ftp', 'string-replace', 'replace', 'ftp-deploy']);
+  grunt.registerTask('dist', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'imagemin']);
+  grunt.registerTask('ftp', ['ftp-deploy']);
 };

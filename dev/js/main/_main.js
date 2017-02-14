@@ -78,7 +78,6 @@ $(document).ready(function(){
   setDesignImages();
   setNewsItems();
   IEVersionCheck();
-  setUpSiema();
 
   console.log($news_bell);
 });
