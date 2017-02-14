@@ -34,15 +34,13 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 6. Run `grunt` to start developing
 
 ## Log (current v1.0)
-
-### Planned for v1.1
 - Provide a page to collect all links
 - Align the number "1" better for the submenu Tutorials
 - Add a fallback for older browsers
 - Tutorial needs an overview to go back to
-- The updates on the home page needs to be a slideshow
-- When switching projects, the animation is "spotty"
+- The updates on the home page needs to be a slideshow <- DEPCR.
 - Limited the number of social media (to only active ones)
+
+### Planned for v1.1
+- When switching projects, the animation is "spotty"
 - Update jade to pug files
-
-

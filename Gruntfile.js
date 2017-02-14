@@ -214,7 +214,7 @@ module.exports = function(grunt) {
         },
         src: 'build',
         dest: upload_location,
-        exclusions: ['dist/**/.DS_Store', 'dist/**/Thumbs.db', 'dist/tmp']
+        exclusions: ['build/**/.DS_Store', 'build/**/Thumbs.db', 'build/tmp']
       }
     }
   });
@@ -237,6 +237,5 @@ module.exports = function(grunt) {
   grunt.task.run('notify_hooks');
 
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'copy:favicon', 'imagemin', 'browserSync', 'watch']);
-  grunt.registerTask('dist', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'imagemin']);
-  grunt.registerTask('ftp', ['ftp-deploy']);
+  grunt.registerTask('ftp', ['concat', 'uglify', 'sass', 'postcss', 'cssmin', 'jade', 'copy:fonts', 'copy:images', 'imagemin', 'ftp-deploy']);
 };
