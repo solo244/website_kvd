@@ -22,6 +22,7 @@
   "dependencies": {
     "autoprefixer-core": "^6.0.1",
     "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
     "pixrem": "^3.0.2"
   }
 }
