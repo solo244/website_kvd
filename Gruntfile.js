@@ -36,7 +36,6 @@ module.exports = function(grunt) {
       },
       vendor: {
         src: [
-          'dev/js/analytics.js',
           'bower_components/jquery/dist/jquery.min.js',
           'bower_components/prism/prism.js'
         ],
