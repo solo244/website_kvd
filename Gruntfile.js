@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 
     sass: {
         options: {
-            sourceMap: true
+            sourceMap: false
         },
         dist: {
             files: {
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
       options: {
         shorthandCompacting: false,
         roundingPrecision: -1,
-        sourceMap: true
+        sourceMap: false
       },
       target: {
         files: {
