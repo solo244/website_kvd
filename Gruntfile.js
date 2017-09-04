@@ -8,7 +8,7 @@ module.exports = function(grunt) {
   // Optional FTP settings
   var server_key = "kvd"; // Defined in your .ftppass file
   var ftp_host = "ftp.kenvandamme.be"; // Host location
-  var upload_location = "/httpdocs/"; // Destination folder for ftp
+  var upload_location = "/"; // Destination folder for ftp
   var server = ""; // Online subfolder containing the project. Prefix with an "/"!
 
   require('time-grunt')(grunt);
