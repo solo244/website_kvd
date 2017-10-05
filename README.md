@@ -43,7 +43,10 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 
 ### Planned for v1.1
 - Update Grunt to Gulp
+- Optimise font use
+- Detailed package file
 - Update jade to pug files
+- Yarn
 
 ### Planned for v1.2
 - When switching projects, the animation is "spotty"
