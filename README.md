@@ -42,5 +42,8 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Limited the number of social media (to only active ones)
 
 ### Planned for v1.1
-- When switching projects, the animation is "spotty"
+- Update Grunt to Gulp
 - Update jade to pug files
+
+### Planned for v1.2
+- When switching projects, the animation is "spotty"
