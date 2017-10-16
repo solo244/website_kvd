@@ -2,9 +2,6 @@
  * Vars
  */
 var $doc = $("html, body"), // General
-    $tweets = $doc.find(".tweets"), // Twitter
-    $tweets_btn = $tweets.find(".twit"),
-    $overlay = $doc.find(".tweets_overlay"),
     $project = $doc.find(".project"), // Projects
     $reset_project_view = $project.find(".containerHolderProjects .overview"),
     $reset_project_grid = $project.find(".back"),
@@ -47,9 +44,6 @@ var $doc = $("html, body"), // General
  * Let's get ready to rumble
  */
 $(document).ready(function(){
-// Tweet(s)
-  $tweets_btn.on("click", toggleTweet);
-  $overlay.on("click", toggleTweet);
   // Projects
   $project_grid_website.on("click", focusProjectsGrid);
   $project_grid_github.on("click", focusProjectsGrid);
