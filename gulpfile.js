@@ -98,7 +98,14 @@ gulp.task('images', function(){
 // Copy fonts
 gulp.task('fonts', function(){
   return gulp.src(pkg.paths.assets.main + 'fonts/**/*')
-    .pipe(gulp.dest(pkg.paths.build.main + 'fonts')
+    .pipe(gulp.dest(pkg.paths.build.css + 'fonts')
+  );
+});
+
+// Copy fonts
+gulp.task('favicon', function(){
+  return gulp.src(pkg.paths.assets.main + 'favicon/**/*')
+    .pipe(gulp.dest(pkg.paths.build.main + 'favicon')
   );
 });
 
@@ -171,7 +178,7 @@ gulp.task('delete', ['deploy'], function(){
 /*
  * Dev gulp tasks
  */
-gulp.task('default', gulpSequence("vendors", "js", "css", "pug", "images", "fonts", "update"));
+gulp.task('default', gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "update"));
 
 // Gulp watch task
 gulp.task("update", function() {
