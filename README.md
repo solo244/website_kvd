@@ -11,27 +11,67 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 
 ## Requirements/used
 - jQuery
-- SASS for `css`
-- Jade for `html`
-- Grunt
+- SCSS for `css`
+- Pug for `html`
+- Gulp
 - Bower
+- Yarn
 - Google Analytics for juicy stats
 
 ## Browser compatibility
-- Internet Explorer 9+
-- Firefox
-- Chrome
-- Opera
-- Safari
+- Internet Explorer 11+ & Edge
+- Firefox (latest version)
+- Chrome (latest version)
+- Opera (latest version)
+- Safari (latest version)
 
 ## Set up
 1. Clone files to a new directory
 2. `cd` to the this directory via command line/terminal
-3. Run `npm install` to get your node_modules (default **.gitignore**)
-4. Run `npm install grunt-postcss pixrem autoprefixer-core cssnano`
-5. Run `bower install`
-5. Check `Gruntfile.js` and look at **//Change** comments (settings at the top)
-6. Run `grunt` to start developing
+3. Run `yarn install` to get your node_modules (default **.gitignore**)
+4. Check `package.json` and make changes in **general info, paths, vars and url** where needed
+5. Run **gulp commands** to start developing
+
+## Gulp commands
+- To run an active watch with BrowserSync, run `gulp`
+- To only run the Critical path **for dist**: `gulp critical`
+- To only run the JS vendor files: `gulp vendors`
+- To only run the JS custom files: `gulp js`
+- To only run the SASS files: `gulp css`
+- To only run the Pug files: `gulp pug`
+- To only run the image files: `gulp images`
+- To only run the font files: `gulp fonts`
+
+## Organisation
+- **Dev:** Add any and all `development` content here. `Pug` for html templates
+  - **Views:**: All files and folders are copied from this location, from `Pug` to `HTML` format, **excluding** files from the  *_layout* folder
+  - **CSS/modules:** Contains all modular files -> `main.scss`
+  - **CSS/pages:** Contains all files for custom/specific pages -> `main.scss`
+  - **CSS/template:** Contains all basic template files -> `main.scss`
+  - **images:** Contains all images. Using subfolder is allowed. Optimization will happen later
+  - **JS/vendor:** Contains all vendor files -> `vendor.js`
+  - **JS/main:** Contains all custom files -> `main.js`
+- **Build:** All dev changes are tracked in the *build* folder. These files are compiled for web friendly viewing. This is the working test directory when running a local server.
+- **Dist:** All build files are compiled for final host purposes in the *dist* folder. These files (css, js, html & images) are optimized for the web (minified & concatenated). Paths are changed where needed to fit the need of the server. Before upload this folder is emptied and after upload this folder is deleted.
+
+## To publish via FTP
+- Before deploying, you need to have run a general build so you have a build folder that's up to date, then run the `gulp critical`, before finally running the `gulp ftp` command.
+- Open/create `.ftppass` (root dir) and edit/add any server with the specific name: `ServerA` (= the default server name). But don't forget that this file needs to be in the same location as your **Gulpfile.js**. You can choose a different name by changing it in the **Gulpfile.js**. Make sure it remains in the **.ignore** for privacy reasons.
+- Run `gulp ftp` (make sure to test and backup remote files _if needed_ first)
+- The command overwrites any excisting files, creates non-existing ones and it doesn't delete others.
+- _When creating your own .ftppass file, you could use this code to set it up:_
+```json
+{
+  "ServerA": {
+    "username": "putyourownusernamehere",
+    "password": "putyourpasswordhere"
+  },
+  "anotherServerifYouNeedItButItsOptional": {
+    "username": "putyourownusernamehere",
+    "password": "putyourpasswordhere"
+  }
+}
+```
 
 ## Log (current v1.0)
 - Provide a page to collect all links
