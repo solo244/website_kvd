@@ -1,13 +1,13 @@
 # Personal website attempt nr. 36
 
 ## Release
-Is now live since December 2016: [http://kenvandamme.be/](http://kenvandamme.be/) & [http://kenvandamme.com/](http://kenvandamme.com/)
+Is now live since December 2016: [https://kenvandamme.be/](https://kenvandamme.be/) & [https://kenvandamme.com/](https://kenvandamme.com/)
 
 ## About
 Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you.
 
 ## For more information
-- [Source and writer](http://kenvandamme.be/) or [on Github as solo244](https://github.com/solo244)
+- [Source and writer](https://kenvandamme.be/) or [on Github as solo244](https://github.com/solo244)
 
 ## Requirements/used
 - jQuery
@@ -41,6 +41,7 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - To only run the Pug files: `gulp pug`
 - To only run the image files: `gulp images`
 - To only run the font files: `gulp fonts`
+- To only run the favicon files: `gulp favicon`
 
 ## Organisation
 - **Dev:** Add any and all `development` content here. `Pug` for html templates
@@ -73,20 +74,23 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 }
 ```
 
-## Log (current v1.0)
+## Log (current v1.1)
+### Version 1.0
 - Provide a page to collect all links
 - Align the number "1" better for the submenu Tutorials
 - Add a fallback for older browsers
 - Tutorial needs an overview to go back to
 - The updates on the home page needs to be a slideshow <- DEPCR.
 - Limited the number of social media (to only active ones)
-
-### Planned for v1.1
-- Update Grunt to Gulp
-- Optimise font use
+### Version 1.1
 - Detailed package file
 - Update jade to pug files
 - Yarn
+- Update Grunt to Gulp
 
 ### Planned for v1.2
+- Optimise font use
+- All inline svg
 - When switching projects, the animation is "spotty"
+- Reload Github stats via alt source
+- progressive images with Imaginemin
