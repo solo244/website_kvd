@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Google Maps - Need to know - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -96,7 +96,7 @@ html
       
       p There you go, you know have a fee and interactive map on your contact page. Your stalkers will be pleased.
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

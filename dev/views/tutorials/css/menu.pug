@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Menu - CSS - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -114,7 +114,7 @@ html
           
       p We'll take a look at some extras like: animation in menu's, vertical buttons, ... in the next tutorial.
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

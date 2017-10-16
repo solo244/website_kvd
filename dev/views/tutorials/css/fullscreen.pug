@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Fullscreen background - CSS - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -54,7 +54,7 @@ html
       p Note that the image will be scale and positioned from the centered. If you feel like there is more crucial information somewhere else you can change this to, for instance right bottom. #[strong In my example the object of importance is also in the right bottom], so it makes more sense to work from that spot. Also don't forget that my path is "#[mark images/bg.jpg]". If you use a different file name and directory, change that as well. Seeing as the cover property is rather new, I add all the prefixes just to make sure it'll work in all browsers.
       
       table.support
-        include /support_table.jade
+        include /support_table.pug
         tr
           td 
             strong Supported
@@ -76,7 +76,7 @@ html
           | filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
           | -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

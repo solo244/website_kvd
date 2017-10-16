@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Programs - Need to know - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -74,7 +74,7 @@ html
 
       p Now it’s all a matter of keeping your site up-to-date and adding new information on there. It’s only when your website is online, that the fun starts!
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

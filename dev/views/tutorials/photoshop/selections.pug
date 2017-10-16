@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Selections #1 - Photoshop - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -76,7 +76,7 @@ html
       
       p Fast selection is key, because you'll save time. More about the Quick Selection Tool in the next tutorial!
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

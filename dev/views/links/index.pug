@@ -2,11 +2,10 @@ doctype html
 html
   head
     title Links - KVD
-    meta(description="")
-    include /header.jade
+    include /header.pug
   body.home
-    include /nav.jade
-    include /tweets.jade
+    include /nav.pug
+    include /tweets.pug
 
     .top
       .container
@@ -222,7 +221,7 @@ html
             span December 2016
     .content
 
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuHome").addClass("selected");

@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Adding content - Simple website - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -26,7 +26,7 @@ html
       
       p We'll add some content to our elements. But we can't forget to make styles for every piece of content we add. We'll do that on the fly so we'll see our result immediately.   
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

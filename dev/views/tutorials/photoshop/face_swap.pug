@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Face swap - Photoshop - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -100,7 +100,7 @@ html
         li Make sure all the layer are set to visible again
         li And there you have it, both faces swapped. Try it on different pictures if this worked.
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

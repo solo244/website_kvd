@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Bootstrap 3.0 - Frameworks - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -118,7 +118,7 @@ html
       
       p Looks easy enough right? Well a lot more where that came from. I’ll be doing more tutorials on this in the future but you can just check out the Bootstrap website for now and look at the CSS or Components page, from there, it’s all copy and paste.
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

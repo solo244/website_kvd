@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Simple website - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -94,7 +94,7 @@ html
         li 
           a(href="http://www.barebones.com/products/bbedit/", target="_blank") BBEdit    
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

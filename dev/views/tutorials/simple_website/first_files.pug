@@ -2,11 +2,11 @@ doctype html
 html
   head
     title First files - Simple website - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -80,7 +80,7 @@ html
       
       iframe(width="100%", height="540", src="https://www.youtube.com/embed/y88z8xEHI3E", frameborder="0", allowfullscreen)
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

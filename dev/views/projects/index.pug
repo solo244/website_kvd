@@ -2,10 +2,10 @@ doctype html
 html
   head
     title Projects - KVD
-    include /header.jade
+    include /header.pug
   body.project
-    include /nav.jade
-    include /tweets.jade
+    include /nav.pug
+    include /tweets.pug
     
     .top
       .container
@@ -47,12 +47,12 @@ html
             h3 Random & funny
             p It's just fun to play around with technology. And fun stuff is something people like to see right ?
       
-      include website.jade
-      include github.jade
-      include dnd.jade
-      include random.jade
+      include website.pug
+      include github.pug
+      include dnd.pug
+      include random.pug
           
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuProjects").addClass("selected");

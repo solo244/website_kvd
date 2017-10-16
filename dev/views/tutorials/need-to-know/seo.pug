@@ -2,11 +2,11 @@ doctype html
 html
   head
     title SEO - Need to know - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -118,7 +118,7 @@ html
 
       p #[a(href="../../images/tutorials/need-to-know/Google_one-page_SEO_Guide.pdf", target="_blank") Google one-page SEO Guide] & #[a(href="../../images/tutorials/need-to-know/search-engine-optimization-starter-guide.pdf", target="_blank") search-engine-optimization-starter-guide]
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

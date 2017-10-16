@@ -2,13 +2,13 @@ doctype html
 html
   head
     title Lightbox - Frameworks - Tutorials - KVD
-    include /header.jade
+    include /header.pug
     link(rel="stylesheet", type="text/css", href="vendors/lightbox/dist/css/lightbox.min.css")
     
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -85,7 +85,7 @@ html
       
       p To do more and explore all the options, #[a(href="http://lokeshdhakar.com/projects/lightbox2/#getting-started", target="_blank") check out the documentation on the website].
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

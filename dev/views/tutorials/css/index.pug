@@ -2,11 +2,11 @@ doctype html
 html
   head
     title CSS - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -101,7 +101,7 @@ html
           
       p We finally have our elements next to each other. You'll notice that adding new boxes next to #[mark box1] and #[mark box2] is simple. Just add an element with the #[mark float] #[mark left] property and it will automatically be positioned next to the other boxes. That all fun and games, but I haven’t talked about why making elements #[mark float] is so annoying. So far everything was easy right? Well yes, but making elements #[mark float] has its consequences. Imagine we would be using this on a website and wanted to add a footer underneath these two boxes. As is often the case with modern websites. #[mark Floating] elements have some nasty behaviours and will actually no longer fit in the #[strong "normal flow"] of the document. That means that elements added behind it will position themselves differently. I'll show this by adding a footer after #[mark box1] and #[mark box2]. Notice where the footer ends up.
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

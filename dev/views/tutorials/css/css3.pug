@@ -2,11 +2,11 @@ doctype html
 html
   head
     title CSS 3 - CSS - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -55,7 +55,7 @@ html
       h3 Browser support
       
       table.support
-        include /support_table.jade
+        include /support_table.pug
         tr
           td 
             strong Supported
@@ -85,7 +85,7 @@ html
       h3 Browser support
       
       table.support
-        include /support_table.jade
+        include /support_table.pug
         tr
           td 
             strong Supported
@@ -113,7 +113,7 @@ html
       h3 Browser support
       
       table.support
-        include /support_table.jade
+        include /support_table.pug
         tr
           td 
             strong Supported
@@ -144,7 +144,7 @@ html
       h3 Browser support
       
       table.support
-        include /support_table.jade
+        include /support_table.pug
         tr
           td 
             strong Supported
@@ -172,7 +172,7 @@ html
       h3 Browser support
       
       table.support
-        include /support_table.jade
+        include /support_table.pug
         tr
           td 
             strong Supported
@@ -205,7 +205,7 @@ html
       h3 Browser support
       
       table.support
-        include /support_table.jade
+        include /support_table.pug
         tr
           td 
             strong Supported
@@ -220,7 +220,7 @@ html
           td 
             i(class="icon dripicons-checkmark")
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

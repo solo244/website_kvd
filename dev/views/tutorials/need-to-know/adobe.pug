@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Adobe - Need to know - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -102,7 +102,7 @@ html
 
       p A more in detail questionnaire I daily go through you can find here. I’m merely describing a #[a(href="https://twitter.com/Elsolo244/status/646595129592152065", target="_blank") normal workflow I go through every day] to figure out what I exactly need to use.
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

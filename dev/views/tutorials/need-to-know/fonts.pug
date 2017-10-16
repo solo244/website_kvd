@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Fonts - Need to know - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -149,7 +149,7 @@ html
       p.quote Careful: Do not use Comic Sans! It was a joke when it was created, not a real font.
 
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

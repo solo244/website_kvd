@@ -2,10 +2,10 @@ doctype html
 html
   head
     title Designs - KVD
-    include /header.jade
+    include /header.pug
   body.design
-    include /nav.jade
-    include /tweets.jade
+    include /nav.pug
+    include /tweets.pug
     
     .top
       .container
@@ -42,7 +42,7 @@ html
         
     .container.grid.divider.design_portfolio
           
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuDesigns").addClass("selected");

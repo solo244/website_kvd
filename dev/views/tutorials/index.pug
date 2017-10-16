@@ -2,10 +2,10 @@ doctype html
 html
   head
     title Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial
-    include /nav.jade
-    include /tweets.jade
+    include /nav.pug
+    include /tweets.pug
     
     .top
       .container
@@ -30,7 +30,7 @@ html
         .clear 
           i(class="icon dripicons-cross")
     
-    include all_tutorials.jade
+    include all_tutorials.pug
       
     .container.grid.divider
       h2 All topics
@@ -65,7 +65,7 @@ html
           h3 Webdesign: need to know
           p Some little things that might help you adding small free features to your site or more info on my setup, what programs I use, ...
           
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Floats and clears - CSS - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -155,7 +155,7 @@ html
         
       p #[strong Proverbial tadaah!]. There we go, we placed the footer at the bottom and the submenu & content are next to each other. As a final touch, you can now change the width of the content #[mark div] back to 70%.
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

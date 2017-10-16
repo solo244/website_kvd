@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Introductions - Photoshop - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -80,7 +80,7 @@ html
       
       p Proverbial tadaaah! The boat is gone and you're staring at a boring open sea without anyone sailing on it. This is your sea now!
   
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

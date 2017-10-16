@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Conventions - Simple website - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -46,7 +46,7 @@ html
       
       p As far as customization on your end goes, most of it will be fixing small problems that just won’t work for that specific browser. You’ll have to make your website work everywhere and on every system, and preferably in the same way. But more and more, people will start focusing on the visual, rather than the content. #[strong Superficial much] ? So you’ll also have to focus more on the design than in the past. Being unique and creative is necessary, without breaking any main conventions. What that will result into is the use of custom fonts. Pretty easy actually, but remember, some fonts might not work or the quality might be awful. Not to mention that some fonts are crazily expensive. Luckily there are free options that are solid. We’ll look into those. But I will always recommend you use a custom font to step away from competitors but also, if you keep on using the older standard #[mark web safe fonts], people will start to feel and think #[strong you’re website is outdated].  
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

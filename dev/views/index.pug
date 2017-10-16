@@ -2,11 +2,10 @@ doctype html
 html
   head
     title KVD - Solo244
-    meta(description="")
-    include /header.jade
+    include /header.pug
   body.home
-    include /nav.jade
-    include /tweets.jade
+    include /nav.pug
+    include /tweets.pug
     
     .top
       .container
@@ -14,7 +13,7 @@ html
           span Blurgh
           | What do you mean write an intro text? I don't know how you..
     
-    include /news.jade
+    include /news.pug
     
     .container-full  
       .container.divider
@@ -41,15 +40,16 @@ html
         
         a(href="https://github.com/solo244", target="_blank").github_contributions
           h3 Github contributions 2016
-          img(src="https://github.com/users/solo244/contributions" alt="Github chart")
+          //img(src="https://github.com/users/solo244/contributions" alt="Github chart")
+          img(src="http://ghchart.rshah.org/solo244" alt="Github chart")
     .content
     .container.divider
       h2 I am by far the most me I've ever known
       p Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you. I am a man of few words but I can use some visuals to help me tell you more about myself. Keep scrolling.
       
-    include /timeline.jade
+    include /timeline.pug
     
-    include /footer.jade
+    include /footer.pug
 
     script.
       $(".mainMenu .menuHome").addClass("selected");

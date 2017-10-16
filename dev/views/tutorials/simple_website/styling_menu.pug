@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Styling menu - Simple website - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -26,7 +26,7 @@ html
       
       p We'll style our menu, our content and out footer. We'll still have the ugly & flashy colors in there to organise everything but we're close to not needing them. Our one-page site is done, we just need to apply it to our other pages.
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");

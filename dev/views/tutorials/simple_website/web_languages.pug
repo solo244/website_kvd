@@ -2,11 +2,11 @@ doctype html
 html
   head
     title Web Languages - Simple website - Tutorials - KVD
-    include /header.jade
+    include /header.pug
   body.tutorial-content
-    include /nav.jade
-    include /tweets.jade
-    include _side.jade
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
     
     .top
       .container
@@ -40,7 +40,7 @@ html
       
       p Because making a nice looking website with good content and some cool features might not be enough - we also want is some interaction. Maybe an animation or some #[mark click events] ? If I click there, that other thing moves. #[strong Well, that’s cool]. Hey, is that sound in the background and is that a video playing ? If I click on that image, it scales up and I can browse all the other pictures as well ? That’s a cool looking #[mark slideshow]... You get the point. Making your site interactive requires you to know a third language. It’s a name that’s commonly known, even if you have never made a website before, and that’s #[mark JavaScript]. Not to be mixed with #[mark Java], which is something completely different. #[mark JavaScript] will give you the option of interacting with your elements. Making them dance, light up or to add data. Now, when I say #[mark JavaScript], I actually mean #[mark jQuery], which is it’s #[mark framework]. We’ll be seeing what the difference is but for now you need to know that jQuery preeetty much uses the same functionalities but it’s easier to write and you have a few more options. So #[mark jQuery] is a more awesome version of #[mark JavaScript].
       
-    include /footer.jade
+    include /footer.pug
     
     script.
       $(".mainMenu .menuTutorials").addClass("selected");
