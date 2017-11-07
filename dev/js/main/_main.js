@@ -73,5 +73,5 @@ $(document).ready(function(){
   setNewsItems();
   IEVersionCheck();
 
-  console.log($news_bell);
+  //console.log($news_bell);
 });
