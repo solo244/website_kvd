@@ -94,3 +94,5 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - When switching projects, the animation is "spotty"
 - Reload Github stats via alt source
 - progressive images with Imaginemin
+- Add update block on homepage
+- In between overview on tutorials page
