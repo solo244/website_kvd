@@ -82,6 +82,7 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Tutorial needs an overview to go back to
 - The updates on the home page needs to be a slideshow <- DEPCR.
 - Limited the number of social media (to only active ones)
+
 ### Version 1.1
 - Detailed package file
 - Update jade to pug files
@@ -96,3 +97,4 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - progressive images with Imaginemin
 - Add update block on homepage
 - In between overview on tutorials page
+- Change path var in pug instead of replace in gulp
