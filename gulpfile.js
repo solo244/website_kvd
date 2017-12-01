@@ -6,19 +6,35 @@ var pkg = require("./package.json"),
     fs = require("fs"),
     ftp = require("vinyl-ftp"),
     path = require("path"),
+    growl = require("gulp-notify-growl"),
+    growlnotifier = growl({
+        hostname: "192.168.0.100",
+        password: "test"
+    }, "TestApp");
+
     $ = require("gulp-load-plugins")({
       pattern: ["*"],
       scope: ["devDependencies"]
     }),
+
     onError = function(err) {
-      console.log(err);
+      growlnotifier.onError({
+        title: "No: <%= error.plugin %> for you!",
+        message: "On line: <%= error.line %> in file: <%= error.message %>",
+        sound: "Pop",
+        appIcon: "/dev/images/bg.png",
+        icon: "/dev/images/bg.png",
+        wait: true
+      })(err);
+
+      //this.emit("end");
     };
 
 // Concat and uglify JS
 gulp.task("js", function() {
   $.fancyLog("-> Compiling JS");
   return gulp.src(pkg.paths.assets.js_main + "*.js")
-    .pipe($.plumber({errorHandler: $.notify.onError("Error: <%= error.message %>")}))
+    .pipe($.plumber({errorHandler: onError}))
     .pipe($.sourcemaps.init())
     .pipe($.concat(pkg.vars.js))
     .pipe($.uglify())
@@ -32,7 +48,7 @@ gulp.task("js", function() {
 gulp.task("vendors", function() {
   $.fancyLog("-> Compiling JS vendors");
   return gulp.src(pkg.paths.assets.js_vendors + "*.js")
-    .pipe($.plumber({errorHandler: $.notify.onError("Error: <%= error.message %>")}))
+    .pipe($.plumber({errorHandler: onError}))
     .pipe($.concat(pkg.vars.vendors))
     .pipe($.uglify())
     .pipe($.size({gzip: true, showFiles: true}))
@@ -46,16 +62,9 @@ gulp.task("css", function(){
   console.log(path.join(__dirname, "dev/images/bg.png"));
   $.fancyLog("-> Compiling SCSS to CSS");
   return gulp.src(pkg.paths.assets.sass + pkg.vars.sass)
-    .pipe($.plumber({errorHandler: $.notify.onError({
-      title: "No: <%= error.plugin %> for you!",
-      message: "On line: <%= error.line %>: <%= error.message %>",
-      sound: "Pop",
-      appIcon: "/dev/images/bg.png",
-      icon: "/dev/images/bg.png",
-      wait: true
-    })}))
+    .pipe($.plumber({errorHandler: onError}))
     .pipe($.sourcemaps.init())
-    .pipe($.sass().on("error", $.sass.logError))
+    //.pipe($.sass().on("error", $.sass.logError))
     .pipe($.cached("sass_compile"))
     .pipe($.autoprefixer({browsers: ["last 2 versions", "ie >= 8", "Firefox ESR"]}))
     .pipe($.cssnano({
