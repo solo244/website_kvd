@@ -98,3 +98,4 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Add update block on homepage
 - In between overview on tutorials page
 - Change path var in pug instead of replace in gulp
+- Lazyload images on design page
