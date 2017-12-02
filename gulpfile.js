@@ -6,33 +6,26 @@ var pkg = require("./package.json"),
     fs = require("fs"),
     ftp = require("vinyl-ftp"),
     path = require("path"),
-    growl = require("gulp-notify-growl"),
-    growlnotifier = growl({
-        hostname: "192.168.0.100",
-        password: "test"
-    }, "TestApp");
-
     $ = require("gulp-load-plugins")({
       pattern: ["*"],
       scope: ["devDependencies"]
     }),
-
+    image,
     onError = function(err) {
-      growlnotifier.onError({
+      $.notify.onError({
         title: "No: <%= error.plugin %> for you!",
         message: "On line: <%= error.line %> in file: <%= error.message %>",
         sound: "Pop",
-        appIcon: "/dev/images/bg.png",
-        icon: "/dev/images/bg.png",
+        appIcon: image,
+        icon: image,
         wait: true
       })(err);
-
-      //this.emit("end");
     };
 
 // Concat and uglify JS
 gulp.task("js", function() {
   $.fancyLog("-> Compiling JS");
+  image = path.join(__dirname, "/dev/_error/js.png");
   return gulp.src(pkg.paths.assets.js_main + "*.js")
     .pipe($.plumber({errorHandler: onError}))
     .pipe($.sourcemaps.init())
@@ -47,6 +40,7 @@ gulp.task("js", function() {
 
 gulp.task("vendors", function() {
   $.fancyLog("-> Compiling JS vendors");
+  image = path.join(__dirname, "/dev/_error/vendors.png");
   return gulp.src(pkg.paths.assets.js_vendors + "*.js")
     .pipe($.plumber({errorHandler: onError}))
     .pipe($.concat(pkg.vars.vendors))
@@ -59,12 +53,18 @@ gulp.task("vendors", function() {
 
 // SASS, autoprefix CSS & minify CSS
 gulp.task("css", function(){
-  console.log(path.join(__dirname, "dev/images/bg.png"));
   $.fancyLog("-> Compiling SCSS to CSS");
+  image = path.join(__dirname, "/dev/_error/sass.png");
   return gulp.src(pkg.paths.assets.sass + pkg.vars.sass)
     .pipe($.plumber({errorHandler: onError}))
     .pipe($.sourcemaps.init())
-    //.pipe($.sass().on("error", $.sass.logError))
+    .pipe($.sass({
+      style: "compressed",
+      errLogToConsole: false,
+      onError: function(err) {
+        return $.notify().write(err);
+      }
+    }))
     .pipe($.cached("sass_compile"))
     .pipe($.autoprefixer({browsers: ["last 2 versions", "ie >= 8", "Firefox ESR"]}))
     .pipe($.cssnano({
@@ -86,6 +86,8 @@ gulp.task("css", function(){
 
 // Compile Pug
 gulp.task("pug", function(){
+  $.fancyLog("-> Compiling PUG to HTML");
+  image = path.join(__dirname, "/dev/_error/pug.png");
   return gulp.src([pkg.paths.assets.pug + "**/*.pug", !pkg.paths.assets.pug + "_template/**/*.pug"])
     .pipe($.filter(function (file) {
         return !/\/_/.test(file.path) && !/^_/.test(file.relative);
@@ -100,6 +102,8 @@ gulp.task("pug", function(){
 
 // Optimize images
 gulp.task("images", function(){
+  $.fancyLog("-> Compiling IMAGES");
+  image = path.join(__dirname, "/dev/_error/images.png");
   return gulp.src(pkg.paths.assets.images + "**/*.{png,jpg,jpeg,gif,svg,ico}")
     .pipe($.cache($.imagemin({
       progressive: true,
@@ -115,13 +119,15 @@ gulp.task("images", function(){
 
 // Copy fonts
 gulp.task("fonts", function(){
+  image = path.join(__dirname, "/dev/_error/fonts.png");
   return gulp.src(pkg.paths.assets.main + "fonts/**/*")
     .pipe(gulp.dest(pkg.paths.build.css + "fonts")
   );
 });
 
-// Copy fonts
+// Copy favicon
 gulp.task("favicon", function(){
+  image = path.join(__dirname, "/dev/_error/favicon.png");
   return gulp.src(pkg.paths.assets.main + "favicon/**/*")
     .pipe(gulp.dest(pkg.paths.build.main + "favicon")
   );
@@ -129,6 +135,7 @@ gulp.task("favicon", function(){
 
 // Copy all files from build to dist folder
 gulp.task("copy", function(){
+  image = path.join(__dirname, "/dev/_error/copy.png");
   $.del.sync(pkg.paths.dist.main);
   return gulp.src(pkg.paths.build.main + "**")
     .pipe(gulp.dest(pkg.paths.dist.main)
@@ -137,6 +144,7 @@ gulp.task("copy", function(){
 
 // Generate critical CSS & JS inline HTML
 gulp.task("critical", ["copy"], function () {
+  image = path.join(__dirname, "/dev/_error/critical.png");
   return gulp.src("dist/**/*.html")
     .pipe(critical({
       inline: true,
@@ -160,6 +168,7 @@ gulp.task("critical", ["copy"], function () {
 
 // Replace text for dist folder
 gulp.task("replace", ["critical"], function(){
+  image = path.join(__dirname, "/dev/_error/replace.png");
   return gulp.src([pkg.paths.dist.main + "**/*.html"])
     .pipe($.replace(/src="\//g, 'src="/' + pkg.paths.dist.online_folder))
     .pipe($.replace(/href="\//g, 'href="/' + pkg.paths.dist.online_folder))
@@ -169,6 +178,7 @@ gulp.task("replace", ["critical"], function(){
 
 // FTP
 gulp.task("deploy", ["replace"], function() {
+  image = path.join(__dirname, "/dev/_error/deploy.png");
   var cleanJSON = require("strip-json-comments"),
       globs = [pkg.paths.dist.main + "**"],
       config = fs.readFileSync(".ftppass", "utf8");
@@ -189,6 +199,7 @@ gulp.task("deploy", ["replace"], function() {
 
 // Clear dist folder after publish
 gulp.task("delete", ["deploy"], function(){
+  image = path.join(__dirname, "/dev/_error/delete.png");
   $.del.sync(pkg.paths.dist.main);
   return;
 });
