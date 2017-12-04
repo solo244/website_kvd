@@ -1,4 +1,4 @@
-# Personal website attempt nr. 36
+# Personal website attempt nr. 36 (v1.1)
 
 ## Release
 Is now live since December 2016: [https://kenvandamme.be/](https://kenvandamme.be/) & [https://kenvandamme.com/](https://kenvandamme.com/)
@@ -92,10 +92,14 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 ### Planned for v1.2
 - Optimise font use
 - All inline svg
-- When switching projects, the animation is "spotty"
-- Reload Github stats via alt source
 - progressive images with Imaginemin
-- Add update block on homepage
-- In between overview on tutorials page
 - Change path var in pug instead of replace in gulp
 - Lazyload images on design page
+- Refactor and clean up all css
+- Refactor and clean up all js
+
+### Planned for v1.3
+- When switching projects, the animation is "spotty"
+- Reload Github stats via alt source
+- Add update block on homepage
+- In between overview on tutorials page
