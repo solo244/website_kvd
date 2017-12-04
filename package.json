@@ -24,7 +24,8 @@
     "dist": {
       "main": "dist/",
       "online_folder": ""
-    }
+    },
+    "error": "/dev/_error/"
   },
   "vars": {
     "sass": "main.scss",

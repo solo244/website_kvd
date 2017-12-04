@@ -25,7 +25,7 @@ var pkg = require("./package.json"),
 // Concat and uglify JS
 gulp.task("js", function() {
   $.fancyLog("-> Compiling JS");
-  image = path.join(__dirname, "/dev/_error/js.png");
+  image = path.join(__dirname, pkg.paths.error + "js.png");
   return gulp.src(pkg.paths.assets.js_main + "*.js")
     .pipe($.plumber({errorHandler: onError}))
     .pipe($.sourcemaps.init())
@@ -40,7 +40,7 @@ gulp.task("js", function() {
 
 gulp.task("vendors", function() {
   $.fancyLog("-> Compiling JS vendors");
-  image = path.join(__dirname, "/dev/_error/vendors.png");
+  image = path.join(__dirname, pkg.paths.error + "vendors.png");
   return gulp.src(pkg.paths.assets.js_vendors + "*.js")
     .pipe($.plumber({errorHandler: onError}))
     .pipe($.concat(pkg.vars.vendors))
@@ -54,7 +54,7 @@ gulp.task("vendors", function() {
 // SASS, autoprefix CSS & minify CSS
 gulp.task("css", function(){
   $.fancyLog("-> Compiling SCSS to CSS");
-  image = path.join(__dirname, "/dev/_error/sass.png");
+  image = path.join(__dirname, pkg.paths.error + "sass.png");
   return gulp.src(pkg.paths.assets.sass + pkg.vars.sass)
     .pipe($.plumber({errorHandler: onError}))
     .pipe($.sourcemaps.init())
@@ -87,7 +87,7 @@ gulp.task("css", function(){
 // Compile Pug
 gulp.task("pug", function(){
   $.fancyLog("-> Compiling PUG to HTML");
-  image = path.join(__dirname, "/dev/_error/pug.png");
+  image = path.join(__dirname, pkg.paths.error + "pug.png");
   return gulp.src([pkg.paths.assets.pug + "**/*.pug", !pkg.paths.assets.pug + "_template/**/*.pug"])
     .pipe($.filter(function (file) {
         return !/\/_/.test(file.path) && !/^_/.test(file.relative);
@@ -103,7 +103,7 @@ gulp.task("pug", function(){
 // Optimize images
 gulp.task("images", function(){
   $.fancyLog("-> Compiling IMAGES");
-  image = path.join(__dirname, "/dev/_error/images.png");
+  image = path.join(__dirname, pkg.paths.error + "images.png");
   return gulp.src(pkg.paths.assets.images + "**/*.{png,jpg,jpeg,gif,svg,ico}")
     .pipe($.cache($.imagemin({
       progressive: true,
@@ -119,7 +119,7 @@ gulp.task("images", function(){
 
 // Copy fonts
 gulp.task("fonts", function(){
-  image = path.join(__dirname, "/dev/_error/fonts.png");
+  image = path.join(__dirname, pkg.paths.error + "fonts.png");
   return gulp.src(pkg.paths.assets.main + "fonts/**/*")
     .pipe(gulp.dest(pkg.paths.build.css + "fonts")
   );
@@ -127,7 +127,7 @@ gulp.task("fonts", function(){
 
 // Copy favicon
 gulp.task("favicon", function(){
-  image = path.join(__dirname, "/dev/_error/favicon.png");
+  image = path.join(__dirname, pkg.paths.error + "favicon.png");
   return gulp.src(pkg.paths.assets.main + "favicon/**/*")
     .pipe(gulp.dest(pkg.paths.build.main + "favicon")
   );
@@ -135,7 +135,7 @@ gulp.task("favicon", function(){
 
 // Copy all files from build to dist folder
 gulp.task("copy", function(){
-  image = path.join(__dirname, "/dev/_error/copy.png");
+  image = path.join(__dirname, pkg.paths.error + "copy.png");
   $.del.sync(pkg.paths.dist.main);
   return gulp.src(pkg.paths.build.main + "**")
     .pipe(gulp.dest(pkg.paths.dist.main)
@@ -144,7 +144,7 @@ gulp.task("copy", function(){
 
 // Generate critical CSS & JS inline HTML
 gulp.task("critical", ["copy"], function () {
-  image = path.join(__dirname, "/dev/_error/critical.png");
+  image = path.join(__dirname, pkg.paths.error + "critical.png");
   return gulp.src("dist/**/*.html")
     .pipe(critical({
       inline: true,
@@ -168,7 +168,7 @@ gulp.task("critical", ["copy"], function () {
 
 // Replace text for dist folder
 gulp.task("replace", ["critical"], function(){
-  image = path.join(__dirname, "/dev/_error/replace.png");
+  image = path.join(__dirname, pkg.paths.dist.main + "replace.png");
   return gulp.src([pkg.paths.dist.main + "**/*.html"])
     .pipe($.replace(/src="\//g, 'src="/' + pkg.paths.dist.online_folder))
     .pipe($.replace(/href="\//g, 'href="/' + pkg.paths.dist.online_folder))
@@ -178,7 +178,7 @@ gulp.task("replace", ["critical"], function(){
 
 // FTP
 gulp.task("deploy", ["replace"], function() {
-  image = path.join(__dirname, "/dev/_error/deploy.png");
+  image = path.join(__dirname, pkg.paths.error + "deploy.png");
   var cleanJSON = require("strip-json-comments"),
       globs = [pkg.paths.dist.main + "**"],
       config = fs.readFileSync(".ftppass", "utf8");
@@ -199,7 +199,7 @@ gulp.task("deploy", ["replace"], function() {
 
 // Clear dist folder after publish
 gulp.task("delete", ["deploy"], function(){
-  image = path.join(__dirname, "/dev/_error/delete.png");
+  image = path.join(__dirname, pkg.paths.error + "delete.png");
   $.del.sync(pkg.paths.dist.main);
   return;
 });
