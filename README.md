@@ -89,14 +89,13 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Yarn
 - Update Grunt to Gulp
 
-### Planned for v1.2
-- Optimise font use
-- All inline svg
-- progressive images with Imaginemin
-- Change path var in pug instead of replace in gulp
-- Lazyload images on design page
-- Refactor and clean up all css
-- Refactor and clean up all js
+### Working on for v1.2
+- [ ] Optimise font use - All inline svg (svg instead of iconfont)
+- [ ] progressive images with Imaginemin
+- [ ] Change path var in pug instead of replace in gulp
+- [x] Lazyload images on design page
+- [x] Refactor and clean up all css
+- [x] Refactor and clean up all js
 
 ### Planned for v1.3
 - When switching projects, the animation is "spotty"
