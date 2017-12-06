@@ -1,4 +1,4 @@
-$(function() {
+(function($) {
 
   // Vars
   var $doc = $("html, body"),
@@ -47,7 +47,7 @@ $(function() {
   ];
 
   // Events
-  setDesignImages();
+  //setDesignImages();
 
   // Load all the design images
   function setDesignImages(){
@@ -62,5 +62,7 @@ $(function() {
       effect : "fadeIn"
     });
   }
+
+  setDesignImages();
 
 })(jQuery);

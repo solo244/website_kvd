@@ -1,9 +1,9 @@
-$(function() {
+(function($) {
 
   // Vars
   var $doc = $("html, body"),
       $news = $doc.find(".news"),
-      currentNews = 1,
+      //currentNews = 1,
       $news_next = $news.find(".next"),
       $news_prev = $news.find(".previous"),
       $news_items = $news.find(".news-items"),
@@ -16,10 +16,10 @@ $(function() {
   $news_next.find(".arro").on("click", gotoNextNews);
   $news_prev.find(".tri").on("click", gotoNextPrev);
   $news_prev.find(".arro").on("click", gotoNextPrev);
+  setNewsItems();
 
   // Toggle news
   function toggleNews(e){
-    var $this = $(this);
     $news_items.toggleClass("news-items_active");
   }
 
@@ -42,8 +42,8 @@ $(function() {
     console.log(number);
   }
 
-  function navigateSlideshow(){
+  /*function navigateSlideshow(){
 
-  }
+  }*/
 
 })(jQuery);

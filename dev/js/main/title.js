@@ -1,4 +1,4 @@
-$(function() {
+(function($) {
 
   // Get page title
   var pageTitle = $("html head title").html();
@@ -12,5 +12,5 @@ $(function() {
   $(window).focus(function() {
     $("html head title").html(pageTitle);
   });
-  
+
 })(jQuery);
