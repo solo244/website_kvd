@@ -91,8 +91,8 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 
 ### Working on for v1.2
 - [ ] Optimise font use - All inline svg (svg instead of iconfont)
-- [ ] progressive images with Imaginemin
-- [ ] Change path var in pug instead of replace in gulp
+- [x] Progressive images with Imaginemin
+- [x] Change path var in pug instead of replace in gulp
 - [x] Lazyload images on design page
 - [x] Refactor and clean up all css
 - [x] Refactor and clean up all js
