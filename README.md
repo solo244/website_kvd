@@ -1,4 +1,4 @@
-# Personal website attempt nr. 36 (v1.1)
+# Personal website attempt nr. 36 (v1.2)
 
 ## Release
 Is now live since December 2016: [https://kenvandamme.be/](https://kenvandamme.be/) & [https://kenvandamme.com/](https://kenvandamme.com/)
@@ -74,7 +74,7 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 }
 ```
 
-## Log (current v1.1)
+## Log (current v1.2)
 ### Version 1.0
 - Provide a page to collect all links
 - Align the number "1" better for the submenu Tutorials
@@ -89,17 +89,18 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Yarn
 - Update Grunt to Gulp
 
-### Working on for v1.2
-- [ ] Optimise font use - All inline svg (svg instead of iconfont)
-- [ ] Added ITS-United project
-- [x] Progressive images with Imaginemin
-- [x] Change path var in pug instead of replace in gulp
-- [x] Lazyload images on design page
-- [x] Refactor and clean up all css
-- [x] Refactor and clean up all js
+### Version 1.2
+- Added ITS-United project
+- Progressive images with Imaginemin
+- Change path var in pug instead of replace in gulp
+- Lazyload images on design page
+- Refactor and clean up all css
+- Refactor and clean up all js
 
-### Planned for v1.3
-- When switching projects, the animation is "spotty"
-- Reload Github stats via alt source
-- Add update block on homepage
-- In between overview on tutorials page
+### Todo for v1.3
+- [ ] When switching projects, the animation is "spotty"
+- [ ] Reload Github stats via alt source
+- [ ] Add update block on homepage
+- [ ] In between overview on tutorials page
+
+### Planned for v1.4
