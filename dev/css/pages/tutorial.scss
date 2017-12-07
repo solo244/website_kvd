@@ -100,6 +100,24 @@
   }
 }
 
+.all-tuts-detail{
+  .grid-item{
+    .grid-c{
+      background-color: #FFF;
+      border: 1px solid #CCC;
+      position: relative;
+      overflow: hidden;
+      padding: 20px 30px;
+
+      h3{
+        color: $grey_;
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+}
+
 .tutorial-content-example{
   background: url(../images/tutorials/simple/bg.jpg) no-repeat center center fixed;
   background-size: cover;
