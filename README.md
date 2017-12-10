@@ -104,3 +104,5 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - [ ] In between overview on tutorials page
 
 ### Planned for v1.4
+- Forgot alt img tag - usability
+- Slideshow for news item
