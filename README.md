@@ -98,6 +98,7 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Refactor and clean up all js
 
 ### Todo for v1.3
+- [ ] Save tutorials previously visited
 - [ ] When switching projects, the animation is "spotty"
 - [ ] Reload Github stats via alt source
 - [ ] Add update block on homepage
@@ -106,3 +107,6 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 ### Planned for v1.4
 - Forgot alt img tag - usability
 - Slideshow for news item
+- Mobile menu for tutorials
+- Mobile menu for general menu -> hamburger
+- Reading bar to show progress for tutorials
