@@ -1,0 +1,126 @@
+doctype html
+html
+  head
+    title Bootstrap 3.0 - Frameworks - Tutorials - KVD
+    include /header.pug
+  body.tutorial-content
+    include /nav.pug
+    include /tweets.pug
+    include _side.pug
+    
+    .top
+      .container
+        h1 
+          span FRAMEWORKS: BOOTSTRAP 3.0
+          | Make use of a nice and handy framework. Do less work!
+    
+    .container.divider
+      p.breadcrumb
+        a(href="../") tutorials
+        | &nbsp;&nbsp;&gt;&nbsp; 
+        a(href="index.html") frameworks
+        | &nbsp;&nbsp;&gt;&nbsp; 
+        span bootstrap 3.0
+        
+      p I want to make my website responsive. I want to make it scale down according to screen size. I will also need columns. I will likely need my navigation bar to have a drop down, and when going into the mobile version, I’d like a #[a(href="https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon", target="_blank") hamburger menu].
+      
+      p It’s very typical things that will always need to be done. Because website and webdesign are evolving and the bar is set higher at a constant rate. We need good UX/UI design, good typography, mobile support, no Flash, good SEO, etc. It’s something we have to remember designing these things. And the problem is that we re-use a lot of our code. I say problem because my code isn’t always clean or optimal, because in most cases, it’s very specific to a particular project. But what if we don’t start from scratch and instead rely on a template? Well, then it has to be a very good template and it has to not always look the same. And that’s a good reason to use Bootstrap.
+      
+      p I’ve always tried to stay away from it. I wright custom code for clients. That is what they pay me for. A unique design and website, which nobody in the world will have. But using Bootstrap doesn’t take that away, it just makes it easier (and mostly faster). I can make the same website, the same design in half the amount of time. However, this was after knowing Bootstrap and using it for a while, because it does take time to get used to it in the beginning.
+      
+      h2 What is it?
+      
+      p Bootstrap is a collection of CSS and JavaScript. What that means is that it provides a series of premade components/elements that you’ll need when making a website. A gallery, menu, buttons, tables, forms, panels, breadcrumbs, etc. They are fully functional, look sleek & modern and are fully responsive.
+      
+      ul.conlist
+        li You will save time – after you learn how to use it
+        li Although it all looks the same, it’s customizable – if you have enough CSS, HTML & jQuery knowledge
+        li It’s open source and well documented (by Bootstrap and communities online)
+        li Bootstrap is focused on future webdesign (“Somebody please think of the children!”)
+        li Problems get fixed and updates get pushed
+        li You can use the grid system to layout (that is awesome)
+      
+      p So you do need a good knowledge of webdesign before you can start using Bootstrap. Those without this knowledge won’t be able to make it unique and your website will look like a typical Bootstrap website. You want to avoid that at all costs!
+      
+      h2 How to use it?
+      
+      p.quote Enough talk, it’s codetime!
+      
+      p What Bootstrap needs is one css file and one js file. You can download them and put them on your very own (rather small and unknown) server or you can use the much visited CDN’s out there to speed up your website when using Bootstrap. You can find the links in a lot of places but I prefer using the official ones.
+      
+      p #[a(href="https://www.bootstrapcdn.com/", target="_blank") The official ones]
+      
+      p As a general rule, you want to apply the external css first, then your own in the head of the document. And we’ll put the js link just before the closing body tag. I’ll show it in a code example just in case you didn’t get any of that.
+      
+      pre
+        code(class="language-html")
+          | &lt;!DOCTYPE html&gt;
+          | &lt;html&gt;
+          |   &lt;head&gt;
+          |   &lt;title&gt;Tutorials - Ken Van Damme&lt;/title&gt;
+          |   &lt;meta charset="UTF-8"&gt;
+          |   &lt;link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"&gt;
+          |   &lt;link rel="stylesheet" type="text/css" href="yourownstylesheet.css"&gt;
+          | &lt;/head&gt;
+          | &lt;body&gt;
+          | &nbsp;
+          |   &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"&gt;&lt;/script&gt; 
+          | &lt;/body&gt;
+          | &lt;/html&gt;
+      
+      h2 Examples
+    
+      p There is really not more to it. I’ll just show you some examples on what to do with it. Using the grid system we can easily make & column layout. Use the following code:
+      
+      pre
+        code(class="language-html")
+          | &lt;div class="container"&gt;
+          |   &lt;div class="row"&gt;
+          |     &lt;div class="col-sm-4"&gt;1&lt;/div&gt;
+          |     &lt;div class="col-sm-4"&gt;2&lt;/div&gt;
+          |     &lt;div class="col-sm-4"&gt;3&lt;/div&gt;
+          |   &lt;/div&gt;
+          | &lt;/div&gt;
+      
+      .code_example
+        div(style="width: 33.33%; float:left; background-color: #CCC; text-align: center; height: 200px; line-height: 200px; font-size: 20px") 1
+        div(style="width: 33.33%; float:left; background-color: #BBB; text-align: center; height: 200px; line-height: 200px; font-size: 20px") 2
+        div(style="width: 33.33%; float:left; background-color: #AAA; text-align: center; height: 200px; line-height: 200px; font-size: 20px") 3
+      
+      p Pretty easy and not to mention fast. Another amazing thing is the existence of Glyphicons. You can choose from a wide variety of icons and they are rendered (used) as a font. I’ve been using this technique for print work for years but now we can also do it for web. You can alter the color of the icon by simply changing the text color. That on its own, is amazing! Try rolling over the icons below with your cursor.
+      
+      .code_example.font-example
+        i(class="fa fa-search", aria-hidden="true")
+        i(class="fa fa-apple", aria-hidden="true")
+        i(class="fa fa-heart", aria-hidden="true")
+        i(class="fa fa-tint", aria-hidden="true")
+      
+      p And here is the HTML code:
+      
+      pre
+        code(class="language-html")
+          | &lt;span class="glyphicon glyphicon-search" aria-hidden="true"&gt;&lt;/span&gt;
+          | &lt;span class="glyphicon glyphicon-apple" aria-hidden="true"&gt;&lt;/span&gt;
+          | &lt;span class="glyphicon glyphicon-heart" aria-hidden="true"&gt;&lt;/span&gt;
+          | &lt;span class="glyphicon glyphicon-tint" aria-hidden="true"&gt;&lt;/span&gt;
+      
+      p And the CSS:
+      
+      pre
+        code(class="language-css")
+          | .glyphicon{
+          |   color: black;
+          | }
+          | &nbsp;
+          | .glyphicon:hover{
+          |   color: red;
+          | }
+      
+      p Looks easy enough right? Well a lot more where that came from. I’ll be doing more tutorials on this in the future but you can just check out the Bootstrap website for now and look at the CSS or Components page, from there, it’s all copy and paste.
+  
+    include /footer.pug
+
+    script.
+      $(".mainMenu .menuTutorials").addClass("selected");
+      $(".sideMenu .frameworks1").addClass("active");
+    script(src="https://use.fontawesome.com/d2c9f526aa.js")
