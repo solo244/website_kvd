@@ -103,6 +103,7 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - [ ] Reload Github stats via alt source
 - [ ] Add update block on homepage
 - [ ] In between overview on tutorials page
+- [ ] Remove sourcemapping in production
 
 ### Planned for v1.4
 - Forgot alt img tag - usability
