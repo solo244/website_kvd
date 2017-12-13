@@ -28,10 +28,8 @@ gulp.task("js", function() {
   image = path.join(__dirname, pkg.paths.error + "js.png");
   return gulp.src(pkg.paths.assets.js_main + "*.js")
     .pipe($.plumber({errorHandler: onError}))
-    .pipe($.sourcemaps.init())
     .pipe($.concat(pkg.vars.js))
     .pipe($.uglify())
-    .pipe($.sourcemaps.write("."))
     .pipe($.size({gzip: true, showFiles: false}))
     .pipe(gulp.dest(pkg.paths.build.js))
     .pipe($.browserSync.reload({ stream: true })
@@ -57,7 +55,6 @@ gulp.task("css", function(){
   image = path.join(__dirname, pkg.paths.error + "sass.png");
   return gulp.src(pkg.paths.assets.sass + pkg.vars.sass)
     .pipe($.plumber({errorHandler: onError}))
-    .pipe($.sourcemaps.init())
     .pipe($.sass({
       style: "compressed",
       errLogToConsole: false,
@@ -77,7 +74,6 @@ gulp.task("css", function(){
       minifySelectors: true
     }))
     .pipe($.size({gzip: true, showFiles: true}))
-    .pipe($.sourcemaps.write("."))
     .pipe($.rename(pkg.vars.css))
     .pipe(gulp.dest(pkg.paths.build.css))
     .pipe($.browserSync.reload({ stream: true })
