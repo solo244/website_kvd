@@ -117,9 +117,23 @@
     }
 
     &.visited-grid-item {
+      position: relative;
+
+      &:after {
+        content:"";
+        position: absolute;
+        right: 11px;
+        top: 11px;
+        width: 60px;
+        bottom: 11px;
+        background-color: $___grey;
+        border-left: 1px solid $_grey;
+        border-radius: 0 $corner $corner 0;
+      }
+
       .grid-c {
         border: 1px solid $_grey;
-        background-color: $___grey;
+        background-color: $white;
         overflow: visible;
 
         &:after {
