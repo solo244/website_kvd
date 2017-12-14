@@ -3,7 +3,7 @@ html
   head
     title CSS 3 - CSS - Tutorials - KVD
     include /header.pug
-  body.tutorial-content
+  body.tutorial-content(data-ref="css3")
     include /nav.pug
     include /tweets.pug
     include _side.pug
@@ -223,5 +223,7 @@ html
     include /footer.pug
     
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("css3");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .css7").addClass("active");
