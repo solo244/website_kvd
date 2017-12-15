@@ -114,67 +114,81 @@
         font-size: 16px;
         text-align: left;
       }
+
+      .seen {
+        display: none;
+      }
     }
 
     &.visited-grid-item {
       position: relative;
-
-      &:after {
-        content:"";
-        position: absolute;
-        right: 11px;
-        top: 11px;
-        width: 60px;
-        bottom: 11px;
-        background-color: $___grey;
-        border-left: 1px solid $_grey;
-        border-radius: 0 $corner $corner 0;
-      }
 
       .grid-c {
         border: 1px solid $_grey;
         background-color: $white;
         overflow: visible;
 
-        &:after {
-          content: "You've read this tutorial once before";
-          position: absolute;
-          top: -50px;
-          right: 0;
-          padding: 10px 15px;
-          background: $grey__;
-          color: $white;
-          border-radius: $corner;
-          opacity: 0;
-          z-index: 2;
-          transform: scale(.2);
-        }
-
-        &:before {
-          content: "";
+        .seen {
           display: block;
           position: absolute;
-          right: 20px;
-          top: -20px;
-          z-index: 2;
-          width: 20px;
-          height: 20px;
-          opacity: 0;
-          background-color: #333;
-          -webkit-transform: translate(-50%) rotate(45deg);
-          transform: translate(-50%) rotate(45deg);
-        }
-      }
-    }
+          right: 0px;
+          top: 0px;
+          width: 50px;
+          line-height: 90px;
+          bottom: 0px;
+          background-color: $___grey;
+          border-left: 1px solid $_grey;
+          border-radius: 0 $corner $corner 0;
 
-    &:hover {
-      .grid-c {
-        &:after {
-          transform: scale(1);
-          opacity: 1;
-        }
-        &:before {
-          opacity: 1;
+          i {
+            &:before {
+              color: $grey;
+            }
+            &:hover {
+              &:before {
+                color: $grey;
+              }
+            }
+          }
+
+          &:after {
+            content: "You've read this tutorial once before";
+            position: absolute;
+            top: -50px;
+            right: 0;
+            padding: 10px 15px;
+            background: $grey__;
+            color: $white;
+            border-radius: $corner;
+            opacity: 0;
+            z-index: 2;
+            transform: scale(.2);
+          }
+
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: -20px;
+            z-index: 2;
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            background-color: #333;
+            -webkit-transform: translate(-50%) rotate(45deg);
+            transform: translate(-50%) rotate(45deg);
+          }
+
+          &:hover {
+            &:after {
+              transform: scale(1);
+              opacity: 1;
+            }
+            &:before {
+              opacity: 1;
+            }
+          }
         }
       }
     }
