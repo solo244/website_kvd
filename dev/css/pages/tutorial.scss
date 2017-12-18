@@ -124,7 +124,6 @@
       position: relative;
 
       .grid-c {
-        border: 1px solid $_grey;
         background-color: $white;
         overflow: visible;
 
@@ -137,7 +136,6 @@
           line-height: 90px;
           bottom: 0px;
           background-color: $___grey;
-          border-left: 1px solid $_grey;
           border-radius: 0 $corner $corner 0;
 
           i {
@@ -152,24 +150,26 @@
           }
 
           &:after {
-            content: "You've read this tutorial once before";
+            content: "You've read this tutorial before";
             position: absolute;
             top: -50px;
             right: 0;
-            padding: 10px 15px;
+            padding: 10px 5px;
             background: $grey__;
             color: $white;
             border-radius: $corner;
             opacity: 0;
             z-index: 2;
             transform: scale(.2);
+            width: 240px;
+            line-height: 23px;
           }
 
           &:before {
             content: "";
             display: block;
             position: absolute;
-            right: 20px;
+            right: 6px;
             top: -20px;
             z-index: 2;
             width: 20px;
