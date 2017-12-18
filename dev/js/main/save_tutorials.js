@@ -13,7 +13,6 @@
     savedTutorials.push(extra);
     var updatedSaved = Array.from(new Set(savedTutorials));
     localStorage.setItem("tutorials", JSON.stringify(updatedSaved));
-    console.log(localStorage.tutorials);
   }
 
   $(".all-tuts-detail .grid-item").each(function() {
@@ -22,7 +21,6 @@
 
     if(savedTutorials.indexOf(href) > 0) {
       $this.addClass("visited-grid-item");
-      console.log(href);
     }
   });
 
