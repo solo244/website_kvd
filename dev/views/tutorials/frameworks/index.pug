@@ -23,12 +23,16 @@ html
       p Don't reinvent the wheel. The one sentence I've every developer lives by: if it exists and it works, use it. Don't rebuild it. In a lot of cases it's free, so why not.. ?
     
     .all-tuts-detail.container.grid.divider
-      .grid-item
+      .grid-item(data-visit="bootstrap")
         a(href="bootstrap.html").grid-c
           h3 Bootstrap 3.0
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="lightbox")
         a(href="lightbox.html").grid-c
           h3 Lightbox
+          .seen
+            i(class='icon dripicons-checkmark')
   
     include /footer.pug
 
