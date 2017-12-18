@@ -23,24 +23,36 @@ html
       p Need to know is a random set of information pieces. Hopefully they help you to add that extra configuration or setup needed to make your website better. All free stuff I might add!
         
     .all-tuts-detail.container.grid.divider
-      .grid-item
+      .grid-item(data-visit="analytics")
         a(href="analytics.html").grid-c
           h3 Google Analytics
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="google_maps")
         a(href="google_maps.html").grid-c
           h3 Google Maps
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="fonts")
         a(href="fonts.html").grid-c
           h3 Custom Font(s)
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="adobe")
         a(href="adobe.html").grid-c
           h3 What Adobe program to use?
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="programs")
         a(href="programs.html").grid-c
           h3 My programs
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="seo")
         a(href="seo.html").grid-c
           h3 SEO
+          .seen
+            i(class='icon dripicons-checkmark')
   
     include /footer.pug
 
