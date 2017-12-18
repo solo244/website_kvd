@@ -23,21 +23,31 @@ html
       p It's one of the best software tools out there for photo manipulation. It's not free but if you plan on using it professionally, it's worth its price. You can do cool and fun stuff, find out what!
     
     .all-tuts-detail.container.grid.divider
-      .grid-item
+      .grid-item(data-visit="introductions")
         a(href="introductions.html").grid-c
           h3 PS introductions
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="selections")
         a(href="selections.html").grid-c
           h3 Selections #1
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="selections_2")
         a(href="selections_2.html").grid-c
           h3 Selections #2
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="face_swap")
         a(href="face_swap.html").grid-c
           h3 Face Swapping
-      .grid-item
+          .seen
+            i(class='icon dripicons-checkmark')
+      .grid-item(data-visit="puppet_warp")
         a(href="puppet_warp.html").grid-c
           h3 Puppet Warp
+          .seen
+            i(class='icon dripicons-checkmark')
       
     include /footer.pug
 
