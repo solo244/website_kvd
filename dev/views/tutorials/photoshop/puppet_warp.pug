@@ -101,5 +101,7 @@ html
     include /footer.pug
 
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("puppet_warp");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .photoshop5").addClass("active");
