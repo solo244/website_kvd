@@ -29,5 +29,7 @@ html
     include /footer.pug
     
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("styling_menu");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .simple8").addClass("active");
