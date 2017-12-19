@@ -43,5 +43,7 @@ html
     include /footer.pug
     
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("web_languages");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .simple4").addClass("active");
