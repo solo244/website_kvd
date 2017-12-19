@@ -72,5 +72,7 @@ html
     include /footer.pug
 
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("selections_2");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .photoshop3").addClass("active");
