@@ -88,6 +88,8 @@ html
     include /footer.pug
 
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("lightbox");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .frameworks2").addClass("active");
     script(src="vendors/lightbox/dist/js/lightbox.min.js")
