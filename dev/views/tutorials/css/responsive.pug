@@ -127,5 +127,7 @@ html
     include /footer.pug
 
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("responsive");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .css8").addClass("active");
