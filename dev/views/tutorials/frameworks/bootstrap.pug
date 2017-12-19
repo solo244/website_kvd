@@ -121,6 +121,8 @@ html
     include /footer.pug
 
     script.
+      var savedTutorials = JSON.parse(localStorage.getItem("tutorials")) || [];
+      savedTutorials.push("bootstrap");
       $(".mainMenu .menuTutorials").addClass("selected");
       $(".sideMenu .frameworks1").addClass("active");
     script(src="https://use.fontawesome.com/d2c9f526aa.js")
