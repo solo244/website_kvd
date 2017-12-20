@@ -103,6 +103,7 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - [x] Add update block on homepage
 - [x] In between overview on tutorials page
 - [x] Remove sourcemapping in production
+- [x] Add background images to main headers
 
 ### Planned for v1.4
 - Sweet alerts
