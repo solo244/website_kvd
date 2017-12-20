@@ -98,16 +98,18 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Refactor and clean up all js
 
 ### Todo for v1.3
-- [ ] Save tutorials previously visited
-- [ ] When switching projects, the animation is "spotty"
-- [ ] Reload Github stats via alt source
-- [ ] Add update block on homepage
-- [ ] In between overview on tutorials page
-- [ ] Remove sourcemapping in production
+- [x] Save tutorials previously visited
+- [x] Reload Github stats via alt source
+- [x] Add update block on homepage
+- [x] In between overview on tutorials page
+- [x] Remove sourcemapping in production
 
 ### Planned for v1.4
+- Sweet alerts
+- When switching projects, the animation is "spotty"
 - Forgot alt img tag - usability
 - Slideshow for news item
 - Mobile menu for tutorials
 - Mobile menu for general menu -> hamburger
 - Reading bar to show progress for tutorials
+- Hover state for homepage timeline with images
