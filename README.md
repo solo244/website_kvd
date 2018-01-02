@@ -114,3 +114,4 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Mobile menu for general menu -> hamburger
 - Reading bar to show progress for tutorials
 - Hover state for homepage timeline with images
+- Grading system for tutorials via emoticons
