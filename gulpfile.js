@@ -141,11 +141,11 @@ gulp.task("copy", function(){
 // Generate critical CSS & JS inline HTML
 gulp.task("critical", ["copy"], function () {
   image = path.join(__dirname, pkg.paths.error + "critical.png");
-  return gulp.src("dist/**/*.html")
+  return gulp.src(pkg.paths.dist.main + "*.html")
     .pipe(critical({
       inline: true,
-      base: "dist/",
-      css: "dist/css/style.min.css",
+      base: pkg.paths.dist.main,
+      css: pkg.paths.dist.css + "style.min.css",
       dimensions: [{
         width: 320,
         height: 480
@@ -158,7 +158,7 @@ gulp.task("critical", ["copy"], function () {
       }],
       minify: true
     }))
-    .pipe(gulp.dest("dist")
+    .pipe(gulp.dest(pkg.paths.dist.main)
   );
 });
 
