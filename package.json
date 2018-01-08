@@ -23,6 +23,7 @@
     },
     "dist": {
       "main": "dist/",
+      "css": "dist/css/",
       "online_folder": ""
     },
     "error": "/dev/_error/"
