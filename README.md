@@ -106,6 +106,7 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Add background images to main headers
 
 ### Todo for v1.4
+- [ ] Add buy me a coffee link
 - [ ] Forgot alt img tag - usability
 - [ ] Slideshow for news item
 - [ ] Reading bar to show progress for tutorials
