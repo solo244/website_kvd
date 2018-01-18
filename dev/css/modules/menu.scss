@@ -87,3 +87,36 @@
     }
   }
 }
+
+.bmc-button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid $white;
+  background-color: $white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 10px 30px rgba($grey, 0.4);
+  max-width: 10px;
+  color: $primary;
+  z-index: 100;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+  }
+
+  span {
+    display: block;
+    width: 160px;
+    margin-left: 30px;
+  }
+
+  &:hover {
+    border: 1px solid $_grey;
+    box-shadow: 0 10px 30px rgba($grey, .4);
+    max-width: 150px;
+  }
+}
