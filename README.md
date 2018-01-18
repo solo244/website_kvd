@@ -1,4 +1,4 @@
-# Personal website attempt nr. 36 (v1.2)
+# Personal website attempt nr. 36 (v1.3)
 
 ## Release
 Is now live since December 2016: [https://kenvandamme.be/](https://kenvandamme.be/) & [https://kenvandamme.com/](https://kenvandamme.com/)
@@ -97,21 +97,23 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Refactor and clean up all css
 - Refactor and clean up all js
 
-### Todo for v1.3
-- [x] Save tutorials previously visited
-- [x] Reload Github stats via alt source
-- [x] Add update block on homepage
-- [x] In between overview on tutorials page
-- [x] Remove sourcemapping in production
-- [x] Add background images to main headers
+### Version 1.3
+- Save tutorials previously visited
+- Reload Github stats via alt source
+- Add update block on homepage
+- In between overview on tutorials page
+- Remove sourcemapping in production
+- Add background images to main headers
 
-### Planned for v1.4
+### Todo for v1.4
+- [ ] Forgot alt img tag - usability
+- [ ] Slideshow for news item
+- [ ] Reading bar to show progress for tutorials
+
+### Planned for v1.5
 - Sweet alerts
 - When switching projects, the animation is "spotty"
-- Forgot alt img tag - usability
-- Slideshow for news item
 - Mobile menu for tutorials
 - Mobile menu for general menu -> hamburger
-- Reading bar to show progress for tutorials
 - Hover state for homepage timeline with images
 - Grading system for tutorials via emoticons
