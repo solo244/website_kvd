@@ -23,6 +23,8 @@
   }
 
   .all-link {
+    clear: both;
+    
     a {
       color: $primary;
       line-height: 50px;
