@@ -1,10 +1,16 @@
-.top{
+.top {
   background-color: $primary;
   padding: 100px 0;
   position: relative;
 
   &.bg-header {
-    background-color: rgba($primary, .8);
+    background-size: cover;
+    background-position: center;
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
 
     &:after {
       content: "";
@@ -13,20 +19,11 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      z-index: -1;
+      background-color: rgba($primary, .4);
     }
   }
 
-  &.bg-home { &:after { background-image: url(/images/header/bg_home.jpg);}}
-  &.bg-tutorial { &:after { background-image: url(/images/header/bg_tutorial.jpg);}}
-  &.bg-project { &:after { background-image: url(/images/header/bg_project.jpg);}}
-  &.bg-design { &:after { background-image: url(/images/header/bg_design.jpg);}}
-  &.bg-link { &:after { background-image: url(/images/header/bg_link.jpg);}}
-
-  h1{
+  h1 {
     font-size: 45px;
     color: $white;
     text-align: center;
