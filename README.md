@@ -74,6 +74,9 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 }
 ```
 
+## To publish via Netlify
+- Simply push to the master branch and the command `gulp publish` will be executed, updated the site live.
+
 ## Log (current v1.2)
 ### Version 1.0
 - Provide a page to collect all links
@@ -106,8 +109,8 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Add background images to main headers
 
 ### Todo for v1.4
-- [ ] Add buy me a coffee link
-- [ ] Forgot alt img tag - usability
+- [x] Add buy me a coffee link
+- [x] Forgot alt img tag - usability
 - [ ] Slideshow for news item
 - [ ] Reading bar to show progress for tutorials
 
