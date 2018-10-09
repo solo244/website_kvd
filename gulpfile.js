@@ -219,12 +219,12 @@ gulp.task("update", function() {
  * Deployment gulp task via ftp
  */
 gulp.task("ftp", function (cb) {
-  gulpSequence("vendors", "js", "css", "pug", "images", "fonts", "delete")(cb);
+  gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "delete")(cb);
 });
 
 /*
  * Deployment gulp task via Netlify
  */
 gulp.task("publish", function (cb) {
-  gulpSequence("vendors", "js", "css", "pug", "images", "fonts", "replace")(cb);
+  gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "replace")(cb);
 });
