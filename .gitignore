@@ -101,3 +101,6 @@ jspm_packages
 .ftppass
 .ftppass.json
 bower_components/
+
+# IDE stuff
+.idea/
