@@ -107,7 +107,9 @@ gulp.task("images", function(){
       optimizationLevel: 8,
       svgoPlugins: [{removeViewBox: false}],
       verbose: true,
-      use: []
+      use: [
+        $.imageminWebp({quality: 50})
+      ]
     })))
     .pipe(gulp.dest(pkg.paths.build.images)
   );
