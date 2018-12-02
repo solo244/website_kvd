@@ -226,5 +226,5 @@ gulp.task("ftp", function (cb) {
  * Deployment gulp task via Netlify
  */
 gulp.task("publish", function (cb) {
-  gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "replace")(cb);
+  gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "copy", "replace")(cb);
 });
