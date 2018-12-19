@@ -4,18 +4,35 @@ html(lang="en")
     title KVD - Solo244
     include /header.pug
   body.home
-    include /nav.pug
-    include /tweets.pug
+    noscript
+      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-MTFHDTJ", height="0", width="0", style="display:none;visibility:hidden")
 
-    .top.bg-header.bg-home(load-src="/images/header/bg_home.jpg")
+    h1 Betere surfervaring
+
+    label
+      input(type="checkbox", required, value="alles", id="cookie-all", class="cookie-check")
+      span Alles
+    label
+      input(type="checkbox", required, value="marketing", id="cookie-marketing", class="cookie-check")
+      span Marketing
+    label
+      input(type="checkbox", required, value="extra", id="cookie-extra", class="cookie-check")
+      span Extra
+    button#idbut Save changes
+
+
+    //include /nav.pug
+    //include /tweets.pug
+
+    //.top.bg-header.bg-home(load-src="/images/header/bg_home.jpg")
       .container
         h1
           span Blurgh
           | What do you mean write an intro text? I don't know how you..
 
-    include /news.pug
+    //include /news.pug
 
-    .container-full
+    //.container-full
       .container.divider
         h2.space I'm mostly busy with
         .colums-3.cleared
@@ -42,14 +59,14 @@ html(lang="en")
           h3 Github contributions
           img(load-src="https://ghchart.rshah.org/solo244" alt="Github chart")
 
-    .content
-    .container.divider
+    //.content
+    //.container.divider
       h2 I am by far the most me I've ever known
       p Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you. I am a man of few words but I can use some visuals to help me tell you more about myself. Keep scrolling.
 
-    include /timeline.pug
+    //include /timeline.pug
 
-    include /footer.pug
+    //include /footer.pug
 
-    script.
+    //script.
       $(".mainMenu .menuHome").addClass("selected");
