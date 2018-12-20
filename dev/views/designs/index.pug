@@ -6,42 +6,42 @@ html
   body.design
     include /nav.pug
     include /tweets.pug
-    
+
     .top.bg-header.bg-design(load-src="/images/header/bg_design.jpg")
       .container
-        h1 
+        h1
           span designs
           | Whoever said money can't buy happiness simply didn't know where to go shopping.
-          
+
     .container.divider
-      p I've had some ideas over the years that I've always put on my own T-shirts. I figured now that I might just as well share these with you guys. I'll show them below and you can buy them from the link provided. Or you could always recommend them to a friend. 
-      
+      p I've had some ideas over the years that I've always put on my own T-shirts. I figured now that I might just as well share these with you guys. I'll show them below and you can buy them from the link provided. Or you could always recommend them to a friend.
+
       p
         strong All of this stuff is sold as:
 
     .container.divider
-      .sold_items 
+      .sold_items
         .s_item
-          .tooltip#tooltip1 Bag 
-          include /svg/designs/bags.html
+          .tooltip#tooltip1 Bag
+          include /svg/designs/bags.svg
         .s_item
           .tooltip#tooltip2 Case
-          include /svg/designs/cases.html
+          include /svg/designs/cases.svg
         .s_item
           .tooltip#tooltip3 Mug
-          include /svg/designs/mugs.html
+          include /svg/designs/mugs.svg
         .s_item
           .tooltip#tooltip4 Pillow
-          include /svg/designs/pillows.html
+          include /svg/designs/pillows.svg
         .s_item
           .tooltip#tooltip5 Shirt
-          include /svg/designs/shirts.html
+          include /svg/designs/shirts.svg
         .s_item
           .tooltip#tooltip6 Sticker
-          include /svg/designs/sticker.html
-        
+          include /svg/designs/sticker.svg
+
     .container.grid.divider.design_portfolio
-          
+
     include /footer.pug
 
     script.
