@@ -1,17 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 46" height="60">
-  <title>projects</title>
-  <rect x="1" y="8" width="42" height="27" style="fill:#fff;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></rect>
-  <rect x="1" y="8" width="42" height="27" style="fill:#fff;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></rect>
-  <rect x="1" y="8" width="42" height="27" style="fill:#fff;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></rect>
-  <rect x="1" y="8" width="42" height="27" style="fill:#fff;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></rect>
-  <polyline points="32 35 32 30 12 30 12 35" style="fill:#e8f6ff;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></polyline>
-  <line x1="22" y1="35" x2="22" y2="45" style="fill:none;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></line>
-  <line x1="22" y1="35" x2="14" y2="44" style="fill:none;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></line>
-  <line x1="22" y1="35" x2="30" y2="44" style="fill:none;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></line>
-  <polyline points="3 4 22 4 41 4" style="fill:none;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></polyline>
-  <line x1="22" y1="1" x2="22" y2="4" style="fill:none;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></line>
-  <line x1="35" y1="21" x2="34" y2="17" style="fill:none;stroke:#00af73;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></line>
-  <line x1="35" y1="21" x2="31.2" y2="22.6" style="fill:none;stroke:#00af73;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></line>
-  <polyline points="9 23 14 18 20 22 26 17 35 21" style="fill:none;stroke:#00af73;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></polyline>
-  <rect x="1" y="8" width="42" height="27" style="fill:none;stroke:#2e98e8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></rect>
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" viewBox="0 0 44 46">
+  <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+    <rect width="42" height="27" y="7" fill="#FFF" stroke="#2E98E8"/>
+    <rect width="42" height="27" y="7" fill="#FFF" stroke="#2E98E8"/>
+    <rect width="42" height="27" y="7" fill="#FFF" stroke="#2E98E8"/>
+    <rect width="42" height="27" y="7" fill="#FFF" stroke="#2E98E8"/>
+    <polyline fill="#E8F6FF" stroke="#2E98E8" points="31 34 31 29 11 29 11 34"/>
+    <path stroke="#2E98E8" d="M21 34L21 44M21 34L13 43M21 34L29 43"/>
+    <polyline stroke="#2E98E8" points="2 3 21 3 40 3"/>
+    <path stroke="#2E98E8" d="M21,0 L21,3"/>
+    <path stroke="#00AF73" d="M34 20L33 16M34 20L30.2 21.6"/>
+    <polyline stroke="#00AF73" points="8 22 13 17 19 21 25 16 34 20"/>
+    <rect width="42" height="27" y="7" stroke="#2E98E8"/>
+  </g>
 </svg>
