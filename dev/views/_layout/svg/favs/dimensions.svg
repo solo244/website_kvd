@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="LINES" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<rect x="9.554" y="9.561" fill="none" stroke="#000000" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="19.602" height="19.603"/>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.912" y1="9.561" x2="4.912" y2="29.116"/>
+		
+			<polyline fill="none" stroke="#000000" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			2.844,27.093 4.905,29.163 6.975,27.102 		"/>
+		
+			<polyline fill="none" stroke="#000000" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			6.978,11.63 4.917,9.561 2.847,11.622 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="29.156" y1="4.904" x2="9.6" y2="4.904"/>
+		
+			<polyline fill="none" stroke="#000000" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			11.623,2.837 9.554,4.897 11.614,6.967 		"/>
+		
+			<polyline fill="none" stroke="#000000" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			27.086,6.97 29.156,4.909 27.095,2.839 		"/>
+	</g>
+</g>
+</svg>
