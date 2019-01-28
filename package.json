@@ -10,7 +10,7 @@
     "jslint": "eslint ./dev/js/main",
     "csslint": "stylelint ./dev/css"
   },
-  "pre-commit": "[jslint][csslint]",
+  "pre-commit": ["jslint", "csslint"],
   "paths": {
     "assets": {
       "main": "dev/",
