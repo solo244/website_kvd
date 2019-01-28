@@ -1,0 +1,4 @@
+web/*
+app/Resources/assets/sass/1_tools/_debug.scss
+/vendor
+_vendor
