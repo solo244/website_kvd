@@ -2184,7 +2184,7 @@ cli-width@^2.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
   integrity sha1-/xnt6Kml5XkyQUewwR8PvLq+1jk=
 
-cli@^1.0.1:
+cli@^1.0.1, cli@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cli/-/cli-1.0.1.tgz#22817534f24bfa4950c34d532d48ecbc621b8c14"
   integrity sha1-IoF1NPJL+klQw01TLUjsvGIbjBQ=
@@ -2448,6 +2448,13 @@ connect@3.6.6:
     finalhandler "1.1.0"
     parseurl "~1.3.2"
     utils-merge "1.0.1"
+
+console-browserify@1.1.x:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.1.0.tgz#f0241c45730a9fc6323b206dbf38edc741d0bb10"
+  integrity sha1-8CQcRXMKn8YyOyBtvzjtx0HQuxA=
+  dependencies:
+    date-now "^0.1.4"
 
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
@@ -2752,6 +2759,11 @@ dashdash@^1.12.0:
   integrity sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=
   dependencies:
     assert-plus "^1.0.0"
+
+date-now@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
+  integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
 dateformat@^2.0.0:
   version "2.2.0"
@@ -3595,7 +3607,7 @@ exif-parser@^0.1.12, exif-parser@^0.1.9:
   resolved "https://registry.yarnpkg.com/exif-parser/-/exif-parser-0.1.12.tgz#58a9d2d72c02c1f6f02a0ef4a9166272b7760922"
   integrity sha1-WKnS1ywCwfbwKg70qRZicrd2CSI=
 
-exit@0.1.2:
+exit@0.1.2, exit@0.1.x:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
   integrity sha1-BjJjj42HfMghB9MKD/8aF8uhzQw=
@@ -4355,6 +4367,11 @@ git-rev-sync@^1.7.1:
     escape-string-regexp "1.0.5"
     graceful-fs "4.1.11"
     shelljs "0.7.7"
+
+git-validate@^2.0.0:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/git-validate/-/git-validate-2.2.4.tgz#0adc02a2887f09ffe077db38932ba8a3de508cbe"
+  integrity sha512-BM49gj2g/VtV+AvsaGYfIXavVyWUfqcJt2klTOr7kji/HYqpgwB6CmlevIJuPyGoBPkIUUXNSov33Ht22juh0Q==
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -5313,6 +5330,17 @@ html-tags@^2.0.0:
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
   integrity sha1-ELMKOGCF9Dzt41PMj6fLDe7qZos=
 
+htmlparser2@3.8.x, htmlparser2@~3.8.1:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.8.3.tgz#996c28b191516a8be86501a7d79757e5c70c1068"
+  integrity sha1-mWwosZFRaovoZQGn15dX5ccMEGg=
+  dependencies:
+    domelementtype "1"
+    domhandler "2.3"
+    domutils "1.5"
+    entities "1.0"
+    readable-stream "1.1"
+
 htmlparser2@^3.10.0, htmlparser2@^3.9.1:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.10.0.tgz#5f5e422dcf6119c0d983ed36260ce9ded0bee464"
@@ -5324,17 +5352,6 @@ htmlparser2@^3.10.0, htmlparser2@^3.9.1:
     entities "^1.1.1"
     inherits "^2.0.1"
     readable-stream "^3.0.6"
-
-htmlparser2@~3.8.1:
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.8.3.tgz#996c28b191516a8be86501a7d79757e5c70c1068"
-  integrity sha1-mWwosZFRaovoZQGn15dX5ccMEGg=
-  dependencies:
-    domelementtype "1"
-    domhandler "2.3"
-    domutils "1.5"
-    entities "1.0"
-    readable-stream "1.1"
 
 http-errors@1.6.3, http-errors@~1.6.2:
   version "1.6.3"
@@ -6323,6 +6340,20 @@ jsftp@^1.3.0:
     parse-listing "^1.1.3"
     stream-combiner "^0.2.2"
     unorm "^1.4.1"
+
+jshint@*:
+  version "2.9.7"
+  resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.9.7.tgz#038a3fa5c328fa3ab03ddfd85df88d3d87bedcbd"
+  integrity sha512-Q8XN38hGsVQhdlM+4gd1Xl7OB1VieSuCJf+fEJjpo59JH99bVJhXRXAh26qQ15wfdd1VPMuDWNeSWoNl53T4YA==
+  dependencies:
+    cli "~1.0.0"
+    console-browserify "1.1.x"
+    exit "0.1.x"
+    htmlparser2 "3.8.x"
+    lodash "~4.17.10"
+    minimatch "~3.0.2"
+    shelljs "0.3.x"
+    strip-json-comments "1.0.x"
 
 json-parse-better-errors@^1.0.1:
   version "1.0.2"
@@ -8729,6 +8760,14 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.13, postcss@^7.0.14, postcss@^7.0.2
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+precommit-hook@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/precommit-hook/-/precommit-hook-3.0.0.tgz#6136c45185ff964371673f6b63e9e485549db1d7"
+  integrity sha1-YTbEUYX/lkNxZz9rY+nkhVSdsdc=
+  dependencies:
+    git-validate "^2.0.0"
+    jshint "*"
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
@@ -9752,6 +9791,11 @@ shebang-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
+shelljs@0.3.x:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.3.0.tgz#3596e6307a781544f591f37da618360f31db57b1"
+  integrity sha1-NZbmMHp4FUT1kfN9phg2DzHbV7E=
+
 shelljs@0.7.7:
   version "0.7.7"
   resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.7.tgz#b2f5c77ef97148f4b4f6e22682e10bba8667cff1"
@@ -10320,6 +10364,11 @@ strip-indent@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
   integrity sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
+
+strip-json-comments@1.0.x:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-1.0.4.tgz#1e15fbcac97d3ee99bf2d73b4c656b082bbafb91"
+  integrity sha1-HhX7ysl9Pumb8tc7TGVrCCu6+5E=
 
 strip-json-comments@^2.0.1, strip-json-comments@~2.0.1:
   version "2.0.1"

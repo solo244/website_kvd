@@ -10,7 +10,6 @@
     "jslint": "eslint ./dev/js/main",
     "csslint": "stylelint ./dev/css"
   },
-  "pre-commit": ["jslint", "csslint"],
   "paths": {
     "assets": {
       "main": "dev/",
@@ -61,6 +60,7 @@
     "normalize.css": "^5.0.0",
     "picturefill": "^3.0.2",
     "pixrem": "^3.0.2",
+    "precommit-hook": "^3.0.0",
     "prismjs": "^1.5.1",
     "tiny-cookie": "^1.0.1",
     "vinyl-ftp": "^0.6.0",
@@ -112,10 +112,10 @@
     "moment": "^2.14.1",
     "pa11y": "^4.11.0",
     "strip-json-comments": "^2.0.1",
-    "vinyl-ftp": "^0.6.0",
-    "vinyl-source-stream": "^1.1.0",
     "stylelint": "^9.9.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-webpack-plugin": "^0.10.5"
+    "stylelint-webpack-plugin": "^0.10.5",
+    "vinyl-ftp": "^0.6.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
