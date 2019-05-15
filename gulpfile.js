@@ -129,6 +129,14 @@ gulp.task("favicon", function(){
   );
 });
 
+// Copy static files from fixed folder to root
+gulp.task("static", function(){
+  image = path.join(__dirname, pkg.paths.error + "copy.png");
+  return gulp.src(pkg.paths.assets.main + "static/**/*")
+    .pipe(gulp.dest(pkg.paths.build.main)
+  );
+});
+
 // Copy all files from build to dist folder
 gulp.task("copy", function(){
   image = path.join(__dirname, pkg.paths.error + "copy.png");
@@ -203,7 +211,7 @@ gulp.task("delete", ["deploy"], function(){
 /*
  * Dev gulp tasks
  */
-gulp.task("default", gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "update"));
+gulp.task("default", gulpSequence("vendors", "js", "css", "pug", "favicon", "static", "images", "fonts", "update"));
 
 // Gulp watch task
 gulp.task("update", function() {
@@ -219,12 +227,12 @@ gulp.task("update", function() {
  * Deployment gulp task via ftp
  */
 gulp.task("ftp", function (cb) {
-  gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "delete")(cb);
+  gulpSequence("vendors", "js", "css", "pug", "favicon", "static", "images", "fonts", "delete")(cb);
 });
 
 /*
  * Deployment gulp task via Netlify
  */
 gulp.task("publish", function (cb) {
-  gulpSequence("vendors", "js", "css", "pug", "favicon", "images", "fonts", "copy", "replace")(cb);
+  gulpSequence("vendors", "js", "css", "pug", "favicon", "static", "images", "fonts", "copy", "replace")(cb);
 });
