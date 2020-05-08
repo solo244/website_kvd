@@ -1,0 +1,74 @@
+/**
+ * Borders
+ */
+
+$circle: 50%;
+$corners: 12px;
+
+/**
+ * Colors
+ */
+
+$black: #000000;
+$white: #FFFFFF;
+// $grey:           969696;
+$grey: #57586E;
+$lightgrey: #BBBBBB;
+$almostwhite: #EFEFEF;
+
+$red: #F17268;
+$green: #B6D9DE;
+// $purple:         8E71EC;
+$yellow: #FED793;
+$blue: #5A76EC;
+
+/**
+ * Shadows
+ */
+
+$shadow-size: 25px;
+$shadow-x: 0;
+$shadow-y: 0;
+$shadow: $shadow-x $shadow-y $shadow-size rgba($grey, .15);
+$shadow-start: $shadow-x $shadow-y $shadow-size rgba($grey, 0);
+
+/**
+ * Buttons
+ */
+
+$btn-corners: 4px;
+$btn-padding: 10px 15px;
+
+/**
+ * Widths
+ */
+
+$width-s: 760px;
+$width-m: 840px;
+$width-l: 960px;
+$width-xl: 1400px;
+$width-grid: 1560px;
+
+/**
+ * Breakpoints
+ */
+
+$xs: "30em"; // 480px
+$s: "48em"; // 768px
+$m: "64em"; // 1024px
+$l: "75em"; // 1200px
+$xl: "100em"; // 1600px
+
+/**
+ * Fonts
+ */
+
+$font: -apple-system, blinkmacsystemfont, "segoe ui", roboto, helvetica, arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+
+/**
+ * Animations
+ */
+
+$animate-slow: all .6s;
+$animate: all .3s;
+$animate-fast: all .2s;
