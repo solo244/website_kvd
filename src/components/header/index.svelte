@@ -5,6 +5,7 @@
 
 <!-- Scripts -->
 <script>
+import Logo from '../../images/logo-42.svg';
 const setActive = (e) => {
   console.log("Clicked", e);
 }
@@ -13,7 +14,9 @@ const setActive = (e) => {
 <!-- HTML -->
 <nav class="header">
   <div class="breadcrumbs">
-    <a href="/">Ken Van Damme</a>
+    <a href="/" class="logo">
+      {@html Logo}
+    </a>
     <span>?</span>
   </div>
   <ul class="menu">
