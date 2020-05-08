@@ -1,4 +1,4 @@
-# Personal website attempt nr. 36 (v1.3)
+# Personal website attempt nr. JS (v2)
 
 ## Release
 Is now live since December 2016: [https://kenvandamme.be/](https://kenvandamme.be/) & [https://kenvandamme.com/](https://kenvandamme.com/)
@@ -10,11 +10,8 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - [Source and writer](https://kenvandamme.be/) or [on Github as solo244](https://github.com/solo244)
 
 ## Requirements/used
-- jQuery
+- Svelte
 - SCSS for `css`
-- Pug for `html`
-- Gulp
-- Bower
 - Yarn
 - Google Analytics for juicy stats
 
