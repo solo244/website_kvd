@@ -10,7 +10,8 @@
 	import routes from "./constants/routes.js";
 	import util from "./constants/utils.js";
 
-	import Header from "./components/header/index.svelte";
+  import Header from "./components/header/index.svelte";
+  import Footer from "./components/footer/index.svelte";
 
 	let page;
 	let params;
@@ -32,7 +33,9 @@
     )
 	});
 
-	router.start();
+  router.start();
+  
+  console.log("Page", page);
 </script>
 
 <!-- HTML -->
@@ -41,3 +44,5 @@
 <main>
   <svelte:component this={page} params={params} />
 </main>
+
+<Footer />

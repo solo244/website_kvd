@@ -1,0 +1,53 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+$verywhite: #F7F7F7;
+
+.footer {
+  padding: 80px 0;
+  display: flex;
+  flex-flow: row wrap;
+  width: $width-l;
+  max-width: 100%;
+  margin: 100px auto 0 auto;
+
+  &-container {
+    background-color: $verywhite;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  .col-alt {
+    width: 40%;
+    padding-right: 100px;
+
+    p {
+      opacity: .7;
+      font-size: 1.3rem;
+    }
+  }
+
+  .col {
+    font-size: 1.5rem;
+    width: 20%;
+
+    a {
+      display: inline-block;
+      padding: 4px 8px;
+      margin-bottom: 6px;
+      background-color: $verywhite;
+      border-radius: 6px;
+      transition: all .3s ease-out;
+
+      &:hover {
+        background-color: $white;
+      }
+
+      strong {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
