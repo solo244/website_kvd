@@ -1,0 +1,54 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: $width-l;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+}
+
+.breadcrumbs {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -.5px;
+
+  a {
+    color: $lightgrey;
+    padding-right: 20px;
+    margin-right: 15px;
+    position: relative;
+
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  span {
+    color: $black;
+  }
+}
+
+.menu {
+  li {
+    display: inline-block;
+  }
+
+  a {
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: $black;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    &:hover {
+      background-color: $almostwhite;
+    }
+  }
+}
