@@ -83,6 +83,10 @@
       transform: translateX(-50%);
       width: 100%;
       opacity: 0;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
       transition: all .3s ease-out;
     }
 

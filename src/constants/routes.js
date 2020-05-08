@@ -8,32 +8,26 @@ import Error from "../pages/error.svelte";
 export default [
   {
     path: "/",
-    component: Home,
-    title: "HOME"
+    component: Home
   },
   {
     path: "/code",
-    component: Code,
-    title: "CODE"
+    component: Code
   },
   {
     path: "/tutorials",
-    component: Tutorials,
-    title: "TUTORIALS"
+    component: Tutorials
   },
   {
     path: "/creative",
-    component: Creative,
-    title: "CREATIVE"
+    component: Creative
   },
   {
     path: "/dnd",
-    component: Dnd,
-    title: "DND"
+    component: Dnd
   },
   {
     path: "*",
-    component: Error,
-    title: "ERROR"
+    component: Error
   }
 ];

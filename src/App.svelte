@@ -2,13 +2,6 @@
 <style lang="scss" global>
 @import "./styles/reset";
 @import "./styles/normalise";
-
-main {
-  // width: 1400px;
-  // max-width: 100%;
-  // margin-left: auto;
-  // margin-right: auto;
-}
 </style>
 
 <!-- Scripts -->
@@ -31,7 +24,7 @@ main {
 			},
       () => {
         if (route.auth && ! user) {
-          router.redirect('/login');
+          router.redirect("/login");
         } else {
           page = route.component;
         }
