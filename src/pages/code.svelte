@@ -1,13 +1,138 @@
 <!-- Styles -->
 <style lang="scss">
+@import "./pages.scss";
 </style>
 
 <!-- Scripts -->
 <script>
+import Bell from "../images/icons/bell.svg";
+// import Code from "../images/icons/code.svg";
+import Github from "../images/icons/github.svg";
+import Umbrella from "../images/icons/umbrella.svg";
 </script>
 
 <!-- HTML -->
 <section>
 	<h1>Comic Sans is never an acceptable font. Unless you are an 8 year old girl writing a poem about unicorns.</h1>
-	<h3>You'd be surprised how many kids and young people come to my website and send me an email that they are actually going to do something meaningful with their lives because of something that I said or did. It's zero. I think that's mostly because I've got an overly protective spam filter. But I still like to think that I'm making a difference. I've been making websites for years and it's something I love doing, despite global warming and horrible traffic. Sidenote: I'm not the best at writing welcome texts. Anyways, just click on any of these to look at the websites that I've made or help create in a new tab.</h3>
+</section>
+
+<section class="code-filters">
+  <div class="website">
+		<!-- {@html Code} -->
+		<div class="icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+				<g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+					<polyline points="14 12 20 6 14 0"/>
+					<polyline points="6 0 0 6 6 12"/>
+				</g>
+			</svg>
+		</div>
+		<div class="content">
+			<span>2 websites</span>
+    	<h2>Website</h2>
+		</div>
+  </div>
+	<div class="github">
+		<div class="icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+				<g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+					<polyline points="14 12 20 6 14 0"/>
+					<polyline points="6 0 0 6 6 12"/>
+				</g>
+			</svg>
+		</div>
+		<div class="content">
+			<span>3 projects</span>
+    	<h2>Github</h2>
+		</div>
+  </div>
+	<div class="extensions">
+		<div class="icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+				<g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+					<polyline points="14 12 20 6 14 0"/>
+					<polyline points="6 0 0 6 6 12"/>
+				</g>
+			</svg>
+		</div>
+		<div class="content">
+			<span>1 extension, some apps</span>
+    	<h2>Extensions</h2>
+		</div>
+  </div>
+	<div class="random">
+		<div class="icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+				<g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+					<polyline points="14 12 20 6 14 0"/>
+					<polyline points="6 0 0 6 6 12"/>
+				</g>
+			</svg>
+		</div>
+		<div class="content">
+			<span>3 rando's</span>
+    	<h2>Random</h2>
+		</div>
+  </div>
+</section>
+
+<!-- -Website
+Stalstudio
+It's United
+The Critical Chronicles
+Homebrew
+
+-Extensions/apps
+Burntabs
+Mine
+Bernie apps
+D&D
+-Github
+DACSS
+Reboot
+New gulp
+New CMS
+New Electron
+-Random
+ms-fe
+I got this card game
+The Daisies
+Dashboard
+D&D stats -->
+
+<section class="code-projects">
+	<a href="https://www.stalstudio.be" target="_blank" class="code-stalstudio">
+		<div class="img"></div>
+		<div class="c1"></div>
+		<div class="c2"></div>
+		<div class="c3"></div>
+		<div class="c4"></div>
+		<h2>Stalstudio<span></span></h2>
+		<p>Stallers are people with a passion for theatre.</p>
+		<img src="/images/stalstudio-phone.png" alt="Stalstudio">
+	</a>
+	<a href="https://www.stalstudio.be" target="_blank">
+		<div class="c1"></div>
+		<div class="c2"></div>
+		<div class="c3"></div>
+		<div class="c4"></div>
+		<h2>Stalstudio</h2>
+		<p>Stallers are people with a passion for theatre.</p>
+	</a>
+	<a href="https://www.stalstudio.be" target="_blank">
+		<div class="c1"></div>
+		<div class="c2"></div>
+		<div class="c3"></div>
+		<div class="c4"></div>
+		<h2>Stalstudio</h2>
+		<p>Stallers are people with a passion for theatre.</p>
+	</a>
+	<a href="https://www.stalstudio.be" target="_blank">
+		<div class="c1"></div>
+		<div class="c2"></div>
+		<div class="c3"></div>
+		<div class="c4"></div>
+		<h2>Stalstudio</h2>
+		<p>Stallers are people with a passion for theatre.</p>
+	</a>
 </section>
