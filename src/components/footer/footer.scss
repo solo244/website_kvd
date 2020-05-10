@@ -10,10 +10,7 @@ $verywhite: #F7F7F7;
   width: $width-l;
   max-width: 100%;
   margin: 100px auto 0 auto;
-
-  &-container {
-    background-color: $verywhite;
-  }
+  border-top: 1px solid $almostwhite;
 
   p {
     margin: 20px 0;
