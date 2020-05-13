@@ -1,6 +1,7 @@
 @import "../../styles/vars";
 @import "../../styles/mixins";
 
+// Code/projects
 .code-filters {
   display: flex;
   flex-flow: row wrap;
@@ -233,7 +234,128 @@
       }
     }
 
-    &.code-stalstudio .img { background-image: url("/images/stalstudio.png"); }
+    &.code-stalstudio .img { background-image: url("/images/projects/stalstudio.png"); }
+    &.code-itsunited .img { background-image: url("/images/projects/itsunited.png"); }
+    &.code-criticalchronicles .img { background-image: url("/images/projects/criticalchronicles.png"); }
+    &.code-burntabs .img { background-image: url("/images/projects/burntabs.png"); }
+    &.code-mine .img { background-image: url("/images/projects/mine.png"); }
+    &.code-dnd .img { background-image: url("/images/projects/dnd.png"); }
+    &.code-dacss .img { background-image: url("/images/projects/dacss.png"); }
+  }
+}
+
+// Creative
+.redbubble {
+  background-color: $almostwhite;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 12px 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    border: 3px solid $blue;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease-out;
   }
 
+  &:hover {
+    &::after {
+      opacity: 1;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+    }
+  }
+}
+
+.creative-projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: $width-l;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-top: 50px;
+
+  a {
+    display: block;
+    width: 192px;
+    height: 192px;
+    margin: 10px;
+    position: relative;
+    transition: all .25s ease-out;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .button {
+      background-color: $blue;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      z-index: 2;
+      opacity: 0;
+      font-size: 1.4rem;
+      transform: translate(-50%, -50%);
+      transition: all .35s ease-out;
+    }
+
+    .design-bc {
+      background-color: $blue;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: scale(.2);
+      opacity: 0;
+      transition: all .2s ease-out;
+    }
+
+    &:hover {
+      z-index: 1;
+      filter: grayscale(0);
+
+      .button {
+        top: 50%;
+        opacity: 1;
+      }
+
+      .design-bc {
+        transform: scale(1);
+        opacity: .9;
+        top: -10px;
+        bottom: -10px;
+        left: -10px;
+        right: -10px;
+      }
+    }
+  }
 }
