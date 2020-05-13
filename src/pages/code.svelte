@@ -9,6 +9,7 @@ import Bell from "../images/icons/bell.svg";
 // import Code from "../images/icons/code.svg";
 import Github from "../images/icons/github.svg";
 import Umbrella from "../images/icons/umbrella.svg";
+import code from "../constants/code.js";
 </script>
 
 <!-- HTML -->
@@ -87,12 +88,14 @@ Burntabs
 Mine
 Bernie apps
 D&D
+
 -Github
 DACSS
 Reboot
 New gulp
 New CMS
 New Electron
+
 -Random
 ms-fe
 I got this card game
@@ -101,38 +104,16 @@ Dashboard
 D&D stats -->
 
 <section class="code-projects">
-	<a href="https://www.stalstudio.be" target="_blank" class="code-stalstudio">
-		<div class="img"></div>
-		<div class="c1"></div>
-		<div class="c2"></div>
-		<div class="c3"></div>
-		<div class="c4"></div>
-		<h2>Stalstudio<span></span></h2>
-		<p>Stallers are people with a passion for theatre.</p>
-		<img src="/images/stalstudio-phone.png" alt="Stalstudio">
-	</a>
-	<a href="https://www.stalstudio.be" target="_blank">
-		<div class="c1"></div>
-		<div class="c2"></div>
-		<div class="c3"></div>
-		<div class="c4"></div>
-		<h2>Stalstudio</h2>
-		<p>Stallers are people with a passion for theatre.</p>
-	</a>
-	<a href="https://www.stalstudio.be" target="_blank">
-		<div class="c1"></div>
-		<div class="c2"></div>
-		<div class="c3"></div>
-		<div class="c4"></div>
-		<h2>Stalstudio</h2>
-		<p>Stallers are people with a passion for theatre.</p>
-	</a>
-	<a href="https://www.stalstudio.be" target="_blank">
-		<div class="c1"></div>
-		<div class="c2"></div>
-		<div class="c3"></div>
-		<div class="c4"></div>
-		<h2>Stalstudio</h2>
-		<p>Stallers are people with a passion for theatre.</p>
-	</a>
+	{#each code as project}
+		<a href={project.link} target="_blank" class={"code-" + project.id}>
+			<div class="img"></div>
+			<div class="c1"></div>
+			<div class="c2"></div>
+			<div class="c3"></div>
+			<div class="c4"></div>
+			<h2>{project.title}<span></span></h2>
+			<p>{project.description}</p>
+			<img src={"/images/" + project.id + "-phone.png"} alt={project.title}>
+		</a>
+	{/each}
 </section>
