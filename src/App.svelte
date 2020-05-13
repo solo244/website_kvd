@@ -34,8 +34,6 @@
 	});
 
   router.start();
-  
-  console.log("Page", page);
 </script>
 
 <!-- HTML -->
