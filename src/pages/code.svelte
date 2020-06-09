@@ -107,13 +107,9 @@ D&D stats -->
 	{#each code as project}
 		<a href={project.link} target="_blank" class={"code-" + project.id}>
 			<div class="img"></div>
-			<div class="c1"></div>
-			<div class="c2"></div>
-			<div class="c3"></div>
-			<div class="c4"></div>
 			<h2>{project.title}<span></span></h2>
 			<p>{project.description}</p>
-			<img src={"/images/" + project.id + "-phone.png"} alt={project.title}>
+			<!-- <img src={"/images/projects/" + project.id + "-phone.png"} alt={project.title}> -->
 		</a>
 	{/each}
 </section>
