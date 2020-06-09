@@ -36,7 +36,7 @@ $verywhite: #F7F7F7;
       margin-bottom: 6px;
       background-color: $verywhite;
       border-radius: 6px;
-      transition: all .3s ease-out;
+      transition: all .3s .1s ease-out;
 
       &:hover {
         background-color: $white;
