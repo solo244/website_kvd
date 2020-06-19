@@ -1,5 +1,6 @@
 @import "../../styles/vars";
 @import "../../styles/mixins";
+@import "../../styles/layout";
 
 $verywhite: #F7F7F7;
 
@@ -35,8 +36,8 @@ $verywhite: #F7F7F7;
       padding: 4px 8px;
       margin-bottom: 6px;
       background-color: $verywhite;
-      border-radius: 6px;
-      transition: all .3s .1s ease-out;
+      border-radius: $btn-corners;
+      transition: $animate;
 
       &:hover {
         background-color: $white;
