@@ -11,11 +11,9 @@ $corners: 12px;
 
 $black: #000000;
 $white: #FFFFFF;
-// $grey:           969696;
 $grey: #57586E;
 $lightgrey: #BBBBBB;
 $almostwhite: #EFEFEF;
-
 $red: #F17268;
 $green: #B6D9DE;
 // $purple:         8E71EC;
@@ -69,6 +67,6 @@ $font: -apple-system, blinkmacsystemfont, "segoe ui", roboto, helvetica, arial, 
  * Animations
  */
 
-$animate-slow: all .6s;
-$animate: all .3s;
-$animate-fast: all .2s;
+$animate-slow: all .6s ease-out;
+$animate: all .3s ease-out;
+$animate-fast: all .2s ease-out;
