@@ -10,7 +10,8 @@ import Categories from "../components/categories/index.svelte";
 <!-- HTML -->
 <header>
 	<h1>Hi, this is a random emoji 👋</h1>
-  <h3>I’m a person that likes randomness and sucks at writing an intro text for their own website. As a profession, I make web-stuff*.</h3>
+  <h3>I’m a person that likes randomness and sucks at writing an intro text for their own website.<br>
+  As a profession, I make web-stuff*.</h3>
 </header>
 
 <Categories />
