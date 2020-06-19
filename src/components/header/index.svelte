@@ -16,14 +16,14 @@ const setActive = () => {
 
     if (loc.endsWith("5000/") || loc.endsWith("kenvandamme.be/") || loc.endsWith("kenvandamme.be")) {
       active = "home";
-    } else if (loc.startsWith(testdomain + "/code") || loc.startsWith(domain + "/code")) {
-      active="code";
-    } else if (loc.startsWith(testdomain + "/tutorials") || loc.startsWith(domain + "/tutorials")) {
-      active="tutorials";
-    } else if (loc.startsWith(testdomain + "/creative") || loc.startsWith(domain + "/creative")) {
-      active="creative";
-    } else if (loc.startsWith(testdomain + "/dnd") || loc.startsWith(domain + "/dnd")) {
-      active="dnd";
+    } else if (loc.startsWith(testdomain + "/coding") || loc.startsWith(domain + "/coding")) {
+      active="coding";
+    } else if (loc.startsWith(testdomain + "/writing") || loc.startsWith(domain + "/writing")) {
+      active="writing";
+    } else if (loc.startsWith(testdomain + "/designing") || loc.startsWith(domain + "/designing")) {
+      active="designing";
+    } else if (loc.startsWith(testdomain + "/dnding") || loc.startsWith(domain + "/dnding")) {
+      active="dnding";
     }
     else {
       active= "";
@@ -35,7 +35,7 @@ setActive();
 </script>
 
 <!-- HTML -->
-<nav class="header">
+<nav class="container--header">
   <div class="breadcrumbs">
     <a href="/" class="logo">
       {@html Logo}
@@ -44,9 +44,9 @@ setActive();
   </div>
   <ul class="menu">
     <li><a class:active={active === "home"} class="link-home" href="/" on:click={() => setActive()}>Home</a></li>
-    <li><a class:active={active === "code"} class="link-code" href="/code" on:click={() => setActive()}>Code</a></li>
-    <li><a class:active={active === "tutorials"} class="link-tutorials" href="/tutorials" on:click={() => setActive()}>Tutorials</a></li>
-    <li><a class:active={active === "creative"} class="link-creative" href="/creative" on:click={() => setActive()}>Creative</a></li>
-    <li><a class:active={active === "dnd"} class="link-dnd" href="/dnd" on:click={() => setActive()}>D&D</a></li>
+    <li><a class:active={active === "coding"} class="link-code" href="/coding" on:click={() => setActive()}>Coding</a></li>
+    <li><a class:active={active === "writing"} class="link-tutorials" href="/writing" on:click={() => setActive()}>Writing</a></li>
+    <li><a class:active={active === "designing"} class="link-creative" href="/designing" on:click={() => setActive()}>Designing</a></li>
+    <li><a class:active={active === "dnding"} class="link-dnd" href="/dnding" on:click={() => setActive()}>D&Ding</a></li>
   </ul>
 </nav>
