@@ -1,0 +1,23 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.button {
+  padding: $btn-padding;
+  border-radius: $btn-corners;
+  background-color: $almostwhite;
+  color: $black;
+  font-weight: 500;
+  transition: $animate;
+
+  &:hover,
+  &:focus {
+    background-color: darken($almostwhite, 10%);
+  }
+
+  &-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+  }
+}
