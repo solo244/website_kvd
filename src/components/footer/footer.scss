@@ -2,49 +2,29 @@
 @import "../../styles/mixins";
 @import "../../styles/layout";
 
-$verywhite: #F7F7F7;
+.container--footer {
+  width: $width-xl;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+  margin-top: 60px;
+}
 
 .footer {
-  padding: 80px 0;
+  border-top: 1px solid $almostwhite;
   display: flex;
   flex-flow: row wrap;
-  width: $width-l;
-  max-width: 100%;
-  margin: 100px auto 0 auto;
-  border-top: 1px solid $almostwhite;
+  align-items: center;
+  padding: 30px 0;
 
-  p {
-    margin: 20px 0;
-  }
-
-  .col-alt {
-    width: 40%;
-    padding-right: 100px;
-
-    p {
-      opacity: .7;
-      font-size: 1.3rem;
-    }
-  }
-
-  .col {
-    font-size: 1.5rem;
-    width: 20%;
-
-    a {
+  ul {
+    li {
       display: inline-block;
-      padding: 4px 8px;
-      margin-bottom: 6px;
-      background-color: $verywhite;
-      border-radius: $btn-corners;
-      transition: $animate;
 
-      &:hover {
-        background-color: $white;
-      }
-
-      strong {
-        margin-bottom: 15px;
+      a {
+        display: block;
+        margin-left: 20px;
       }
     }
   }

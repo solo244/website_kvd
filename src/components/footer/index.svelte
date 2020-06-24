@@ -21,7 +21,7 @@ import Logo from "../../images/logo-42.svg";
       <li><a class="" href="/dnding">D&Ding</a></li>
     </ul>
     <ul class="socials">
-      <li><a href="#">Twitter</a></li>
+      <li><a href="https://twitter.com/Elsolo244" target="_blank">Twitter</a></li>
     </ul>
   </nav>
 </div>
