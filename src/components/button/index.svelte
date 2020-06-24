@@ -5,12 +5,33 @@
 
 <!-- Scripts -->
 <script>
+export let label = "";
+export let href = "";
 </script>
 
 <!-- HTML -->
-<a href="/" class="button">
-
-</a>
-<button class="button">
-
-</button>
+{#if typeof label === "object"}
+  <div class="button-group">
+    {#each label as item, i}
+      {#if typeof href === "object"}
+        <a href="/" class="button">
+          {item}
+        </a>
+      {:else}
+        <button class="button">
+          {item}
+        </button>
+      {/if}
+    {/each}
+  </div>
+{:else}
+  {#if href !== ""}
+    <a href="/" class="button">
+      {label}
+    </a>
+  {:else}
+    <button class="button">
+      {label}
+    </button>
+  {/if}
+{/if}

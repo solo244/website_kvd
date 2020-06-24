@@ -8,6 +8,7 @@
   color: $black;
   font-weight: 500;
   transition: $animate;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -19,5 +20,11 @@
     flex-flow: row wrap;
     align-items: center;
     align-content: center;
+    justify-content: center;
+    padding: 30px;
+
+    .button {
+      margin: 0 10px;
+    }
   }
 }
