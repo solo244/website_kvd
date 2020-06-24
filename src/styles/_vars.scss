@@ -34,8 +34,15 @@ $shadow-start: $shadow-x $shadow-y $shadow-size rgba($grey, 0);
  * Buttons
  */
 
-$btn-corners: 4px;
+$btn-corners: 6px;
 $btn-padding: 10px 15px;
+
+/**
+ * Inputs
+ */
+
+$input-corners: 6px;
+$input-padding: 15px 20px;
 
 /**
  * Widths

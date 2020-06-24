@@ -35,6 +35,53 @@
   border-radius: $btn-corners;
   overflow: hidden;
   transition: $animate;
+
+  &--home {
+    @extend .block;
+    text-align: center;
+    top: 0;
+    transition: $animate;
+    box-shadow: $shadow;
+    border-radius: $btn-corners;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 6px;
+      opacity: 0;
+      transition: all .3s .1s ease-out;
+    }
+
+    &:hover {
+      top: -4px;
+
+      .bg {
+        background-color: $almostwhite;
+        background-size: auto 240px;
+        height: 140px;
+        background-position: top center;
+      }
+
+      .button {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      &::after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  &--writing {
+    @extend .block;
+  }
 }
 
 // .categories {
