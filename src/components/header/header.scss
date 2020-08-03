@@ -1,100 +1,16 @@
 @import "../../styles/vars";
 @import "../../styles/mixins";
-@import "../../styles/layout";
 
-.logo {
-  svg {
-    width: 48px;
-    height: 48px;
-  }
-}
+.header {
+  padding: 150px 0;
 
-.container--header {
-  @extend .container;
-  justify-content: space-between;
-}
-
-.breadcrumbs {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  font-weight: 400;
-  letter-spacing: -.5px;
-
-  a {
-    color: $lightgrey;
-    padding-right: 20px;
-    margin-right: 15px;
-    position: relative;
-
-    &::after {
-      content: "/";
-      position: absolute;
-      right: 0;
-      top: 10px;
-    }
+  h1,
+  p {
+    width: $width;
   }
 
-  span {
-    color: $black;
-  }
-}
-
-.menu {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    padding: $btn-padding;
-    border-radius: $btn-corners;
-    color: $black;
-    font-weight: 500;
-    position: relative;
-
-    &:hover {
-      &::after {
-        height: 10px;
-      }
-    }
-
-    &.active {
-      &.link-creative,
-      &.link-dnd {
-        color: $white;
-      }
-
-      &::after {
-        content: "";
-        border-radius: $btn-corners;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 38px;
-        background-color: $almostwhite;
-      }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 5px;
-      right: 5px;
-      bottom: 8px;
-      z-index: -1;
-      height: 0;
-      transition: $animate;
-    }
-
-    &.link-home { &::after { background-color: $almostwhite; }}
-    &.link-code { &::after { background-color: $yellow; }}
-    &.link-tutorials { &::after { background-color: $green; }}
-    &.link-creative { &::after { background-color: $blue; }}
-    &.link-dnd { &::after { background-color: $red; }}
+  &.primary {
+    background: $primary url("/images/chillin.svg") no-repeat right bottom;
+    background-size: contain;
   }
 }
