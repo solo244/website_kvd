@@ -1,79 +1,62 @@
-/**
- * Borders
- */
+// Border radius
+$radius: 10px;
+$radius_large: 40px;
 
-$circle: 50%;
-$corners: 12px;
+// Borders
+$border: 1px solid;
 
-/**
- * Colors
- */
-
+// Colors
+$primary: #FFF7EA;
 $black: #000000;
 $white: #FFFFFF;
-$grey: #57586E;
-$lightgrey: #BBBBBB;
-$almostwhite: #EFEFEF;
-$red: #F17268;
-$green: #B6D9DE;
-// $purple:         8E71EC;
-$yellow: #FED793;
-$blue: #5A76EC;
+$grey: #696969;
+$grey_light: #F8F8F8;
+$red: #FFD4BF;
+$red_light: lighten($red, 25%);
+$red_dark: darken($red, 35%);
+$green: #C4F1DD;
+$green_light: lighten($green, 15%);
+$green_dark: darken($green, 35%);
+$yellow: #FFE186;
+$yellow_light: lighten($yellow, 15%);
+$yellow_dark: darken($yellow, 35%);
+$blue: #89E0E3;
+$blue_light: lighten($blue, 30%);
+$blue_dark: darken($blue, 35%);
 
-/**
- * Shadows
- */
+// Shadows
+$shadow: 0 4px 60px rgba($black, .05);
+$shadow_light: 0 0 30px rgba($black, .05);
+$shadow_dark: 0 4px 60px rgba($black, .15);
 
-$shadow-size: 25px;
-$shadow-x: 0;
-$shadow-y: 0;
-$shadow: $shadow-x $shadow-y $shadow-size rgba($grey, .15);
-$shadow-start: $shadow-x $shadow-y $shadow-size rgba($grey, 0);
+// Buttons
+$radius_btn: 6px;
+$padding_btn: 14px 20px;
 
-/**
- * Buttons
- */
+// Inputs
+$radius_input: 6px;
+$padding_input: 15px 20px;
 
-$btn-corners: 6px;
-$btn-padding: 10px 15px;
+// Widths
+$width: 700px;
+$width_small: 300px;
+$width_large: 960px;
 
-/**
- * Inputs
- */
-
-$input-corners: 6px;
-$input-padding: 15px 20px;
-
-/**
- * Widths
- */
-
-$width-s: 760px;
-$width-m: 840px;
-$width-l: 960px;
-$width-xl: 1400px;
-$width-grid: 1560px;
-
-/**
- * Breakpoints
- */
-
+// Breakpoints
 $xs: "30em"; // 480px
 $s: "48em"; // 768px
 $m: "64em"; // 1024px
 $l: "75em"; // 1200px
 $xl: "100em"; // 1600px
 
-/**
- * Fonts
- */
-
+// Fonts/typography
 $font: -apple-system, blinkmacsystemfont, "segoe ui", roboto, helvetica, arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+$font_header: -apple-system, blinkmacsystemfont, "segoe ui", roboto, helvetica, arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+$font-size: 2rem;
+$font-size_logo: 4rem;
+$font-size_large: 3rem;
+$font-size_huge: 7rem;
+$font-size_small: 1.5rem;
 
-/**
- * Animations
- */
-
-$animate-slow: all .6s ease-out;
+// Animations
 $animate: all .3s ease-out;
-$animate-fast: all .2s ease-out;
