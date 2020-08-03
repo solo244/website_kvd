@@ -15,6 +15,7 @@
     "build": "sapper build --legacy",
     "dev": "sapper dev",
     "export": "sapper export --legacy",
+    "serve": "npx serve __sapper__/export",
     "start": "node __sapper__/build"
   },
   "husky": {
@@ -53,6 +54,8 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.1.1",
     "page": "^1.11.6",
     "polka": "next",
     "sirv-cli": "^0.4.4",
