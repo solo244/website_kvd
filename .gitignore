@@ -126,3 +126,6 @@ yarn-error.log*
 backups/keys
 backups/error.txt
 backups/log.txt
+
+# Sapper
+__sapper__
