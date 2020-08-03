@@ -1,6 +1,6 @@
 <!-- Styles -->
 <style lang="scss">
-@import "./pages.scss";
+// @import "./pages.scss";
 </style>
 
 <!-- Scripts -->

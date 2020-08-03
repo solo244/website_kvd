@@ -1,47 +1,116 @@
 <!-- Styles -->
 <style lang="scss">
-@import "../../styles/layout";
+// @import "../../styles/layout";
 </style>
 
 <!-- Scripts -->
 <script>
+import code from "../constants/code.js";
+import designs from "../constants/designs.js";
+import dnd from "../constants/dnd.js";
+import writing from "../constants/writing.js";
 import Button from "../components/button/index.svelte";
 </script>
 
 <!-- HTML -->
-<header>
-	<h1>Hi, this is a random emoji 👋</h1>
-  <h3>I’m a person that likes randomness and sucks at writing an intro text for their own website.<br>
-  As a profession, I make web-stuff*.</h3>
-</header>
+<section class="container">
+  <header>
+    <h1>Lorem all the ipsums 👋</h1>
+    <h3>Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. As a profession, I make web-stuff at Mediasoft and Weebit.</h3>
+    <Button label="Activity" />
+    <Button label="More me" />
+  </header>
 
-<section class="container--4">
-  <a href="/coding" class="block--home coding">
-    <div class="bg"></div>
-    <Button label="Take a look"/>
-    <h2>Coding</h2>
-    <p>Sure, I make websites. But I'm also a procrastinator Exctraordinaire. This results in many side projects.</p>
-  </a>
-  <a href="/writing" class="block--home writing">
-    <div class="bg"></div>
-    <Button label="Read"/>
-    <h2>Writing</h2>
-    <p>I like to share my web design & development knowledge in "short-ish" written tutorials.</p>
-  </a>
-  <a href="/designing" class="block--home designing">
-    <div class="bg"></div>
-    <Button label="Explore"/>
-    <h2>Designing</h2>
-    <p>I got tired of looking for clothes that have awesome designs. So I make them.</p>
-  </a>
-  <a href="/dnding" class="block--home dnding">
-    <div class="bg"></div>
-    <Button label="Check it"/>
-    <h2>D&Ding</h2>
-    <p>I love Dungeons and Dragons and I'm a front-ender. So I combine them were possible.</p>
-  </a>
-</section>
+  <section class="block">
+    <section class="block__header">
+      <h2>Writing</h2>
+      <Button label="View all" />
+    </section>
 
-<section>
-  <h3>Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you. I am a man of few words but I can use some visuals to help me tell you more about myself. Keep scrolling.</h3>
+    <ul>
+      {#each writing as project, i}
+        {#if project.status && i < 4}
+          <li>
+            <a href={project.link} class="block__project">
+              <p class="block__project__date">{project.date}</p>
+              <p class={`block__project__category ${project.category}`}></p>
+              <h4>{project.title}</h4>
+              <span class={project.type}>{project.type}</span>
+            </a>
+          </li>
+        {/if}
+      {:else}
+        <li>No projects found</li>
+      {/each}
+    </ul>
+  </section>
+
+  <section class="block">
+    <section class="block__header">
+      <h2>Coding</h2>
+      <Button label="View all" />
+    </section>
+
+    <ul>
+      {#each code as project, i}
+        {#if project.status && i < 4}
+          <li>
+            <a href={project.link} target="_blank" class="block__project">
+              <div class={`img ${project.id}`}></div>
+              <h4>{project.title}</h4>
+              <p>{project.description}</p>
+              <span class={project.type}>{project.type}</span>
+            </a>
+          </li>
+        {/if}
+      {:else}
+        <li>No projects found</li>
+      {/each}
+    </ul>
+  </section>
+
+  <section class="block">
+    <section class="block__header">
+      <h2>Designing</h2>
+      <Button label="View all" />
+    </section>
+
+    <ul class="block__designs">
+      {#each designs as project, i}
+        {#if i < 4}
+          <li class={`block__design ${project.id}`}>
+            <a href={project.link} target="_blank" style={`background-image: url(/images/creative/${project.id}.jpg)`}>
+              <img src="/images/creative/{project.id}.jpg" alt={project.title} width="100%">
+            </a>
+          </li>
+        {/if}
+      {:else}
+        <li>No projects found</li>
+      {/each}
+    </ul>
+  </section>
+
+  <section class="block">
+    <section class="block__header">
+      <h2>D&D-ing</h2>
+      <Button label="View all" />
+    </section>
+
+    <ul>
+      {#each dnd as project, i}
+        {#if project.status && i < 4}
+          <li>
+            <a href={project.link} class="block__project">
+              <div class={`img ${project.id}`}></div>
+              <h4>{project.title}</h4>
+              <p>{project.description}</p>
+              <span class={project.type}>{project.type}</span>
+            </a>
+          </li>
+        {/if}
+      {:else}
+        <li>No projects found</li>
+      {/each}
+    </ul>
+  </section>
 </section>
