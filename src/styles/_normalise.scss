@@ -1,9 +1,5 @@
 @import "./vars";
 
-/**
- * Normalise
- */
-
 html {
   font-size: 62.5%;
 }
@@ -11,18 +7,23 @@ html {
 body {
   background-color: $white;
   font-family: $font;
-  font-size: 1.7rem;
+  font-size: $font-size;
   overflow-x: hidden;
+}
+
+main {
+  margin-left: $width_small;
 }
 
 a {
   text-decoration: none;
-  color: $black;
+  // color: $black;
 }
 
 p {
-  font-size: 1.7rem;
+  font-size: $font-size;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 ol,
@@ -30,106 +31,55 @@ ul {
   list-style-type: none;
 }
 
-input {
-  font-size: 1.7rem;
-  border: 2px solid $green;
-  border-radius: $input-corners;
-  padding: $input-padding;
-  transition: $animate;
+button {
+  font-size: $font-size;
+  border-radius: $radius_btn;
+  padding: $padding_btn;
+}
 
+input {
+  font-size: $font-size;
+  border-radius: $radius_input;
+  padding: $padding_input;
+
+  &:focus,
   &:focus {
     border: 2px solid $red;
   }
-
-  &:hover {
-    box-shadow: $shadow;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h1,
 .h1 {
-  font-size: 5rem;
-  color: $black;
-  font-weight: 700;
+  font-size: $font-size_huge;
+  font-weight: 900;
   letter-spacing: -2px;
-  line-height: 1.2;
-  padding: 40px 30px;
-  margin-bottom: 20px;
-  width: 760px;
-  max-width: 100%;
-
-  span {
-    padding: 30px 50px 30px;
-    position: relative;
-    font-size: 1.7rem;
-    letter-spacing: 0;
-    font-weight: 300;
-    display: block;
-    text-align: right;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 1px;
-      width: 40px;
-      background-color: $black;
-    }
-  }
+  color: $black;
+  margin-bottom: 40px;
+  line-height: .9;
 }
 
 h2,
 .h2 {
-  font-size: 4rem;
+  font-size: $font-size_large;
+  font-weight: 900;
+  letter-spacing: -1px;
   color: $black;
-  font-weight: 500;
-  letter-spacing: -1.5px;
+  margin-bottom: 30px;
   line-height: 1.2;
-  padding: 40px 30px;
-  margin-bottom: 20px;
 }
 
 h3,
 .h3 {
-  font-size: 3rem;
-  color: $grey;
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: 1.4;
-  padding: 40px 30px;
-  margin-bottom: 20px;
-  width: 840px;
-  max-width: 100%;
-}
-
-h4,
-.h4 {
-  font-size: 2.2rem;
-  color: $black;
-  font-weight: 500;
+  font-size: $font-size;
+  font-weight: 700;
   letter-spacing: -.5px;
-  line-height: 1.4;
-  padding: 40px 30px;
-  margin-bottom: 20px;
+  color: $black;
+  margin-bottom: 25px;
+  line-height: 1.2;
 }
 
-h1 + h3,
-.h1 + .h3,
-.h1 + h3,
-h1 + .h3 {
-  padding-top: 0;
-  margin-top: -20px;
+.container {
+  width: $width_large;
+  max-width: 100%;
+  margin: 0 auto;
 }
