@@ -2,29 +2,21 @@
 @import "../../styles/mixins";
 
 .button {
-  padding: $btn-padding;
-  border-radius: $btn-corners;
-  background-color: $almostwhite;
-  color: $black;
-  font-weight: 500;
+  padding: $padding_btn;
+  border-radius: $radius_btn;
   transition: $animate;
   cursor: pointer;
+  display: inline-block;
+  border: 2px solid $black;
 
-  &:hover,
-  &:focus {
-    background-color: darken($almostwhite, 10%);
-  }
+  &.primary {
+    background-color: $black;
+    color: $white;
 
-  &-group {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    padding: 30px;
-
-    .button {
-      margin: 0 10px;
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $black;
     }
   }
 }
