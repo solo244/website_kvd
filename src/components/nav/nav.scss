@@ -1,0 +1,37 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+// @import "../../styles/layout";
+
+.nav {
+  width: $width_small;
+  background-color: $white;
+  box-shadow: $shadow_light;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  a {
+    color: $black;
+  }
+
+  &__logo {
+    font-size: $font-size_logo;
+    font-weight: 800;
+    letter-spacing: -2px;
+  }
+
+  &__menu {
+    a {
+      display: block;
+      font-size: $font-size;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 15px;
+    }
+  }
+}
