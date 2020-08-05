@@ -4,7 +4,7 @@ const code = [
     id: "stalstudio",
     title: "Stalstudio",
     link: "https://www.stalstudio.be",
-    type: "website",
+    type: "Website",
     status: true,
     description: "Stallers are people with a passion for theatre."
   },
@@ -12,7 +12,7 @@ const code = [
     id: "itsunited",
     title: "It's United",
     link: "https://www.its-united.com/",
-    type: "website",
+    type: "Website",
     status: true,
     description: "ITS-United creates sustainable traffic management infrastructures."
   },
@@ -20,7 +20,7 @@ const code = [
     id: "criticalchronicles",
     title: "The Critical Chronicles",
     link: "https://www.criticalchronicles.com",
-    type: "website",
+    type: "Website",
     status: true,
     description: "Follow our two D&D squads, destined to .... the world."
   },
@@ -29,7 +29,7 @@ const code = [
     id: "burntabs",
     title: "Burntabs",
     link: "https://burntabs.kenvandamme.be/",
-    type: "app",
+    type: "Extension",
     status: true,
     description: "The biggest tab burner extension for Chrome and Firefox."
   },
@@ -37,7 +37,7 @@ const code = [
     id: "mine",
     title: "Mine",
     link: "",
-    type: "app",
+    type: "App",
     status: false,
     description: "Manage your browser favorites, your way."
   },
@@ -45,7 +45,7 @@ const code = [
     id: "dnd",
     title: "D&D",
     link: "",
-    type: "app",
+    type: "App",
     status: false,
     description: "."
   },
@@ -54,7 +54,7 @@ const code = [
     id: "dacss",
     title: "DACSS",
     link: "",
-    type: "github",
+    type: "Github",
     status: false,
     description: "Own framework."
   }

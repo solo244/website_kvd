@@ -20,13 +20,13 @@
 	<title>Ken Van Damme</title>
 </svelte:head>
 
-<!-- <Header
+<Header
 	title="Lorem all the ipsums"
 	content="Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you."
 	background="primary"
 	button="More about me"
 	link="/about"
-/> -->
+/>
 
 <section class="container grid">
 	<section class="grid__row">
