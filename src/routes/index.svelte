@@ -3,11 +3,24 @@
 </style>
 
 <script>
+	import { onMount } from "svelte";
 	import writing from "../constants/writing.js";
 	import Header from "../components/header/index.svelte";
 	import Button from "../components/button/index.svelte";
 
 	let writingMode = false;
+
+	onMount(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  });
 
 	function toggleMode(type, mode) {
 		if (type === "writing") {
@@ -18,6 +31,7 @@
 
 <svelte:head>
 	<title>Ken Van Damme</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
 
 <Header
@@ -50,7 +64,7 @@
 			</ul>
 			<div class="grid__buttons">
 				<button on:click={() => toggleMode("writing", writingMode)} type="primary">Open</button>
-				<a href="/writing">All</a>
+				<a href="/writing" class="button primary">All</a>
 			</div>
 		</article>
 
