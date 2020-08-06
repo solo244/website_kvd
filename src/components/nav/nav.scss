@@ -1,6 +1,5 @@
 @import "../../styles/vars";
 @import "../../styles/mixins";
-// @import "../../styles/layout";
 
 .nav {
   width: $width_small;
@@ -32,6 +31,17 @@
       font-weight: 700;
       letter-spacing: -1px;
       margin-bottom: 15px;
+    }
+  }
+
+  &__socials {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        display: block;
+      }
     }
   }
 }
