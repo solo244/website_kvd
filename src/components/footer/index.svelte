@@ -2,11 +2,6 @@
 @import "footer.scss";
 </style>
 
-<!-- Scripts -->
-<script>
-// import Logo from "../../images/logo-42.svg";
-</script>
-
 <nav class="footer">
   <section class="container">
     <article>
