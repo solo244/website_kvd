@@ -3,7 +3,6 @@
 </style>
 
 <script>
-  // import { twitter } from "jam-icons";
   import {
     TwitterIcon,
     GithubIcon,
