@@ -12,10 +12,22 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    position: relative;
   }
 
   span,
   a {
     font-weight: 700;
+  }
+
+  .to-top {
+    background-color: $grey_light;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    border: 3px solid $white;
+    padding: 8px;
   }
 }
