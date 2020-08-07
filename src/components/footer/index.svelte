@@ -18,7 +18,6 @@
     <article>
       Icons from <a href="https://icons8.com/" target="_blank">Icon8</a>
     </article>
-    <!-- Back to top -->
     <div class="to-top" on:click={() => toTop()}>
       <ArrowUpIcon size="20" />
     </div>
