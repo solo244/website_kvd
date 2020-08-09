@@ -5,15 +5,15 @@
 
 <script context="module">
 	export function preload({ params, query }) {
-		return this.fetch(`writing.json`).then(r => r.json()).then(posts => {
-			return { posts };
+		return this.fetch(`writing.json`).then(r => r.json()).then(writings => {
+			return { writings };
 		});
 	}
 </script>
 
 <script>
 	import Header from "../../components/header/index.svelte";
-	export let posts;
+	export let writings;
 </script>
 
 <svelte:head>
@@ -28,13 +28,13 @@
 
 <section class="container grid">
 	<section class="grid__row">
-		{#each posts as post}
+		{#each writings as writing}
 			<article class="grid__item">
-				<a rel="prefetch" href="writing/{post.slug}" class="grid__item__link writing">
-					<span>{post.category}: {post.collection}</span>
-					<div class={`postfilter grid__item__category ${post.filters}`}>{post.filters}</div>
-					<h3>{post.title}</h3>
-					<div class="grid__item__date">{post.date}</div>
+				<a rel="prefetch" href="writing/{writing.slug}" class="grid__item__link writing">
+					<span>{writing.category}: {writing.collection}</span>
+					<div class={`postfilter grid__item__category ${writing.filters}`}>{writing.filters}</div>
+					<h3>{writing.title}</h3>
+					<div class="grid__item__date">{writing.date}</div>
 				</a>
 			</article>
 		{/each}
