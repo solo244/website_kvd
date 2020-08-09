@@ -1,12 +1,23 @@
 <style lang="scss">
 @import "../styles/pages";
+@import "../styles/filters";
 </style>
+
+<script context="module">
+	export function preload({ params, query }) {
+		return this.fetch(`writing.json`).then(r => r.json()).then(writings => {
+			return { writings };
+		});
+	}
+</script>
 
 <script>
 	import { onMount } from "svelte";
 	import writing from "../constants/writing.js";
 	import Header from "../components/header/index.svelte";
 	import Button from "../components/button/index.svelte";
+
+	export let writings;
 
 	let writingMode = false;
 
@@ -47,14 +58,14 @@
 		<article class="grid__item" class:active={writingMode}>
 			<h2>Writing</h2>
 			<ul>
-				{#each writing as project, i}
-					{#if project.status && i < 3}
+				{#each writings as writing, i}
+					{#if i < 3}
 						<li>
-							<a href={project.link} class="grid__item__link writing">
-								<span>{project.type}</span>
-								<div class={`grid__item__category ${project.category}`}>{project.category}</div>
-								<h3>{project.title}</h3>
-								<div class="grid__item__date">{project.date}</div>
+							<a rel="prefetch" href="writing/{writing.slug}" class="grid__item__link writing">
+								<span>{writing.category}: {writing.collection}</span>
+								<div class={`postfilter grid__item__category ${writing.filters}`}>{writing.filters}</div>
+								<h3>{writing.title}</h3>
+								<div class="grid__item__date">{writing.date}</div>
 							</a>
 						</li>
 					{/if}
