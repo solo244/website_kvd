@@ -1,4 +1,6 @@
-<style>
+<style lang="scss">
+@import "../styles/pages";
+@import "../styles/filters";
 </style>
 
 <script context="module">
@@ -24,6 +26,17 @@
 	background="writing"
 />
 
-{#each posts as post}
-	<a rel="prefetch" href="writing/{post.slug}">{post.title}</a>
-{/each}
+<section class="container grid">
+	<section class="grid__row">
+		{#each posts as post}
+			<article class="grid__item">
+				<a rel="prefetch" href="writing/{post.slug}" class="grid__item__link writing">
+					<span>{post.category}: {post.collection}</span>
+					<div class={`postfilter grid__item__category ${post.filters}`}>{post.filters}</div>
+					<h3>{post.title}</h3>
+					<div class="grid__item__date">{post.date}</div>
+				</a>
+			</article>
+		{/each}
+	</section>
+</section>
