@@ -45,6 +45,7 @@
       height: 460px;
       background-color: $white;
       border: 2px solid $white;
+      position: relative;
 
       &.writing {
         &:hover,
@@ -92,8 +93,6 @@
       color: $black;
       display: inline-block;
       padding: 6px 10px;
-
-      &.css { background-color: $green; }
     }
 
     &__date {
