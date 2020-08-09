@@ -1,0 +1,15 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+
+.postfilter {
+  &.css,
+  &.CSS {
+    background-color: $green;
+  }
+
+  &.js,
+  &.JS {
+    background-color: $yellow;
+  }
+}
