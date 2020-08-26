@@ -7,6 +7,8 @@
     ArrowUpIcon
   } from "svelte-feather-icons";
 
+  let year = new Date().getFullYear();
+
   function toTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -22,7 +24,10 @@
       <ArrowUpIcon size="20" />
     </div>
     <aside>
-      <span>© 2020</span> Ken Van Damme
+      <span>© {year}</span> Ken Van Damme
     </aside>
+  </section>
+  <section class="disclaimer">
+    No <span>🍪 cookies, 👣 tracking, 💰 ads or ❗pop-ups.</span>
   </section>
 </nav>
