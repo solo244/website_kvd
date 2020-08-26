@@ -1,0 +1,75 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.filter {
+  margin: -30px auto 90px;
+
+  &__block {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    li {
+      font-weight: bold;
+      letter-spacing: -.5px;
+
+      &:not(:first-child) {
+        border-radius: $radius;
+        margin-left: 15px;
+      }
+
+      &:first-child {
+        pointer-events: none;
+        position: relative;
+        margin-right: 5px;
+
+        &::before {
+          content: "";
+          height: 4px;
+          background-color: $black;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &__main {
+    margin-bottom: 30px;
+
+    li {
+      &:not(:first-child) {
+        background-color: $black;
+        padding: $padding_input;
+        color: $white;
+      }
+
+      &:first-child {
+        color: $black;
+      }
+    }
+  }
+
+  &__sub {
+    li {
+      &:not(:first-child) {
+        // background-color: $black;
+        // padding: $padding_input;
+        // color: $white;
+      }
+
+      &:first-child {
+        color: $black;
+      }
+    }
+  }
+}
