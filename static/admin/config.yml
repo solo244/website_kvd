@@ -22,9 +22,33 @@ collections:
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Date", name: "date", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "coding"
     label: "Coding"
     folder: "static/coding"
+    create: true
+    fields:
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Online", name: "online", widget: "boolean" }
+
+  - name: "designing"
+    label: "Designing"
+    folder: "static/designing"
+    create: true
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Collection", name: "collection", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "gaming"
+    label: "Gaming"
+    folder: "static/gaming"
     create: true
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
