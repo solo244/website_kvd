@@ -1,4 +1,4 @@
-<style lang="scss">
+<style lang="scss" global>
 @import "../styles/pages";
 @import "../styles/filters";
 </style>
@@ -13,6 +13,7 @@
 
 <script>
 	import Header from "../../components/header/index.svelte";
+	import Filter from "../../components/filter/index.svelte";
 	export let writings;
 </script>
 
@@ -26,7 +27,9 @@
 	background="writing"
 />
 
-<section class="container grid">
+<Filter />
+
+<section class="container grid--overview">
 	<section class="grid__row">
 		{#each writings as writing}
 			<article class="grid__item">

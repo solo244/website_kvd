@@ -1,3 +1,8 @@
+<style lang="scss" global>
+@import "../styles/pages";
+@import "../styles/filters";
+</style>
+
 <script context="module">
   export async function preload({ params, query }) {
     const res = await this.fetch(`writing/${params.slug}.md`);
@@ -20,6 +25,10 @@
     html: md.render(frontMatter.body)
   };
 
+  import {
+    CalendarIcon,
+  } from "svelte-feather-icons";
+
   import Header from "../../components/header/index.svelte";
 </script>
 
@@ -27,17 +36,16 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<Header
-	title={post.title}
-	background="primary"
-	button="More about me"
-	link="/about"
-/>
+<section class="main__header">
+  <div class="main__header__sub">{post.title}</div>
+  <span class={`main__header__filter ${post.filters}`}>{post.filters}</span>
+  <h1>{post.header}</h1>
+  <span class="main__header__icon">
+    <CalendarIcon size="20" />
+    <span>{post.date}</span>
+  </span>
+</section>
 
-{post.date}
-{post.category}
-{post.collection}
-
-<div class='content'>
+<div class="main__content">
 	{@html post.html}
 </div>
