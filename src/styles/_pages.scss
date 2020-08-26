@@ -2,22 +2,16 @@
 @import "../../styles/mixins";
 
 .grid {
-  margin-top: -50px;
-
   &__buttons {
-    padding: 10px;
-  }
-
-  &__row {
-    width: 750px;
-
-    &:nth-child(even) {
-      margin-left: auto;
-    }
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   &__item {
     width: 310px;
+    margin: 0 10px 20px;
 
     h2 {
       margin: 0 30px -15px;
@@ -54,25 +48,29 @@
           border: 2px solid $red_dark;
         }
       }
-    }
 
-    li {
-      &:nth-child(1) {
-        top: 0;
-        z-index: 3;
-        transform: scaleX(1);
+      &.coding {
+        &:hover,
+        &:focus {
+          background-color: $yellow;
+          border: 2px solid $yellow_dark;
+        }
       }
 
-      &:nth-child(2) {
-        top: 10px;
-        z-index: 2;
-        transform: scaleX(.95);
+      &.designing {
+        &:hover,
+        &:focus {
+          background-color: $green;
+          border: 2px solid $green_dark;
+        }
       }
 
-      &:nth-child(3) {
-        top: 20px;
-        z-index: 1;
-        transform: scaleX(.9);
+      &.gaming {
+        &:hover,
+        &:focus {
+          background-color: $blue;
+          border: 2px solid $blue_dark;
+        }
       }
     }
 
@@ -104,8 +102,40 @@
       bottom: 80px;
       left: -10px;
     }
+  }
 
-    &.active {
+  &--stacked {
+    margin-top: -50px;
+
+    .grid__row {
+      width: 750px;
+
+      &:nth-child(even) {
+        margin-left: auto;
+      }
+
+      li {
+        &:nth-child(1) {
+          top: 0;
+          z-index: 3;
+          transform: scaleX(1);
+        }
+
+        &:nth-child(2) {
+          top: 10px;
+          z-index: 2;
+          transform: scaleX(.95);
+        }
+
+        &:nth-child(3) {
+          top: 20px;
+          z-index: 1;
+          transform: scaleX(.9);
+        }
+      }
+    }
+
+    .grid__item.active {
       li {
         a {
           box-shadow: $shadow_dark;
@@ -142,5 +172,56 @@
         }
       }
     }
+  }
+
+  &--overview {
+    .grid__row {
+      display: flex;
+      flex-flow: row wrap;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+}
+
+.main {
+  &__header {
+    @include container;
+    width: $width_large;
+    padding: 150px 0;
+    text-align: center;
+
+    h1 {
+      padding-top: 10px;
+    }
+
+    &__icon {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      opacity: .6;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    &__sub {
+      text-transform: uppercase;
+      font-size: $font-size_small;
+      margin-bottom: 20px;
+    }
+
+    &__filter {
+      border-radius: $radius;
+      padding: $padding_btn;
+      display: inline-block;
+    }
+  }
+
+  &__content {
+    width: $width;
+    @include container;
   }
 }

@@ -1,8 +1,8 @@
 @import "../../styles/vars";
 @import "../../styles/mixins";
 
-
-.postfilter {
+.postfilter,
+.main__header__filter {
   &.css,
   &.CSS {
     background-color: $green;
