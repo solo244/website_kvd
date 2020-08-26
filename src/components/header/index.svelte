@@ -16,6 +16,10 @@
   <section class="container">
     <h1>{title}</h1>
     <p>{content}</p>
-    <Button label={button} href={link} type={"primary"} />
+    {#if (button !== "" && link !== "")}
+      <div class="button__holder">
+        <Button label={button} href={link} type="primary" />
+      </div>
+    {/if}
   </section>
 </header>

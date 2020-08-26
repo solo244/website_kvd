@@ -9,6 +9,10 @@
     width: $width;
   }
 
+  .button__holder {
+    padding-top: 30px;
+  }
+
   &.primary {
     background: $primary url("/images/chillin.svg") no-repeat right bottom;
     background-size: contain;
@@ -16,6 +20,21 @@
 
   &.writing {
     background: $red url("/images/writing.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.coding {
+    background: $yellow url("/images/writing.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.designing {
+    background: $green url("/images/writing.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.gaming {
+    background: $blue url("/images/writing.svg") no-repeat right bottom;
     background-size: contain;
   }
 }
