@@ -4,7 +4,6 @@ import commonjs from "@rollup/plugin-commonjs";
 import svelte from "rollup-plugin-svelte";
 import babel from "@rollup/plugin-babel";
 import json from "@rollup/plugin-json";
-import nodeResolve from "rollup-plugin-node-resolve";
 import autoPreprocess from "svelte-preprocess";
 import { terser } from "rollup-plugin-terser";
 import config from "sapper/config/rollup.js";
@@ -46,7 +45,6 @@ export default {
 			}),
 			commonjs(),
 			json(),
-			nodeResolve({ preferBuiltins: false }),
 
 			legacy && babel({
 				extensions: [".js", ".mjs", ".html", ".svelte"],
@@ -114,10 +112,3 @@ export default {
 		onwarn,
 	}
 };
-
-
-
-
-
-
-
