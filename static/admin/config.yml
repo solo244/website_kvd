@@ -16,10 +16,14 @@ collections:
     folder: "static/writing"
     create: true
     fields:
+      - { label: "Folder", name: "folder", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Header", name: "header", widget: "string" }
       - { label: "Collection", name: "collection", widget: "string" }
       - { label: "Category", name: "category", widget: "string" }
+      - { label: "Filters", name: "filters", widget: "string" }
+      - { label: "Icons", name: "icons", widget: "string" }
       - { label: "Date", name: "date", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -28,8 +32,10 @@ collections:
     folder: "static/coding"
     create: true
     fields:
+      - { label: "Folder", name: "folder", widget: "string" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Online", name: "online", widget: "boolean" }
@@ -39,12 +45,13 @@ collections:
     folder: "static/designing"
     create: true
     fields:
-      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Folder", name: "folder", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Collection", name: "collection", widget: "string" }
-      - { label: "Category", name: "category", widget: "string" }
       - { label: "Date", name: "date", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "string" }
+      - { label: "Color", name: "color", widget: "string" }
+      - { label: "Background", name: "background", widget: "string" }
 
   - name: "gaming"
     label: "Gaming"
