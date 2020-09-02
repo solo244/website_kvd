@@ -1,7 +1,9 @@
 ---
 link: https://www.stalstudio.be
 title: Stalstudio
+image: stalstudio.svg
 description: Stallers are people with a passion for theatre.
-category: Website
+category: Web
 online: true
+folder: coding
 ---
