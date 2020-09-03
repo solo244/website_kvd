@@ -1,8 +1,3 @@
-<style lang="scss" global>
-@import "../styles/pages";
-@import "../styles/filters";
-</style>
-
 <script context="module">
 	export function preload({ params, query }) {
 		return this.fetch(`writing.json`).then(r => r.json()).then(writings => {
@@ -14,7 +9,14 @@
 <script>
 	import Header from "../../components/header/index.svelte";
 	import Filter from "../../components/filter/index.svelte";
-	export let writings;
+
+	export let writings = null;
+	let filter = { show: "", view: "", filtered: "" };
+
+	function setFilter(event) {
+		const { show, view, filtered } = event.detail;
+		filter = { show: show, view: view, filtered: filtered };
+	}
 </script>
 
 <svelte:head>
@@ -27,19 +29,23 @@
 	background="writing"
 />
 
-<Filter />
+<Filter filters={filter} on:filter={(e) => setFilter(e)} />
 
 <section class="container grid--overview">
 	<section class="grid__row">
 		{#each writings as writing}
-			<article class="grid__item">
-				<a rel="prefetch" href="writing/{writing.slug}" class="grid__item__link writing">
-					<span>{writing.category}: {writing.collection}</span>
-					<div class={`postfilter grid__item__category ${writing.filters}`}>{writing.filters}</div>
-					<h3>{writing.title}</h3>
-					<div class="grid__item__date">{writing.date}</div>
-				</a>
-			</article>
+			{#if filter.show === "" || filter.show === writing.category}
+				{#if filter.filtered === "" || filter.filtered.includes(writing.filters)}
+					<article class={`grid__item ${filter.view === "List" ? "grid__item--list" : ""}`}>
+						<a rel="prefetch" href="./writing/{writing.slug}" class="grid__item__link writing">
+							<span>{writing.category}: {writing.collection}</span>
+							<div class={`postfilter grid__item__category ${writing.filters}`}>{writing.filters}</div>
+							<h3>{writing.title}</h3>
+							<div class="grid__item__date">{writing.date}</div>
+						</a>
+					</article>
+				{/if}
+			{/if}
 		{/each}
 	</section>
 </section>

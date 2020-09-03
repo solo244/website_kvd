@@ -1,8 +1,3 @@
-<style lang="scss" global>
-@import "../styles/pages";
-@import "../styles/filters";
-</style>
-
 <script context="module">
   export async function preload({ params, query }) {
     const res = await this.fetch(`writing/${params.slug}.md`);
