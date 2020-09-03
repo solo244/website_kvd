@@ -5,9 +5,11 @@ header: Positioning your elements via floating. Incoming problems...
 collection: CSS Introductions
 category: Tutorial
 filters: CSS
-date: 22 July 2020
+date: 13 July 2015
 icons: google_css.svg
+folder: writing
 ---
+
 ## A story
 
 Using the float property on elements can be compared to the following story. Imaging a sunny day with the sun shining bright and giving off a heating glow that warms your face. You’re sitting on the sidewalk. And although it’s nice and cosy, it’s just too warm. And all of a sudden there’s an ice cream truck sound in the far distance. We all know what that means and whilst you run inside to get some coins lying around, you trip, fall face first on the floor with your arms reacting to late and waving around like scarves in the wind. You get up after that face plant, flabbergasted, and rush back out with the change you collected. You can still hear the promised bells of ice cream, but the truck is nowhere to be seen. Hatefully you run around, hoping to catch it again and after a minute of looking, you light up, as in the corner of your eye you see the truck drying away slowly, hoping to attract more customers. You start running over to it but have to wait to cross the street as all of a sudden, it’s filled with cars. Each going too fast for you to slip between. So you have to wait. But luckily it’s only for two minutes. But in the meantime the truck fades more and more in the distance.
