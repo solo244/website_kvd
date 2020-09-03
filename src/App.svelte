@@ -1,13 +1,8 @@
-<!-- Styles -->
 <style lang="scss" global>
-// @import "./styles/vars";
 @import "./styles/reset";
 @import "./styles/normalise";
-// @import "./styles/layout";
-// @import "./styles/components";
 </style>
 
-<!-- Scripts -->
 <script>
 	import router from "page";
 	import routes from "./constants/routes.js";
