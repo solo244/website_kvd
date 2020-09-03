@@ -1,30 +1,18 @@
-<style lang="scss" global>
-@import "../styles/pages";
-@import "../styles/filters";
-</style>
-
-<!-- <script context="module">
+<script context="module">
 	export function preload({ params, query }) {
-		const writings = this.fetch(`writing.json`).then(r => r.json()).then(writings => {
-			return { writings };
+		return this.fetch(`index.json`).then(r => r.json()).then(posts => {
+			return { posts };
 		});
-		const codings = this.fetch(`coding.json`).then(r => r.json()).then(codings => {
-			return { codings };
-		});
-
-		return codings, writings;
 	}
-</script> -->
+</script>
 
 <script>
 	import { onMount } from "svelte";
 	import Header from "../components/header/index.svelte";
 	import Button from "../components/button/index.svelte";
 
-	export let writings;
-	export let codings;
-
-	let toggles = [""];
+	export let posts;
+	let toggle = "";
 
 	onMount(() => {
     if (window.netlifyIdentity) {
@@ -38,13 +26,11 @@
     }
   });
 
-	function toggleMode(type) {
-		if (toggles.includes(type)) {
-			toggles = toggles.filter(toggle => toggle !== type);
+	function setToggle(type) {
+		if (toggle === type) {
+			toggle = "";
 		} else {
-			let added = toggles;
-			added.push(type);
-			toggles = added;
+			toggle = type;
 		}
 	}
 </script>
@@ -56,73 +42,107 @@
 
 <Header
 	title="Lorem all the ipsums"
-	content="Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. I think thats by far the best description I can give you."
+	content="Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. As a profession, I make web-stuff at Mediasoft and Weebit."
 	background="primary"
-	button="More about me"
+	button="More about me 😴"
 	link="/about"
 />
 
 <section class="container grid--stacked">
-	<section class="grid__row">
-		{#if writings !== undefined && writings !== null}
-			{#each writings as writing, i}
-				{writing.title}
-			{/each}
-		{/if}
+	{#if posts !== undefined && posts !== null}
+		<section class="grid__row">
+			<article class="grid__item" class:active={toggle === "writing"}>
+				<h2>Writing</h2>
+				<ul>
+					{#each posts as post}
+						{#if post.folder === 'writing'}
+							<li>
+								<a rel="prefetch" href="writing/{post.slug}" class={`grid__item__link writing ${post.folder}`}>
+									<span>{post.category}: {post.collection}</span>
+									<div class={`postfilter grid__item__category ${post.filters}`}>{post.filters}</div>
+									<h3>{post.title}</h3>
+									<div class="grid__item__date">{post.date}</div>
+								</a>
+							</li>
+						{/if}
+					{:else}
+						<li>No projects found</li>
+					{/each}
+				</ul>
+				<div class="grid__buttons">
+					<Button on:click={() => setToggle("writing")} type="primary" label="Open" icon="plus" group />
+					<Button href="/writing" label="All" icon="right" position="right" group />
+				</div>
+			</article>
 
-		{#if codings !== undefined && codings !== null}
-			{#each codings as coding, i}
-				{coding.title}
-			{/each}
-		{/if}
-		<!-- <article class="grid__item" class:active={toggles.includes("writing")}>
-			<h2>Writing</h2>
-			<ul>
-				{#each writings as writing, i}
-					{#if i < 3}
-						<li>
-							<a rel="prefetch" href="writing/{writing.slug}" class="grid__item__link writing">
-								<span>{writing.category}: {writing.collection}</span>
-								<div class={`postfilter grid__item__category ${writing.filters}`}>{writing.filters}</div>
-								<h3>{writing.title}</h3>
-								<div class="grid__item__date">{writing.date}</div>
-							</a>
-						</li>
-					{/if}
-				{:else}
-					<li>No projects found</li>
-				{/each}
-			</ul>
-			<div class="grid__buttons">
-				<Button on:click={() => toggleMode("writing")} type="primary" label="Open" icon="plus" group />
-				<Button href="/writing" label="All" icon="right" position="right" group />
-			</div>
-		</article> -->
-
-		<!-- <article class="grid__item" class:active={toggles.includes("coding")}>
-			<h2>Coding</h2>
-			<ul>
-				{#each codings as coding, i}
-					{#if i < 3}
-						<li>
-							<a href="{coding.link}" class="grid__item__link coding">
-								<span>{coding.description}</span>
-								<div class={`postfilter grid__item__category ${coding.category}`}>{coding.category}</div>
-								<h3>{coding.title}</h3>
-							</a>
-						</li>
-					{/if}
-				{:else}
-					<li>No projects found</li>
-				{/each}
-			</ul>
-			<div class="grid__buttons">
-				<Button on:click={() => toggleMode("coding")} type="primary" label="Open" icon="plus" group />
-				<Button href="/coding" label="All" icon="right" position="right" group />
-			</div>
-		</article> -->
-
-		<article></article>
-		<article></article>
-	</section>
+			<article class="grid__item" class:active={toggle === "coding"}>
+				<h2>Coding</h2>
+				<ul>
+					{#each posts as post}
+						{#if post.folder === 'coding' && post.online}
+							<li>
+								<a href="{post.link}" class={`grid__item__link ${post.folder}`} style={`background-image: url(/images/projects/${post.image})`} target="_blank">
+									<span>{post.description}</span>
+									<div class={`postfilter grid__item__category ${post.category}`}>{post.category}</div>
+									<h3>{post.title}</h3>
+								</a>
+							</li>
+						{/if}
+					{:else}
+						<li>No projects found</li>
+					{/each}
+				</ul>
+				<div class="grid__buttons">
+					<Button on:click={() => setToggle("coding")} type="primary" label="Open" icon="plus" group />
+					<Button href="/coding" label="All" icon="right" position="right" group />
+				</div>
+			</article>
+		</section>
+		<section class="grid__row">
+			<article class="grid__item" class:active={toggle === "designing"}>
+				<h2>Designing</h2>
+				<ul>
+					{#each posts as post}
+						{#if post.folder === 'designing'}
+							<li>
+								<a href="{post.link}" target="_blank" class={`grid__item__link ${post.folder}`} style={`background-color: #${post.background}`}>
+									<h3 style={`color: #${post.color}`}>{post.title}</h3>
+									<div class="grid__item__date" style={`color: #${post.color}`}>{post.date}</div>
+									<div class="grid__item__image" style={`background-image: url(/images/creative/${post.image})`}></div>
+								</a>
+							</li>
+						{/if}
+					{:else}
+						<li>No projects found</li>
+					{/each}
+				</ul>
+				<div class="grid__buttons">
+					<Button on:click={() => setToggle("designing")} type="primary" label="Open" icon="plus" group />
+					<Button href="/designing" label="All" icon="right" position="right" group />
+				</div>
+			</article>
+			<article class="grid__item" class:active={toggle === "gaming"}>
+				<h2>Gaming</h2>
+				<ul>
+					{#each posts as post}
+						{#if post.folder === 'gaming'}
+							<li>
+								<a href="{post.link}" target="_blank" class={`grid__item__link ${post.folder}`} style={`background-color: #${post.background}`}>
+									<h3 style={`color: #${post.color}`}>{post.title}</h3>
+									<div class="grid__item__date" style={`color: #${post.color}`}>{post.date}</div>
+									<div class="grid__item__image" style={`background-image: url(/images/creative/${post.image})`}></div>
+								</a>
+							</li>
+						{/if}
+					{:else}
+						<li>No projects found</li>
+					{/each}
+				</ul>
+				<div class="grid__buttons">
+					<Button on:click={() => setToggle("gaming")} type="primary" label="Open" icon="plus" group />
+					<Button href="/gaming" label="All" icon="right" position="right" group />
+				</div>
+			</article>
+		</section>
+	{/if}
 </section>
