@@ -23,6 +23,9 @@ $yellow_dark: darken($yellow, 35%);
 $blue: #89E0E3;
 $blue_light: lighten($blue, 30%);
 $blue_dark: darken($blue, 35%);
+$purple: #B19CD9;
+$purple_light: lighten($purple, 30%);
+$purple_dark: darken($purple, 35%);
 
 // Shadows
 $shadow: 0 4px 60px rgba($black, .05);
@@ -36,6 +39,9 @@ $padding_btn: 14px 20px;
 // Inputs
 $radius_input: 6px;
 $padding_input: 15px 20px;
+
+// Paddings
+$padding: 6px 10px;
 
 // Widths
 $width: 700px;

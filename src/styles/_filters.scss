@@ -4,12 +4,35 @@
 .postfilter,
 .main__header__filter {
   &.css,
-  &.CSS {
+  &.CSS,
+  &.git,
+  &.Git {
     background-color: $green;
   }
 
   &.js,
-  &.JS {
+  &.JS,
+  &.app,
+  &.App {
     background-color: $yellow;
+  }
+
+  &.ps,
+  &.PS,
+  &.ext,
+  &.Ext {
+    background-color: $blue;
+  }
+
+  &.seo,
+  &.SEO,
+  &.web,
+  &.Web {
+    background-color: $red;
+  }
+
+  &.general,
+  &.GENERAL {
+    background-color: $purple;
   }
 }
