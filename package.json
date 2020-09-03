@@ -49,7 +49,7 @@
     "gulp-ftp": "^1.1.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-sequence": "^0.4.6",
-    "lazysizes": "^2.0.6",
+    "lazysizes": "^5.2.1",
     "loadjs": "^3.3.1",
     "normalize.css": "^5.0.0",
     "picturefill": "^3.0.2",
