@@ -20,6 +20,29 @@
     font-weight: 700;
   }
 
+  a {
+    position: relative;
+    color: $black;
+
+    &::after {
+      content: "";
+      background-color: $black;
+      position: absolute;
+      left: -1px;
+      right: -1px;
+      top: 100%;
+      bottom: -2px;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        top: calc(100% - 3px);
+        background-color: $yellow;
+      }
+    }
+  }
+
   .to-top {
     background-color: $grey_light;
     border-radius: 50%;
@@ -29,6 +52,12 @@
     transform: translateX(-50%);
     border: 3px solid $white;
     padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      box-shadow: $shadow_dark;
+    }
   }
 
   .disclaimer {

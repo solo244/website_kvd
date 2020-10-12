@@ -24,17 +24,22 @@
   }
 
   &.coding {
-    background: $yellow url("/images/writing.svg") no-repeat right bottom;
+    background: $yellow url("/images/coding.svg") no-repeat right bottom;
     background-size: contain;
   }
 
   &.designing {
-    background: $green url("/images/writing.svg") no-repeat right bottom;
+    background: $green url("/images/designing.svg") no-repeat right bottom;
     background-size: contain;
   }
 
   &.gaming {
-    background: $blue url("/images/writing.svg") no-repeat right bottom;
+    background: $blue url("/images/gaming.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.me {
+    background: $grey_light url("/images/me.svg") no-repeat right bottom;
     background-size: contain;
   }
 }

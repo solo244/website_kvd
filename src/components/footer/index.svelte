@@ -18,7 +18,7 @@
 <nav class="footer">
   <section class="container">
     <article>
-      Icons from <a href="https://icons8.com/" target="_blank">Icon8</a>
+      Illustrations from <a href="https://icons8.com/" target="_blank">Icon8</a>
     </article>
     <div class="to-top" on:click={() => toTop()}>
       <ArrowUpIcon size="20" />

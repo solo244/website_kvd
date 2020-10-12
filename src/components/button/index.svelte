@@ -14,7 +14,7 @@
   export let type = "";
   export let icon = "";
   export let position = "";
-  export let group;
+  export let group = false;
 
   function click() {
     dispatch("click");

@@ -4,6 +4,7 @@
 
 <script>
   import {
+    CornerUpLeftIcon,
     TwitterIcon,
     GithubIcon,
     LinkedinIcon,
@@ -13,12 +14,25 @@
 </script>
 
 <nav class="nav">
-  <a href="." class="nav__logo">KeVD_</a>
+  <a href="." class="nav__logo">
+    <span class="icon">
+      <CornerUpLeftIcon size="16"/>
+    </span>
+    KeVD<span class="under">_</span>
+  </a>
   <ul class="nav__menu">
-    <li><a rel=prefetch class:active="{segment === "writing"}" class="link-writing" href="/writing">Writing</a></li>
-    <li><a rel=prefetch class:active="{segment === "coding"}" class="link-coding" href="/coding">Coding</a></li>
-    <li><a rel=prefetch class:active="{segment === "designing"}" class="link-designing" href="/designing">Designing</a></li>
-    <li><a rel=prefetch class:active="{segment === "gaming"}" class="link-gaming" href="/gaming">Gaming</a></li>
+    <li><a rel=prefetch class:active="{segment === "writing"}" class="link-writing" href="/writing">
+      <span>Writing</span>
+    </a></li>
+    <li><a rel=prefetch class:active="{segment === "coding"}" class="link-coding" href="/coding">
+      <span>Coding</span>
+    </a></li>
+    <li><a rel=prefetch class:active="{segment === "designing"}" class="link-designing" href="/designing">
+      <span>Designing</span>
+    </a></li>
+    <li><a rel=prefetch class:active="{segment === "gaming"}" class="link-gaming" href="/gaming">
+      <span>Gaming</span>
+    </a></li>
   </ul>
   <ul class="nav__socials">
     <li>
