@@ -1,4 +1,4 @@
-# Personal website attempt with Svelte (v2)
+# Personal website attempt with Next.js
 
 ## Release
 Is live since December 2016: [https://kenvandamme.be/](https://kenvandamme.be/) & [https://kenvandamme.com/](https://kenvandamme.com/)
@@ -10,34 +10,16 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - [Source and writer](https://kenvandamme.be/) or [on Github as solo244](https://github.com/solo244)
 
 ## Requirements/used
-- Svelte
-- SCSS for `css`
-- Yarn
-- Google Analytics for juicy stats
+- React
+- Next.js
+- SCSS for `css` and CSS modules
+- NPM
+- No Analytics
 
 ## Commands
 `npm run dev`
-
-## Set up
-1. Clone files to a new directory
-2. `cd` to the this directory via command line/terminal
-3. Run `npm install` to get your node_modules (default **.gitignore**)
-4. Check `package.json` and make changes in **general info, paths, vars and url** where needed
-5. Run **dev command** to start developing
-
-## Organisation (todo)
-- **Dev:** Add any and all `development` content here. `Pug` for html templates
-  - **Views:**: All files and folders are copied from this location, from `Pug` to `HTML` format, **excluding** files from the  *_layout* folder
-  - **CSS/modules:** Contains all modular files -> `main.scss`
-  - **CSS/pages:** Contains all files for custom/specific pages -> `main.scss`
-  - **CSS/template:** Contains all basic template files -> `main.scss`
-  - **images:** Contains all images. Using subfolder is allowed. Optimization will happen later
-  - **JS/vendor:** Contains all vendor files -> `vendor.js`
-  - **JS/main:** Contains all custom files -> `main.js`
-- **Build:** All dev changes are tracked in the *build* folder. These files are compiled for web friendly viewing. This is the working test directory when running a local server.
-- **Dist:** All build files are compiled for final host purposes in the *dist* folder. These files (css, js, html & images) are optimized for the web (minified & concatenated). Paths are changed where needed to fit the need of the server. Before upload this folder is emptied and after upload this folder is deleted.
-
-## To publish via Netlify (todo)
+`npm run build`
+`npm run start`
 
 ## Log (current v1.2)
 ### Version 1.0
@@ -71,8 +53,4 @@ Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast 
 - Add background images to main headers
 
 ### Version 2
-- Switch to Svelte
-
-### Ideas
-- Reading bar to show progress for tutorials
-- Grading system for tutorials via emoticons
+- Switch to React/Next
