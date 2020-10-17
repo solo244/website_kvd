@@ -1,0 +1,37 @@
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tile {
+  width: calc(50% - 1rem);
+}
+
+.tile h2 {
+  margin-bottom: 0;
+}
+
+.tile h4 {
+  margin-bottom: 1rem;
+}
+
+.tile span {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: var(--font-size_small);
+}
+
+.tilelink {
+  background-color: var(--grey_light);
+  border-radius: var(--radius);
+  display: block;
+  padding: 3.5rem 4rem;
+  transform: scale(1);
+  transition: var(--animate);
+  color: var(--grey);
+}
+
+.tilelink:hover,
+.tilelink:focus {
+  transform: scale(1.05);
+}
