@@ -1,0 +1,45 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.header {
+  padding: 150px 0;
+
+  h1,
+  p {
+    width: $width;
+  }
+
+  .button__holder {
+    padding-top: 30px;
+  }
+
+  &.primary {
+    background: $primary url("/images/chillin.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.writing {
+    background: $red url("/images/writing.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.coding {
+    background: $yellow url("/images/coding.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.designing {
+    background: $green url("/images/designing.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.gaming {
+    background: $blue url("/images/gaming.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  &.me {
+    background: $grey_light url("/images/me.svg") no-repeat right bottom;
+    background-size: contain;
+  }
+}

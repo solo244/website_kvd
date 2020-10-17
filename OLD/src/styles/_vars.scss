@@ -1,0 +1,69 @@
+// Border radius
+$radius: 10px;
+$radius_large: 40px;
+
+// Borders
+$border: 1px solid;
+
+// Colors
+$primary: #FFF7EA;
+$black: #000000;
+$white: #FFFFFF;
+$grey: #696969;
+$grey_light: #F8F8F8;
+$red: #FFD4BF;
+$red_light: lighten($red, 25%);
+$red_dark: darken($red, 35%);
+$green: #C4F1DD;
+$green_light: lighten($green, 15%);
+$green_dark: darken($green, 35%);
+$yellow: #FFE186;
+$yellow_light: lighten($yellow, 15%);
+$yellow_dark: darken($yellow, 35%);
+$blue: #89E0E3;
+$blue_light: lighten($blue, 30%);
+$blue_dark: darken($blue, 35%);
+$purple: #B19CD9;
+$purple_light: lighten($purple, 30%);
+$purple_dark: darken($purple, 35%);
+
+// Shadows
+$shadow: 0 4px 60px rgba($black, .05);
+$shadow_light: 0 0 30px rgba($black, .05);
+$shadow_dark: 0 4px 60px rgba($black, .15);
+
+// Buttons
+$radius_btn: 6px;
+$padding_btn: 14px 20px;
+
+// Inputs
+$radius_input: 6px;
+$padding_input: 15px 20px;
+
+// Paddings
+$padding: 6px 10px;
+
+// Widths
+$width: 700px;
+$width_small: 300px;
+$width_large: 960px;
+
+// Breakpoints
+$xs: "30em"; // 480px
+$s: "48em"; // 768px
+$m: "64em"; // 1024px
+$l: "75em"; // 1200px
+$xl: "100em"; // 1600px
+
+// Fonts/typography
+$font: -apple-system, blinkmacsystemfont, "segoe ui", roboto, helvetica, arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+$font_header: -apple-system, blinkmacsystemfont, "segoe ui", roboto, helvetica, arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+$font-size: 2rem;
+$font-size_logo: 4rem;
+$font-size_large: 3rem;
+$font-size_huge: 7rem;
+$font-size_small: 1.5rem;
+$font-size_tiny: 1.2rem;
+
+// Animations
+$animate: all .2s ease-in-out;
