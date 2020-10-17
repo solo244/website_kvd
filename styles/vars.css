@@ -1,0 +1,63 @@
+:root {
+  --grey: hsl(0, 0%, 41%);
+  --radius: 10px;
+  --radius_large: 40px;
+
+  --border: 1px solid;
+
+  --primary: #fff7ea;
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #696969;
+  --grey_light: #f8f8f8;
+  --red: #ffd4bf;
+  /* --red_light: lighten(--red, 25%); */
+  /* --red_dark: darken(--red, 35%); */
+  --green: #c4f1dd;
+  /* --green_light: lighten(--green, 15%);
+  --green_dark: darken(--green, 35%); */
+  --yellow: #ffe186;
+  /* --yellow_light: lighten(--yellow, 15%);
+  --yellow_dark: darken(--yellow, 35%); */
+  --blue: #89e0e3;
+  /* --blue_light: lighten(--blue, 30%);
+  --blue_dark: darken(--blue, 35%); */
+  --purple: #b19cd9;
+  /* --purple_light: lighten(--purple, 30%);
+  --purple_dark: darken(--purple, 35%); */
+  --shadow: 0 4px 60px rgba(0, 0, 0, 0.1);
+  --shadow_light: 0 0 30px rgba(black, 0.05);
+  --shadow_dark: 0 4px 60px rgba(black, 0.15);
+
+  --radius_btn: 6px;
+  --padding_btn: 14px 20px;
+
+  --radius_input: 6px;
+  --padding_input: 15px 20px;
+
+  --padding: 6px 10px;
+
+  --width: 700px;
+  --width_small: 300px;
+  --width_large: 960px;
+
+  --xs: "30em";
+  --s: "48em";
+  --m: "64em";
+  --l: "75em";
+  --xl: "100em";
+
+  --font: -apple-system, blinkmacsystemfont, "segoe ui", roboto, helvetica,
+    arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+  --font_header: -apple-system, blinkmacsystemfont, "segoe ui", roboto,
+    helvetica, arial, sans-serif, "apple color emoji", "segoe ui emoji",
+    "segoe ui symbol";
+  --font-size: 2rem;
+  --font-size_logo: 4rem;
+  --font-size_large: 3rem;
+  --font-size_huge: 7rem;
+  --font-size_small: 1.5rem;
+  --font-size_tiny: 1.2rem;
+
+  --animate: all 0.2s ease-in-out;
+}
