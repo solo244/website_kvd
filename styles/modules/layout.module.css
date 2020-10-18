@@ -17,6 +17,15 @@
   min-height: 100vh;
 }
 
+.side {
+  border-right: 1px solid var(--grey);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+}
+
 .fixed {
   position: fixed;
   left: 0;
@@ -29,4 +38,15 @@
 .content {
   flex: 1;
   padding: 4rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  max-width: 90%;
+}
+
+.container p {
+  margin-bottom: 2rem;
 }

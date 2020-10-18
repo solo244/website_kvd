@@ -4,6 +4,8 @@
 }
 
 .tile {
+  display: flex;
+  flex-flow: row wrap;
   width: calc(50% - 1rem);
 }
 
@@ -15,23 +17,31 @@
   margin-bottom: 1rem;
 }
 
-.tile span {
-  display: block;
+.tiledate {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   margin-bottom: 3rem;
   font-size: var(--font-size_small);
+  color: var(--black);
+  opacity: 0.4;
+}
+
+.tiledate svg {
+  margin-right: 0.5rem;
 }
 
 .tilelink {
-  background-color: var(--grey_light);
-  border-radius: var(--radius);
+  width: 100%;
   display: block;
   padding: 3.5rem 4rem;
   transform: scale(1);
   transition: var(--animate);
-  color: var(--grey);
+  border-radius: var(--radius_small);
 }
 
 .tilelink:hover,
 .tilelink:focus {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  border-radius: var(--radius);
 }
