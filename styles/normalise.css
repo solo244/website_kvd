@@ -38,11 +38,11 @@ input {
   font-size: var(--font-size);
   border-radius: var(--radius_input);
   padding: var(--padding_input);
+}
 
-  &:focus,
-  &:focus {
-    border: 2px solid var(--red);
-  }
+input:focus,
+input:hover {
+  border: 2px solid var(--red);
 }
 
 h1,
