@@ -23,7 +23,7 @@ p {
   line-height: 1.5;
 }
 
-ol,
+ol:not(:first-child),
 ul {
   list-style-type: none;
 }
@@ -45,14 +45,50 @@ input:hover {
   border: 2px solid var(--red);
 }
 
+.link {
+  position: relative;
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+.link:hover,
+.link:focus {
+  font-weight: normal;
+  border-bottom: 1px solid var(--grey);
+}
+
+.button {
+  padding: 1.3rem 2rem;
+  background-color: var(--black);
+  border: 3px solid var(--black);
+  border-radius: var(--radius_small);
+  margin: 2.5rem 0;
+  display: inline-block;
+  color: var(--white);
+  transition: var(--animate);
+  box-shadow: var(--shadow);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--black);
+  border-radius: var(--radius);
+  background-color: var(--white);
+}
+
 h1,
 .h1 {
   font-size: var(--font-size_huge);
   font-weight: 900;
   letter-spacing: -5px;
   color: var(--black);
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   line-height: 0.9;
+}
+
+h1:not(:first-child),
+.h1:not(:first-child) {
+  margin-top: 5rem;
 }
 
 h2,
@@ -61,8 +97,13 @@ h2,
   font-weight: 900;
   letter-spacing: -1px;
   color: var(--black);
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   line-height: 1.2;
+}
+
+h2:not(:first-child),
+.h2:not(:first-child) {
+  margin-top: 4rem;
 }
 
 h3,
@@ -71,8 +112,13 @@ h3,
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--black);
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
   line-height: 1.2;
+}
+
+h3:not(:first-child),
+.h3:not(:first-child) {
+  margin-top: 3.5rem;
 }
 
 h4,
@@ -81,9 +127,14 @@ h4,
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--gray);
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+h4:not(:first-child),
+.h4:not(:first-child) {
+  margin-top: 3.5rem;
 }
 
 .container {
