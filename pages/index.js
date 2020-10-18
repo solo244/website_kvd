@@ -3,8 +3,10 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
 import Content from "../components/content";
-import styles from "../styles/modules/tile.module.css";
+import tileStyles from "../styles/modules/tile.module.css";
+import categoryStyles from "../styles/modules/category.module.css";
 import { getSortedWritingsData } from "../lib/writings";
+import { Calendar } from "../components/icons";
 
 export default function Home({ data }) {
   return (
@@ -15,23 +17,25 @@ export default function Home({ data }) {
 
       <Sidebar>
         <h1>Lorem all the ipsums</h1>
-        <p>Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. As a profession, I make web-stuff at Mediasoft and Weebit.</p>
+        <p>Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. As a profession, I make web-stuff at <a href="https://www.mediasoft.be" className="link" target="_blank">Mediasoft</a> and <a href="https://www.weebit.be" className="link" target="_blank">Weebit</a>.</p>
         <Link href="/about">
-          <a>More about me 😴</a>
+          <a className="button">More about me 😴</a>
         </Link>
       </Sidebar>
 
-      <Content className={styles.flex}>
+      <Content grid>
         {data.map(({ slug, title, collection, date, category }) => {
           return (
             <article
               key={slug}
-              className={styles.tile}
+              className={tileStyles.tile}
             >
               <Link href={`/writings/${slug}`}>
-                <a className={`${styles.tilelink} ${category}`}>
+                <a className={`${tileStyles.tilelink} ${categoryStyles[category]}`}>
                   <h4>{collection}</h4>
-                  <span>{date}</span>
+                  <span className={tileStyles.tiledate}>
+                    <Calendar size="16" /> {date}
+                  </span>
                   <h2>{title}</h2>
                 </a>
               </Link>
@@ -39,17 +43,6 @@ export default function Home({ data }) {
           )
         })}
       </Content>
-{/* 
----
-slug: floats-and-clears-1
-title: Floats and clears 1
-header: Positioning your elements via floating. Incoming problems...
-collection: CSS Introductions
-category: Tutorial
-filters: CSS
-date: 13 July 2015
-icons: google_css.svg
-folder: writing */}
     </Layout>
   )
 }
