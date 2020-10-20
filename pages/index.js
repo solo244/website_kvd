@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
 import Content from "../components/content";
+import Footer from "../components/footer";
 import tileStyles from "../styles/modules/tile.module.css";
 import categoryStyles from "../styles/modules/category.module.css";
 import { getSortedWritingsData } from "../lib/writings";
@@ -21,6 +22,7 @@ export default function Home({ data }) {
         <Link href="/about">
           <a className="button">More about me 😴</a>
         </Link>
+        <Footer grid />
       </Sidebar>
 
       <Content grid>
