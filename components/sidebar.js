@@ -5,7 +5,6 @@ export default function Sidebar({ children, side }) {
     <>
       {side ? (
         <section className={styles.side}>
-          <h1>Side</h1>
           {children}
         </section>
       ) : (
