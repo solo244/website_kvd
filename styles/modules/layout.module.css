@@ -18,12 +18,34 @@
 }
 
 .side {
-  border-right: 1px solid var(--grey);
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 4rem;
+  top: 1rem;
+  left: 1rem;
+}
+
+.link {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  color: var(--black);
+  opacity: 0.35;
+}
+
+.back {
+  opacity: 0.35;
+  margin-right: 0.5rem;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--primary);
+  opacity: 1;
+}
+
+.spacer {
+  font-weight: bold;
+  font-size: 1.5rem;
+  opacity: 0.35;
 }
 
 .fixed {
@@ -33,6 +55,8 @@
   bottom: 0;
   width: 500px;
   padding: 4rem;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .content {
