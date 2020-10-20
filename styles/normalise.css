@@ -80,7 +80,7 @@ h1,
 .h1 {
   font-size: var(--font-size_huge);
   font-weight: 900;
-  letter-spacing: -5px;
+  letter-spacing: -4px;
   color: var(--black);
   margin-bottom: 4rem;
   line-height: 0.9;

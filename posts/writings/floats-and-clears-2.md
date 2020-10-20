@@ -3,7 +3,8 @@ slug: floats-and-clears-2
 title: Floats and clears 2
 header: ...
 collection: css introductions
-category: tutorial
+category: wdigt
+# category: tutorial
 filters: css
 date: 22 August 2015
 ---
