@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 import tileStyles from "../styles/modules/tile.module.css";
 import categoryStyles from "../styles/modules/category.module.css";
 import { getSortedWritingsData } from "../lib/writings";
-import { Calendar } from "../components/icons";
+import { Calendar } from "react-feather";
 
 export default function Home({ data }) {
   return (
@@ -20,7 +20,7 @@ export default function Home({ data }) {
         <h1>Lorem all the ipsums</h1>
         <p>Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. As a profession, I make web-stuff at <a href="https://www.mediasoft.be" className="link" target="_blank">Mediasoft</a> and <a href="https://www.weebit.be" className="link" target="_blank">Weebit</a>.</p>
         <Link href="/about">
-          <a className="button">More about me 😴</a>
+          <a className={`button ${tileStyles.button}`}>More about me 😴</a>
         </Link>
         <Footer grid />
       </Sidebar>
