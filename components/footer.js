@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/modules/footer.module.css";
 import { ArrowUp, GitHub, Twitter } from "react-feather";
 
@@ -14,8 +15,12 @@ export default function Footer({ children, grid }) {
       {grid ? (
         <footer className={styles.footerstripped}>
           <aside className={styles.socials}>
-            <GitHub />
-            <Twitter />
+            <Link href="https://github.com/solo244">
+              <a target="_blank"><GitHub /></a>
+            </Link>
+            <Link href="https://twitter.com/Elsolo244">
+              <a target="_blank"><Twitter /></a>
+            </Link>
           </aside>
 
           <section className={styles.disclaimer}>
@@ -26,13 +31,13 @@ export default function Footer({ children, grid }) {
       ) : (
         <footer className={styles.footer}>
           <section className={styles.container}>
-            <div className={styles.totop} onClick={() => toTop()}>
-              <ArrowUp size="20" />
-            </div>
-
             <aside className={styles.socials}>
-              <GitHub />
-              <Twitter />
+              <Link href="https://github.com/solo244">
+                <a target="_blank"><GitHub /></a>
+              </Link>
+              <Link href="https://twitter.com/Elsolo244">
+                <a target="_blank"><Twitter /></a>
+              </Link>
             </aside>
 
             <section className={styles.disclaimer}>
