@@ -11,9 +11,7 @@ export default function Layout({ children }) {
           content="Learn how to build a personal website using Next.js"
         />
       </Head>
-      <section className={styles.flex}>
-        {children}
-      </section>
+      <section className={styles.flex}>{children}</section>
     </>
-  )
+  );
 }

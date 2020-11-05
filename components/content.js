@@ -8,10 +8,8 @@ export default function Content({ children, grid }) {
           {children}
         </section>
       ) : (
-        <section className={styles.container}>
-          {children}
-        </section>
+        <section className={styles.container}>{children}</section>
       )}
     </>
-  )
+  );
 }
