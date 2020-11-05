@@ -18,7 +18,19 @@ export default function Home({ data }) {
 
       <Sidebar>
         <h1>Lorem all the ipsums</h1>
-        <p>Webdesigner, webdeveloper, teacher, gamer, moron, realist, procrastinator, fast talker, nerd, distracted by pretty colors. As a profession, I make web-stuff at <a href="https://www.mediasoft.be" className="link" target="_blank">Mediasoft</a> and <a href="https://www.weebit.be" className="link" target="_blank">Weebit</a>.</p>
+        <p>
+          Webdesigner, webdeveloper, teacher, gamer, moron, realist,
+          procrastinator, fast talker, nerd, distracted by pretty colors. As a
+          profession, I make web-stuff at{" "}
+          <a href="https://www.mediasoft.be" className="link" target="_blank">
+            Mediasoft
+          </a>{" "}
+          and{" "}
+          <a href="https://www.weebit.be" className="link" target="_blank">
+            Weebit
+          </a>
+          .
+        </p>
         <Link href="/about">
           <a className={`button ${tileStyles.button}`}>More about me 😴</a>
         </Link>
@@ -28,12 +40,11 @@ export default function Home({ data }) {
       <Content grid>
         {data.map(({ slug, title, collection, date, category }) => {
           return (
-            <article
-              key={slug}
-              className={tileStyles.tile}
-            >
+            <article key={slug} className={tileStyles.tile}>
               <Link href={`/writings/${slug}`}>
-                <a className={`${tileStyles.tilelink} ${categoryStyles[category]}`}>
+                <a
+                  className={`${tileStyles.tilelink} ${categoryStyles[category]}`}
+                >
                   <h4>{collection}</h4>
                   <span className={tileStyles.tiledate}>
                     <Calendar size="16" /> {date}
@@ -42,18 +53,18 @@ export default function Home({ data }) {
                 </a>
               </Link>
             </article>
-          )
+          );
         })}
       </Content>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const data = getSortedWritingsData()
+  const data = getSortedWritingsData();
   return {
     props: {
-      data
-    }
-  }
+      data,
+    },
+  };
 }

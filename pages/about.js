@@ -13,5 +13,5 @@ export default function About() {
         <a>Back to home</a>
       </Link>
     </Layout>
-  )
+  );
 }

@@ -28,39 +28,47 @@ export default function Writing({ writingData }) {
       </Sidebar>
 
       <Header style={writingData.category}>
-        <h4>{writingData.category}: {writingData.title}</h4>
+        <h4>
+          {writingData.category}: {writingData.title}
+        </h4>
         <h1>{writingData.header}</h1>
 
         <aside>
-          <span><Calendar size="20" />{writingData.date}</span>
-          <span><Tag size="20" />{writingData.collection}</span>
+          <span>
+            <Calendar size="20" />
+            {writingData.date}
+          </span>
+          <span>
+            <Tag size="20" />
+            {writingData.collection}
+          </span>
         </aside>
       </Header>
 
       <Content>
-        <section dangerouslySetInnerHTML={{ __html: writingData.contentHtml }}></section>
+        <section
+          dangerouslySetInnerHTML={{ __html: writingData.contentHtml }}
+        ></section>
       </Content>
 
       <Footer />
-
     </Layout>
-  )
+  );
 }
 
 export async function getStaticPaths() {
   const paths = getAllWritingIds();
   return {
     paths,
-    fallback: false
-  }
+    fallback: false,
+  };
 }
 
 export async function getStaticProps({ params }) {
   const writingData = await getWritingData(params.id);
   return {
     props: {
-      writingData
-    }
-  }
+      writingData,
+    },
+  };
 }
-

@@ -27,20 +27,18 @@ export default function Writings({ data }) {
 
       <Content grid>
         {data.map(({ title }) => {
-          return (
-            <h1 key={title}>{title}</h1>
-          )
+          return <h1 key={title}>{title}</h1>;
         })}
       </Content>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
   const data = getSortedWritingsData();
   return {
     props: {
-      data
-    }
-  }
+      data,
+    },
+  };
 }
