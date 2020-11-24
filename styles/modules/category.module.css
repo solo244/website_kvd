@@ -31,18 +31,18 @@
   box-shadow: var(--shadow);
 }
 
-/* Gaming */
-.gaming {
+/* Coding */
+.coding {
   background-color: var(--blue_light);
   border: 4px solid var(--blue_light);
 }
 
-.gaming h4 {
+.coding h4 {
   color: var(--blue_dark);
 }
 
-.gaming:hover,
-.gaming:focus {
+.coding:hover,
+.coding:focus {
   background-color: var(--white);
   border: 4px solid var(--blue);
   box-shadow: var(--shadow);
@@ -65,18 +65,18 @@
   box-shadow: var(--shadow);
 }
 
-/* Coding */
-.coding {
+/* Gaming */
+.gaming {
   background-color: var(--yellow_light);
   border: 4px solid var(--yellow_light);
 }
 
-.coding h4 {
+.gaming h4 {
   color: var(--yellow_dark);
 }
 
-.coding:hover,
-.coding:focus {
+.gaming:hover,
+.gaming:focus {
   background-color: var(--white);
   border: 4px solid var(--yellow);
   box-shadow: var(--shadow);
