@@ -1,12 +1,11 @@
 ---
-slug: floats-and-clears-2
+slug: /writings/floats-and-clears-2
 title: Floats and clears 2
 header: ...
-collection: css introductions
 category: wdigt
 # category: tutorial
 filters: css
-date: 22 August 2015
+date: 22/08/2015
 ---
 
 After explaining floats in the previous tutorial you might have noticed that floats are trouble. In the sense that they give you the option to position elements next to each other yes, but by doing so, they completely mess up the “flow” off your document. The normal flow simply dictates that every elements is positioned underneath the previous element. That way, you get a stack of HTML elements.
