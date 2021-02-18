@@ -3,9 +3,9 @@ import React from "react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 // Config/state
-import links from "../constants/links";
+import links from "../../constants/links";
 // Components
-import Logo from "../images/logo";
+import Logo from "../../images/logo";
 // Styles
 import { Link, Row, Col, Spacer, Text } from "@geist-ui/react";
 

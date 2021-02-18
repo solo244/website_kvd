@@ -1,7 +1,7 @@
 // Dependencies
 import React from "react";
 // Config/state
-import get from "../utils/get";
+import get from "../../utils/get";
 // Styles
 import { Link, Row, Col, Spacer, Text, Divider } from "@geist-ui/react";
 import Github from "@geist-ui/react-icons/github";
