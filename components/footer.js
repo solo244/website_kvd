@@ -1,69 +1,51 @@
-import Link from "next/link";
-import styles from "../styles/modules/footer.module.css";
-import { ArrowUp, GitHub, Twitter } from "react-feather";
+// Dependencies
+import React from "react";
+// Config/state
+import get from "../utils/get";
+// Styles
+import { Link, Row, Col, Spacer, Text, Divider } from "@geist-ui/react";
+import Github from "@geist-ui/react-icons/github";
+import Twitter from "@geist-ui/react-icons/twitter";
 
-const toTop = () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-};
-
-let year = new Date().getFullYear();
-
-export default function Footer({ children, grid }) {
+const Footer = () => {
   return (
     <>
-      {grid ? (
-        <footer className={styles.footerstripped}>
-          <aside className={styles.socials}>
-            <Link href="https://github.com/solo244">
-              <a target="_blank">
-                <GitHub />
-              </a>
-            </Link>
-            <Link href="https://twitter.com/Elsolo244">
-              <a target="_blank">
-                <Twitter />
-              </a>
-            </Link>
-          </aside>
-
-          <section className={styles.disclaimer}>
-            <section className="copyright">
-              <span>© {year}</span> Ken Van Damme
-            </section>
-            <section className="adds">
-              No <span>🍪 cookies, 👣 tracking, 💰 ads or ❗pop-ups.</span>
-            </section>
-          </section>
-        </footer>
-      ) : (
-        <footer className={styles.footer}>
-          <section className={styles.container}>
-            <aside className={styles.socials}>
-              <Link href="https://github.com/solo244">
-                <a target="_blank">
-                  <GitHub />
-                </a>
-              </Link>
-              <Link href="https://twitter.com/Elsolo244">
-                <a target="_blank">
+      <Spacer y={3} />
+      <Row gap={2}>
+        <Col>
+          <Divider />
+          <Spacer y={2} />
+          <Row align="middle" justify="space-between">
+            <Col>
+              <Text small>
+                © {get.date()} <strong>Ken Van Damme</strong>
+              </Text>
+            </Col>
+            <Col>
+              <Row justify="center">
+                <Text small>No 🍪 cookies, 💰 ads or ❗pop-ups.</Text>
+              </Row>
+            </Col>
+            <Col>
+              <Row justify="end">
+                <Link color href="https://github.com/solo244" target="_blank">
+                  <Github />
+                </Link>
+                <Spacer x={0.5} />
+                <Link
+                  color
+                  href="https://twitter.com/Elsolo244"
+                  target="_blank"
+                >
                   <Twitter />
-                </a>
-              </Link>
-            </aside>
-
-            <section className={styles.disclaimer}>
-              <article className="copyright">
-                <span>© {year}</span> Ken Van Damme
-              </article>
-              <article className="adds">
-                No <span>🍪 cookies, 👣 tracking, 💰 ads or ❗pop-ups.</span>
-              </article>
-              {/* // BUT I STILL WNAT A COOKIE NOTIFICATION */}
-            </section>
-          </section>
-        </footer>
-      )}
+                </Link>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </>
   );
-}
+};
+
+export default Footer;
