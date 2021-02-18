@@ -7,23 +7,23 @@ import links from "../../constants/links";
 // Components
 import Logo from "../../images/logo";
 // Styles
-import { Link, Row, Col, Spacer, Text } from "@geist-ui/react";
+import { Grid, Link, Row, Col, Spacer, Text } from "@geist-ui/react";
 
 const Header = () => {
   const router = useRouter();
 
   return (
     <>
-      <Row gap={2} align="middle">
-        <Col>
+      <Grid.Container gap={2} align="middle">
+        <Grid>
           <NextLink href="/">
             <Link>
               <Logo />
             </Link>
           </NextLink>
-        </Col>
-        <Col>
-          <Row justify="end">
+        </Grid>
+        <Grid xs justify="end">
+          <Row justify="end" align="middle">
             {links.map(link => (
               <NextLink href={link.path} key={link.path}>
                 {router.pathname === link.path ? (
@@ -36,8 +36,8 @@ const Header = () => {
               </NextLink>
             ))}
           </Row>
-        </Col>
-      </Row>
+        </Grid>
+      </Grid.Container>
       <Spacer y={3} />
     </>
   );
