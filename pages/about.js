@@ -1,40 +1,55 @@
-import Head from "next/head";
-import Link from "next/link";
-import Layout from "../components/layout";
-import Content from "../components/content";
+// Components
+import TabSkills from "../components/atoms/TabSkills";
+import TabTimeline from "../components/atoms/TabTimeline";
+import TabLinks from "../components/atoms/TabLinks";
+import Layout from "../components/molecules/Layout";
+// Styles
+import { Text, Spacer, Tabs } from "@geist-ui/react";
+import Activity from "@geist-ui/react-icons/activity";
+import BookOpen from "@geist-ui/react-icons/bookOpen";
+import LinkIcon from "@geist-ui/react-icons/link";
 
-export default function About() {
+const About = () => {
   return (
-    <>
-      <Layout about>
-        <Head>
-          <title>About | Ken Van Damme</title>
-        </Head>
-        <h1>About page</h1>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </Layout>
-      <Content>
-        <h2>Short Bio</h2>
-        <h2>Timeline</h2>
-        <h2>Worked with/comfortale with:</h2>
-        <ul>
-          <li>React</li>
-          <li>Svelte</li>
-          <li>Netlify</li>
-        </ul>
-        <h2>Trying to get better at:</h2>
-        <ul>
-          <li>Next.js</li>
-        </ul>
-        <h2>Still looking into:</h2>
-        <ul>
-          <li>Foresttry</li>
-          <li>Vercel</li>
-          <li></li>
-        </ul>
-      </Content>
-    </>
+    <Layout title="About | Ken Van Damme">
+      <Text style={{ textAlign: "center", lineHeight: "1" }} h1>
+        I am by far the most me I've ever known
+      </Text>
+      <Spacer y={2} />
+      <Tabs initialValue="1">
+        <Tabs.Item
+          label={
+            <>
+              <Activity /> My timeline
+            </>
+          }
+          value="1"
+        >
+          <TabTimeline />
+        </Tabs.Item>
+        <Tabs.Item
+          label={
+            <>
+              <BookOpen /> Learning in public
+            </>
+          }
+          value="2"
+        >
+          <TabSkills />
+        </Tabs.Item>
+        <Tabs.Item
+          label={
+            <>
+              <LinkIcon /> Handy links
+            </>
+          }
+          value="3"
+        >
+          <TabLinks />
+        </Tabs.Item>
+      </Tabs>
+    </Layout>
   );
-}
+};
+
+export default About;
