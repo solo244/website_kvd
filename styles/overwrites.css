@@ -1,3 +1,17 @@
 #__next .tabs {
   overflow: initial;
 }
+
+.link-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.link-icon svg {
+  width: auto;
+  height: auto;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 35px;
+  max-height: 35px;
+}

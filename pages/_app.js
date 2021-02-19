@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { CssBaseline, GeistProvider } from "@geist-ui/react";
 import Sun from "@geist-ui/react-icons/sun";
 import Moon from "@geist-ui/react-icons/moon";
+import "../styles/overwrites.css";
 
 const App = ({ Component, pageProps }) => {
   const [themeType, setThemeType] = useState("dark");
