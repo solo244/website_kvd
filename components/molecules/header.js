@@ -3,7 +3,7 @@ import React from "react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 // Config/state
-import links from "../../constants/links";
+import menu from "../../constants/menu";
 // Components
 import Logo from "../../images/logo";
 // Styles
@@ -24,7 +24,7 @@ const Header = () => {
         </Grid>
         <Grid xs justify="end">
           <Row justify="end" align="middle">
-            {links.map(link => (
+            {menu.map(link => (
               <NextLink href={link.path} key={link.path}>
                 {router.pathname === link.path ? (
                   <Text b type="secondary">
