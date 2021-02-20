@@ -8,7 +8,7 @@ import writings from "../constants/writings";
 import Intro from "../components/atoms/Intro";
 import Griditem from "../components/atoms/Griditem";
 import Block from "../components/atoms/Block";
-import Layout from "../components/molecules/Layout";
+import Layout from "../components/molecules/GLayout";
 // Styles
 import { Button, Row, Spacer, Grid, Description } from "@geist-ui/react";
 import User from "@geist-ui/react-icons/user";

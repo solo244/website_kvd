@@ -3,7 +3,7 @@ import ProgressBar from "react-scroll-progress-bar";
 import { readingTime } from "reading-time-estimator";
 // Components
 import Breadcrumb from "../../components/atoms/Breadcrumb";
-import Layout from "../../components/molecules/Layout";
+import Layout from "../../components/molecules/GLayout";
 // Styles
 import { Text, Spacer, Tag, Row } from "@geist-ui/react";
 
