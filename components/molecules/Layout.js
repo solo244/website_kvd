@@ -2,7 +2,7 @@
 import React from "react";
 import Head from "next/head";
 // Components
-import Meta from "./Meta";
+import Meta from "./NewMeta";
 import Header from "./Header";
 import Footer from "./Footer";
 // Styles
