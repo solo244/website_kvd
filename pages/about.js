@@ -2,12 +2,14 @@
 import TabSkills from "../components/atoms/TabSkills";
 import TabTimeline from "../components/atoms/TabTimeline";
 import TabLinks from "../components/atoms/TabLinks";
+import TabSponsorship from "../components/atoms/TabSponsorship";
 import Layout from "../components/molecules/Layout";
 // Styles
 import { Text, Spacer, Tabs } from "@geist-ui/react";
 import Activity from "@geist-ui/react-icons/activity";
 import BookOpen from "@geist-ui/react-icons/bookOpen";
 import LinkIcon from "@geist-ui/react-icons/link";
+import DollarSign from "@geist-ui/react-icons/dollarSign";
 
 const About = () => {
   return (
@@ -46,6 +48,16 @@ const About = () => {
           value="3"
         >
           <TabLinks />
+        </Tabs.Item>
+        <Tabs.Item
+          label={
+            <>
+              <DollarSign /> Supporting me
+            </>
+          }
+          value="4"
+        >
+          <TabSponsorship />
         </Tabs.Item>
       </Tabs>
     </Layout>
