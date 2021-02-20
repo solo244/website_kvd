@@ -7,14 +7,16 @@ const Block = ({ title, type, intro, link }) => {
   const typeStyle =
     type === "What Did I Google Today"
       ? "warning"
-      : "Brainfart"
+      : type === "Brainfarts"
       ? "success"
-      : "error";
+      : type === "Tutorials"
+      ? "error"
+      : "lite";
 
   return (
     <>
       <NextLink href={link}>
-        <Link>
+        <Link style={{ display: "block", width: "100%" }}>
           <Card shadow hoverable>
             <Text h4 style={{ marginBottom: "0" }}>
               {title}
