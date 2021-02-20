@@ -5,7 +5,7 @@ import categories from "../constants/categories";
 import writings from "../constants/writings";
 // Components
 import Block from "../components/atoms/Block";
-import Layout from "../components/molecules/GLayout";
+import Layout from "../components/molecules/Layout";
 // Styles
 import { Text, Button, Row, Spacer, Grid } from "@geist-ui/react";
 

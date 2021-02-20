@@ -4,7 +4,7 @@ import React from "react";
 import designs from "../constants/designs";
 // Components
 import Griditem from "../components/atoms/Griditem";
-import Layout from "../components/molecules/GLayout";
+import Layout from "../components/molecules/Layout";
 // Styles
 import { Grid, Text, Spacer } from "@geist-ui/react";
 

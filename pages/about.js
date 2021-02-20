@@ -3,7 +3,7 @@ import TabSkills from "../components/atoms/TabSkills";
 import TabTimeline from "../components/atoms/TabTimeline";
 import TabLinks from "../components/atoms/TabLinks";
 import TabSponsorship from "../components/atoms/TabSponsorship";
-import Layout from "../components/molecules/GLayout";
+import Layout from "../components/molecules/Layout";
 // Styles
 import { Text, Spacer, Tabs } from "@geist-ui/react";
 import Activity from "@geist-ui/react-icons/activity";
