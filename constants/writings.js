@@ -2,11 +2,10 @@
 
 const writings = [
   {
-    title: "Multi private repo setup",
-    tag: "What Did I Google Today",
+    title: "Creating a simple website",
+    tag: "Tutorials",
     link: "a-simple-website",
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    intro: "Is building a website actually that difficult?",
   },
 ];
 
