@@ -82,6 +82,8 @@ const designs = [
     image: "/images/designs/design18.jpg",
     redbubble:
       "https://www.redbubble.com/i/iphone-case/I-see-dead-pixels-by-solo244/14691278.PGM2E",
+    tags:
+      "i see dead pixels, dead pixel, dead pixels, people, pixel, pixels, dead, i see, haley joel osment, malcolm crowe, scary, scary, halloween, hd tv, television, ghost, dead people, i see dead people, bruce willis, the sixth sense, sixth sense, flatscreen, flat screen, high definition",
   },
   {
     title: "Say hello to my little friend",
@@ -134,3 +136,6 @@ const designs = [
 ];
 
 export default designs;
+
+const tags =
+  "nerd, 8bit, lcd, pixel, geekchic, geek, screen, funny, retro, sarcasm, humor, error, computer, gamer, parody, irony, satire, awesome, repair, monitor";
