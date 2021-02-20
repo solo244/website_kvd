@@ -2,9 +2,9 @@
 import React from "react";
 import Head from "next/head";
 // Components
-import Meta from "./NewMeta";
-import Header from "./NewHeader";
-import Footer from "./NewFooter";
+import Meta from "./Meta";
+import Header from "./Header";
+import Footer from "./Footer";
 // Styles
 import { Page } from "@geist-ui/react";
 
