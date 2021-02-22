@@ -18,7 +18,7 @@ const Block = ({ title, type, intro, link }) => {
       <NextLink href={link}>
         <Link style={{ display: "block", width: "100%" }}>
           <Card shadow hoverable>
-            <Text h4 style={{ marginBottom: "0" }}>
+            <Text h4 style={{ marginBottom: "0", lineHeight: "1.25" }}>
               {title}
             </Text>
             <Spacer y={0.5} />
