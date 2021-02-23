@@ -7,10 +7,18 @@ import Layout from "../molecules/Layout";
 // Styles
 import { Text, Spacer, Tag, Row } from "@geist-ui/react";
 
-const Blog = ({ title, content }) => {
+const Blog = ({ title, content, type }) => {
   let all = "";
   content.props.children.map(child => (all += child.props.children));
   const time = readingTime(all, 200);
+  const typeStyle =
+    type === "What Did I Google Today"
+      ? "warning"
+      : type === "Brainfarts"
+      ? "success"
+      : type === "Tutorials"
+      ? "error"
+      : "lite";
 
   return (
     <>
@@ -25,7 +33,7 @@ const Blog = ({ title, content }) => {
           {title}
         </Text>
         <Row justify="center" align="middle">
-          <Tag type="error">Tutorials</Tag>
+          <Tag type={typeStyle}>{type}</Tag>
         </Row>
         <Spacer y={2} />
         <Breadcrumb title="A simple website" />
