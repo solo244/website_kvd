@@ -18,7 +18,7 @@ const Blog = ({ title, content }) => {
       <Layout title={`${title} | Writing | Ken Van Damme`}>
         <Row justify="center" align="middle">
           <Text small style={{ color: "#aaa" }}>
-            {time.text}
+            {time.text === "min read" ? `1 ${time.text}` : time.text}
           </Text>
         </Row>
         <Text style={{ textAlign: "center", lineHeight: "1" }} h1>
