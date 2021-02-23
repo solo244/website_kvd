@@ -3,7 +3,7 @@ import Blog from "../../components/atoms/Blog";
 // Styles
 import { Text, Note, Image, Code, Display } from "@geist-ui/react";
 
-const shitcCodeOnlyWarrantsMoreShitCode = () => {
+const shitCodeOnlyWarrantsMoreShitCode = () => {
   return (
     <Blog
       title="Shit code only warrants more shit code"
@@ -13,7 +13,7 @@ const shitcCodeOnlyWarrantsMoreShitCode = () => {
   );
 };
 
-export default shitcCodeOnlyWarrantsMoreShitCode;
+export default shitCodeOnlyWarrantsMoreShitCode;
 
 const content = (
   <>
