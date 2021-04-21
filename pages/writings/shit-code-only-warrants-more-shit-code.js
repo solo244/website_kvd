@@ -17,27 +17,27 @@ export default shitCodeOnlyWarrantsMoreShitCode;
 
 const content = (
   <>
-    <Note label={false} filled>
+    <Note label="Disclaimer" type="secondary">
       Disclaimer: this title is click bait. All words are my opinion and
       experience, apply mostly to the web development world and I’m located in
       Belgium. Your mileage may vary.
     </Note>
     <Text>
       <strong>
-        Conclusion: bad code is only bad code if it hinders your user or
-        programmers working on it in any way. But nothing is black and white.
-        That hindrance is measured in degrees. Some degree is acceptable and
-        expected.
+        TL;DR: bad code is only bad code if it hinders your user or programmers
+        working on it in any way. But nothing is black and white. That hindrance
+        is measured in degrees. Some degree is acceptable and expected.
       </strong>
     </Text>
     <Text h2>Where to start</Text>
     <Text>
       I love spaghetti. Both the food and the code. However, I don’t like it as
-      a result or something you should aspire to have in finished projects but
-      merely as a step. A necessary step that a lot of people write off as plain
-      bad. I’d say that statement is as useless as claiming if you are drawing
-      you can’t sketch something quickly, but rather you should draw your final
-      result in one go.
+      a <em>result</em> or something you should plan to have in{" "}
+      <em>finished</em>
+      projects, but merely as a necessary step. A step that a lot of people
+      write off as plain bad. I’d say that statement is as useless as claiming
+      that if you are drawing you can’t sketch something quickly, but rather you
+      should draw your final result in one go.
     </Text>
     <Display
       shadow
@@ -58,18 +58,17 @@ const content = (
     </Display>
     <Text h2>Planning is key</Text>
     <Text>
-      Yes, you should plan. Setup, process and workflow. You can’t just dive
-      into any project by just typing code now can you? Wait, why not? Because
-      people told you so? Of course you can! But in most cases it’s not a good
-      idea. Because you’ll write a lot of code that wasn’t foreseen for certain
-      features. So you’ll have to refactor those code blocks. They might get
-      messy and inconsistent. Having a plan will avoid those roadblocks and
-      lower technical debt. But it won’t prevent or fix it. Planning your
-      “general” goal by defining scope and technical specs will always help, but
-      you’ll need to, at some point, rework some things. Without exception. You
-      don’t want those things to be the majority but there is no avoiding it. So
-      having experience in this field is important, otherwise you’ll loose to
-      much time when it eventually happens.
+      You can’t just dive into any project by just typing code now, can you?
+      Wait, why not? Because people told you so? Of course you can! But in most
+      cases it’s not a good idea. Because you’ll write a lot of code that wasn’t
+      foreseen for certain features. So you’ll have to refactor those code
+      blocks. They might get messy and inconsistent. Having a plan will avoid
+      those roadblocks and lower technical debt. But it won’t prevent or fix it.
+      Planning your “general” goal by defining scope and technical specs will
+      always help, but you’ll need to, at some point, rework some things.
+      Without exception. You don’t want those things to be the majority but
+      there is no avoiding it. So having experience in this field is important,
+      otherwise you’ll loose to much time when it eventually happens.
     </Text>
     <Text h2>Duck tape personal projects</Text>
     <Text>
