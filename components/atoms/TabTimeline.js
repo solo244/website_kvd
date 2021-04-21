@@ -7,10 +7,10 @@ const TabTimeline = () => {
   return (
     <>
       <Text p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        So you clicked on ‘More about me’, bit of a stalker there? Well, if you
+        are here already and interested in my fascinating life story, just
+        scroll along the timeline to get to know me intimately and understand
+        the inner workings of a mastermind.
       </Text>
       <Spacer y={2} />
       <Text h3>Highlights ⭐</Text>

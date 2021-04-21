@@ -9,10 +9,12 @@ const TabSponsorship = () => {
   return (
     <>
       <Text p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        So now you know me intimately, have clearly clicked on several of my
+        handy links and find me potentially interesting to follow, hire or
+        support. Great! If you like my designs, you can buy them below and if
+        you cannot handle mornings without your hot cup of java just like me,
+        why don’t you show me that support by hitting the button below ? Much
+        appreciated!
       </Text>
       <Spacer y={2} />
       <Text h3>Thank you 😊</Text>

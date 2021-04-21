@@ -9,13 +9,13 @@ const TabSkills = () => {
   return (
     <>
       <Text p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Yup, I jumped on this trend too. I think it’s a great push both for
+        myself - constantly striving for more & being able to show off what I
+        can do - and potentially for you, if you’re looking for new tools,
+        techniques etc.
       </Text>
       <Spacer y={2} />
-      <Text h3>Todo 🧠</Text>
+      <Text h3>Busy with 🧠</Text>
       <Grid.Container gap={2}>
         {skills.map(
           skill =>
