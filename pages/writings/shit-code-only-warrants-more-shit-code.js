@@ -72,64 +72,69 @@ const content = (
     </Text>
     <Text h2>Duck tape personal projects</Text>
     <Text>
-      Lets’ face it, we don’t always know what we’re doing. But that’s fine. In
-      most cases, you learn and evolve and don’t make the same mistakes. In some
-      cases, you do keep making the same mistake and learn how to assign it to a
-      co-worker. There is always a solution. What we need is to train ourselves
-      to find a solution. This is where personal projects can come in. I would
-      argue you don’t need to work next to your main job on development, but I
-      wouldn’t recommend it. Personal projects is where a lot of my creativity
-      goes to die. I know that sounds bad, but it’s not. Because I learn stuff
-      in the process. Even if it’s how not to do something. You can learn on the
-      job, but the margins are slim and a deadline can creep up on you really
-      fast. You don’t ascertain information well under stress. And in most
-      cases, you store the wrong, “hacky” solutions.
+      We don't always know what we're doing. Surprising, I know. In most cases
+      we learn and evolve and don't make the same mistakes over and over. In
+      some cases, however, we do keep making the same mistakes and just get
+      smarter about it: we assign it to a co-worker. There is always a solution.
+      What we need to do is train ourselves to find a solution. This is where
+      personal projects are a good option. I am not going to tell you that you
+      absolutely need to do dev projects next to your main job, but I strongly
+      recommend it. Personal projects are where a lot of my creativity goes to
+      die. I know that sounds grim, but it is not. It's essential for me because
+      I learn so much in the process. Sometimes it's just about how not to do
+      something. You can choose to learn on the job, but the margins are slim
+      and deadlines tend to creep on you really fast. You really seldomly have
+      time during your day-to-day to improve yourself and look back over code to
+      see what went wrong or what could be better. Additionally, you don't
+      ascertain information as well under stress. This often results in you
+      learning the wrong, "hacky" solutions.
     </Text>
     <Text h2>Bad code isn’t always bad</Text>
     <Text>
-      Defining bad code is probable one of the most optioned things to read
-      online. What actually makes code bad? Nothing. It’s a terrible adjective.
-      It’s incorrect and subjective and code isn’t. Sure, you write your version
-      of any language, but it’s filled with workflow and logic, not opinions.
-      And using a certain way of working can have consequences. Those can have a
-      direct effect on the outcome and can be classified as “bad”. If your
-      triple for loop impacts performance, some might labels it as bad. If you
-      use 16 nesting levels in your CSS selectors, that would not be smart. Then
-      you could argue that that persons code needs to be addressed. Fixed. But
-      that doesn’t not mean the person needs a sit-down or needs to be labeled
-      as dumb. They need to understand why that code is “bad” and why it should
-      be avoided.
+      Defining bad code is probably one of the most opinioned things to read
+      online. What actually makes code "bad"? Nothing. It’s a terrible
+      adjective. It’s incorrect and subjective and code isn’t. What is most
+      important is that bad code != bad coder. An experienced developer with a
+      highly paid job and freelance projects by the side could write non-optimal
+      code. Their code could be more performant, readable, reusable. Sometimes
+      we all take shortcuts, based on our situation. I think it's important not
+      to get deflated by this. Write bad code, be upset that you don't get given
+      the time to improve it and then learn from it. Your unperformant code
+      could be perfectly readable. Optimally you combine this with our previous
+      step and learn from this "bad" code and improve it in your own projects.
     </Text>
-    <Text h2> What is shit</Text>
+    <Text h2>What is shit</Text>
     <Text>
-      We’ve labeled our bad code. But what is shit code? Something else. It's
-      that code written be the “smart” person in the office. Code only he or she
-      can alter and nobody else. It’s code that doesn’t make sense because of
-      naming conventions or writing things on one line because that’s cooler.
-      Blocks of code that are repeated by copy/paste and every time slightly
-      altered. Undocumented and/or uncommented code. Code where, when you get it
-      assigned to you, you look it and go: “Shit”. I need to adjust one color
-      and it’ll take me 30 minutes. This function is broken, so I’ll have to go
-      and ask Josh, because he’s the only one in the company that knows how to
-      fix it. Which he then does in 2 minutes, but he can’t explain the fix to
-      you, because you wouldn’t get it.
+      I thought "bad" was a terrible adjective, why are we now calling code
+      "shit"?! Well. Shit code is something else. It's that code written by the
+      "smart" person in the office. Code only they can alter and nobody else.
+      It's code that doesn't make sense because of naming conventions or line
+      breaking choices because they are "cooler". Blocks of code that are
+      repeated by copy/paste and every time slightly altered. Undocumented
+      and/or uncommented code. Code which, when you get it assigned to you, you
+      look at and go: "Shit". I need to adjust one colour and it'll take me 30
+      minutes to sift through and figure this out. This function is broken, so
+      I'll have to go and ask Josh because he's the only one in the company who
+      knows how to fix it. Which he then does in 2 minutes, but he can't explain
+      the fix to you, because you wouldn't get it. Don't be a Josh. Consider
+      that people will have to pick up your slack when you're out or busy or
+      leave the company. Be a teamplayer instead.
     </Text>
     <Text h2>Shit consequences</Text>
     <Text>
-      The results of having bad code in a company is simple. You might loose
-      some time having to fix it. But if done correctly this is a self-fixing
-      problem. Because if a developer gets explained why they should avoid
-      something, they’ll do exactly that. And over time, the code only get’s
-      better and better. They pass the message along and the general bar of
-      quality of the project or company gets raised a bit. Shit code on the
-      other hand does the opposite. It creates smaller groups of people with
-      specific knowledge and an atmosphere where asking questions can be
-      followed up by criticism. This behavior only leads to negative results
-      that manifest in very different ways. They are never good for your people
-      and thus also not for the company. Shit people, being smart or capable,
-      write shit code and have a way of ruining the experience for others. We
-      should allow bad code to experience lessons learned and avoid shit code
-      wherever we can.
+      Having "bad" code in a company is simple. You might lose some time having
+      to fix it. Often it is a self-fixing problem, however. If the developer
+      gains understanding as to why they should be avoiding this triple "for"
+      loop or seemingly infinite nesting of your CSS selectors, they often will
+      do exactly that. Over time, the code only gets better and better. They
+      pass the message along and the general bar of quality of the
+      project/company gets raised a bit. "Shit" code on the other hand does the
+      opposite. It creates smaller groups of people with specific knowledge and
+      an atmosphere where asking questions can be followed up by criticism. This
+      behaviour only leads to negative results that manifset in very different
+      ways. "Shit" people, smart or capable as they are, write shit code and
+      have a way of ruining the experience for others. We should allow bad code
+      to experience lessons learned and avoid shit code wherever we can.
     </Text>
   </>
 );
