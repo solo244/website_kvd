@@ -130,6 +130,10 @@ const timeline = [
     description: "Switched to Mediasoft.",
     year: "2020",
   },
+  {
+    description: "Joined the great rollercoaster called cryptocurrency",
+    year: "2021",
+  },
 ];
 
 export default timeline;
