@@ -274,6 +274,16 @@ const skills = [
     progress: 80,
     link: "https://wordpress.com/",
   },
+  {
+    title: "Flutter",
+    progress: 1,
+    link: "https://flutter.dev",
+  },
+  {
+    title: "Stripe",
+    progress: 10,
+    link: "https://stripe.com",
+  },
 ];
 
 export default skills;
