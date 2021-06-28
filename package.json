@@ -54,7 +54,7 @@
     "normalize.css": "^5.0.0",
     "picturefill": "^3.0.2",
     "pixrem": "^3.0.2",
-    "prismjs": "^1.5.1",
+    "prismjs": "^1.24.0",
     "tiny-cookie": "^1.0.1",
     "vinyl-ftp": "^0.6.0",
     "vinyl-source-stream": "^1.1.0"
