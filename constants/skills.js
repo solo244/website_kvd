@@ -175,6 +175,11 @@ const skills = [
     link: "https://preactjs.com/",
   },
   {
+    title: "Prisma",
+    progress: 1,
+    link: "https://www.prisma.io/",
+  },
+  {
     title: "Puppeteer",
     progress: 40,
     link: "https://pptr.dev/",
@@ -270,6 +275,11 @@ const skills = [
     link: "https://svelte.dev/",
   },
   {
+    title: "Symfony",
+    progress: 1,
+    link: "https://symfony.com/",
+  },
+  {
     title: "Tailwind",
     progress: 80,
     link: "https://tailwindcss.com/",
@@ -283,6 +293,11 @@ const skills = [
     title: "Vercel",
     progress: 70,
     link: "https://vercel.com",
+  },
+  {
+    title: "Vite",
+    progress: 1,
+    link: "https://vitejs.dev/",
   },
   {
     title: "Vue",
