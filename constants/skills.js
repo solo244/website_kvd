@@ -35,6 +35,11 @@ const skills = [
     link: "https://www.w3schools.com/css/",
   },
   {
+    title: "Cypress",
+    progress: 40,
+    link: "https://www.cypress.io/",
+  },
+  {
     title: "Deno",
     progress: 1,
     link: "https://deno.land/",
@@ -56,7 +61,7 @@ const skills = [
   },
   {
     title: "Eleventy",
-    progress: 1,
+    progress: 80,
     link: "https://www.11ty.dev/",
   },
   {
@@ -65,9 +70,19 @@ const skills = [
     link: "https://expressjs.com/",
   },
   {
+    title: "Figma",
+    progress: 70,
+    link: "https://www.figma.com/",
+  },
+  {
     title: "Firebase",
     progress: 100,
     link: "https://firebase.google.com",
+  },
+  {
+    title: "Flutter",
+    progress: 1,
+    link: "https://flutter.dev",
   },
   {
     title: "Forestry",
@@ -141,13 +156,18 @@ const skills = [
   },
   {
     title: "Next",
-    progress: 60,
+    progress: 90,
     link: "https://nextjs.org/",
   },
   {
     title: "Nuxt",
     progress: 1,
     link: "https://nuxtjs.org/",
+  },
+  {
+    title: "PostCSS",
+    progress: 50,
+    link: "https://postcss.org/",
   },
   {
     title: "Preact",
@@ -215,6 +235,11 @@ const skills = [
     link: "https://moz.com/beginners-guide-to-seo",
   },
   {
+    title: "Sketch",
+    progress: 100,
+    link: "https://www.sketch.com/",
+  },
+  {
     title: "Snowpack",
     progress: 1,
     link: "https://www.snowpack.dev/",
@@ -226,13 +251,18 @@ const skills = [
   },
   {
     title: "Styled Components",
-    progress: 80,
+    progress: 100,
     link: "https://styled-components.com/",
   },
   {
     title: "Supabase",
-    progress: 20,
+    progress: 90,
     link: "https://app.supabase.io/",
+  },
+  {
+    title: "Stripe",
+    progress: 50,
+    link: "https://stripe.com",
   },
   {
     title: "Svelte",
@@ -251,7 +281,7 @@ const skills = [
   },
   {
     title: "Vercel",
-    progress: 40,
+    progress: 70,
     link: "https://vercel.com",
   },
   {
@@ -261,28 +291,18 @@ const skills = [
   },
   {
     title: "Webpack",
-    progress: 80,
+    progress: 90,
     link: "https://webpack.js.org/",
   },
   {
     title: "Websockets",
-    progress: 1,
+    progress: 40,
     link: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket",
   },
   {
     title: "Wordpress",
     progress: 80,
     link: "https://wordpress.com/",
-  },
-  {
-    title: "Flutter",
-    progress: 1,
-    link: "https://flutter.dev",
-  },
-  {
-    title: "Stripe",
-    progress: 10,
-    link: "https://stripe.com",
   },
 ];
 
