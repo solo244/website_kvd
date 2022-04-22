@@ -5,6 +5,11 @@ const skills = [
     link: "https://www.a11yproject.com/",
   },
   {
+    title: "Algolia",
+    progress: 1,
+    link: "https://www.algolia.com/",
+  },
+  {
     title: "Alpine",
     progress: 1,
     link: "https://github.com/alpinejs/alpine",
@@ -65,9 +70,19 @@ const skills = [
     link: "https://www.11ty.dev/",
   },
   {
+    title: "Emotion",
+    progress: 1,
+    link: "https://emotion.sh/docs/introduction",
+  },
+  {
     title: "Express",
     progress: 1,
     link: "https://expressjs.com/",
+  },
+  {
+    title: "Fauna",
+    progress: 1,
+    link: "https://fauna.com/",
   },
   {
     title: "Figma",
@@ -158,6 +173,11 @@ const skills = [
     title: "Next",
     progress: 90,
     link: "https://nextjs.org/",
+  },
+  {
+    title: "Nhost",
+    progress: 10,
+    link: "https://nhost.io/",
   },
   {
     title: "Nuxt",
@@ -283,6 +303,11 @@ const skills = [
     title: "Tailwind",
     progress: 80,
     link: "https://tailwindcss.com/",
+  },
+  {
+    title: "ThreeJS",
+    progress: 1,
+    link: "https://threejs.org/",
   },
   {
     title: "Typescript",
