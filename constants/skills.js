@@ -140,6 +140,11 @@ const skills = [
     link: "https://jekyllrb.com/",
   },
   {
+    title: "Jest",
+    progress: 10,
+    link: "https://jestjs.io/",
+  },
+  {
     title: "Karma",
     progress: 80,
     link: "https://karma-runner.github.io/latest/index.html",
