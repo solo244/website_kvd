@@ -160,6 +160,11 @@ const skills = [
     link: "https://mobx.js.org/README.html",
   },
   {
+    title: "Mollie",
+    progress: 1,
+    link: "https://www.mollie.com/en",
+  },
+  {
     title: "Netlify",
     progress: 100,
     link: "https://www.netlify.com/",
