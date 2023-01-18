@@ -20,6 +20,11 @@ const skills = [
     link: "https://www.apollographql.com/",
   },
   {
+    title: "Astro",
+    progress: 1,
+    link: "https://astro.build/",
+  },
+  {
     title: "AWS",
     progress: 1,
     link: "https://aws.amazon.com/",
@@ -28,6 +33,11 @@ const skills = [
     title: "Bootstrap",
     progress: 100,
     link: "https://getbootstrap.com/",
+  },
+  {
+    title: "Bun",
+    progress: 1,
+    link: "https://bun.sh/",
   },
   {
     title: "Chai",
@@ -210,6 +220,11 @@ const skills = [
     link: "https://www.prisma.io/",
   },
   {
+    title: "Prismic",
+    progress: 1,
+    link: "https://prismic.io/",
+  },
+  {
     title: "Puppeteer",
     progress: 40,
     link: "https://pptr.dev/",
@@ -218,6 +233,11 @@ const skills = [
     title: "Python",
     progress: 1,
     link: "https://www.python.org/",
+  },
+  {
+    title: "Qwik",
+    progress: 1,
+    link: "https://qwik.builder.io/",
   },
   {
     title: "React",
@@ -285,6 +305,11 @@ const skills = [
     link: "https://storybook.js.org/",
   },
   {
+    title: "Solid",
+    progress: 1,
+    link: "https://solidjs.com/",
+  },
+  {
     title: "Styled Components",
     progress: 100,
     link: "https://styled-components.com/",
@@ -315,14 +340,29 @@ const skills = [
     link: "https://tailwindcss.com/",
   },
   {
+    title: "Tauri",
+    progress: 1,
+    link: "https://tauri.app/",
+  },
+  {
     title: "ThreeJS",
     progress: 1,
     link: "https://threejs.org/",
   },
   {
+    title: "tRPC",
+    progress: 1,
+    link: "https://trpc.io/",
+  },
+  {
     title: "Typescript",
     progress: 1,
     link: "https://www.typescriptlang.org/",
+  },
+  {
+    title: "Turbopack",
+    progress: 1,
+    link: "https://turbo.build/",
   },
   {
     title: "Vercel",
