@@ -65,7 +65,7 @@ const timeline = [
 
   {
     description:
-      "Realised I love playing games, not making them. My own company up and running - clearly more for me than Uni.",
+      "Realised I love playing games, not making them. My own company up and running - clearly more for me than school.",
     year: "2009",
   },
 
@@ -131,11 +131,11 @@ const timeline = [
     year: "2020",
   },
   {
-    description: "Joined the great rollercoaster called cryptocurrency",
+    description: "Joined the great rollercoaster called cryptocurrency.",
     year: "2021",
   },
   {
-    description: "Started working on my very own online application Dyroll",
+    description: "Started working on my very own online application Dyroll.",
     year: "2022",
   },
 ];
