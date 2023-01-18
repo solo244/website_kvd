@@ -134,6 +134,10 @@ const timeline = [
     description: "Joined the great rollercoaster called cryptocurrency",
     year: "2021",
   },
+  {
+    description: "Started working on my very own online application Dyroll",
+    year: "2022",
+  },
 ];
 
 export default timeline;
