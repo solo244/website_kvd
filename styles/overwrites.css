@@ -1,0 +1,30 @@
+#__next .tabs {
+  overflow: initial;
+}
+
+.link-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.support-icon {
+  width: 90px;
+  height: 60px;
+}
+
+.link-icon svg,
+.support-icon svg {
+  width: auto;
+  height: auto;
+  min-width: 20px;
+  min-height: 20px;
+  max-height: 35px;
+}
+
+.link-icon svg {
+  max-width: 35px;
+}
+
+.support-icon svg {
+  max-width: 90px;
+}
