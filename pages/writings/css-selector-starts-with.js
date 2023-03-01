@@ -24,7 +24,7 @@ const codeSelector1 = `div[width] {
 const codeSelector2 = `a[href="https://kenvandamme.be"] {
   color: orange;
 }`;
-const codeSelector3 = `a[href=^=http] {
+const codeSelector3 = `a[href^=http] {
   color: green;
 }`;
 const codeSelector4 = `img[src$=.jpg] {
