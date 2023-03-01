@@ -7,9 +7,8 @@ const Meta = () => {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta
         name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1"
+        content="width=device-width,initial-scale=1,maximum-scale=5"
       />
-      <meta name="robots" content="noindex, nofollow" />
       <meta
         name="description"
         content="Webdesigner, webdeveloper, teacher, gamer, moron, realist,
