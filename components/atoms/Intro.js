@@ -24,12 +24,20 @@ const Intro = () => {
         >
           Mediasoft
         </Link>
-        {/* {" "}
+        ,{" "}
+        <Link
+          icon
+          color
+          underline
+          href="https://www.makeitfly.group"
+          target="_blank"
+        >
+          Make It Fly
+        </Link>{" "}
         and{" "}
         <Link icon color underline href="https://www.weebit.be" target="_blank">
           Weebit
         </Link>
-        */}
         . For fun, I create{" "}
         <NextLink href="/coding">
           <Link color underline>
