@@ -5,8 +5,24 @@ import Video from "@geist-ui/react-icons/video";
 import Emoji from "@geist-ui/react-icons/emoji";
 import Map from "@geist-ui/react-icons/map";
 import Sidebar from "@geist-ui/react-icons/sidebar";
+import Box from "@geist-ui/react-icons/box";
+import Drop from "@geist-ui/react-icons/droplet";
 
 const codings = [
+  // {
+  //   title: "Dyroll",
+  //   link: "https://www.dyroll.com/",
+  //   linktext: "Visit this website",
+  //   description: "An in browser app to run your very own TTRPG.",
+  //   icon: Box,
+  // },
+  {
+    title: "Weebit",
+    link: "https://www.weebit.be/",
+    linktext: "Visit this website",
+    description: "We build the web, bit by bit. My own company's landingspage.",
+    icon: Drop,
+  },
   {
     title: "Burntabs",
     link: "https://burntabs.kenvandamme.be/",
