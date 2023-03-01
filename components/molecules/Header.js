@@ -16,8 +16,8 @@ const Header = () => {
     <>
       <Grid.Container gap={2} align="middle">
         <Grid>
-          <NextLink href="/">
-            <Link>
+          <NextLink href="/" name="Logo Ken Van Damme">
+            <Link name="Logo Ken Van Damme">
               <Logo />
             </Link>
           </NextLink>

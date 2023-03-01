@@ -27,11 +27,21 @@ const Footer = () => {
           <Text small>No 🍪 cookies, 💰 ads or ❗pop-ups.</Text>
         </Grid>
         <Grid xs={24} sm={3} justify="end">
-          <Link color href="https://github.com/solo244" target="_blank">
+          <Link
+            color
+            href="https://github.com/solo244"
+            target="_blank"
+            name="Github"
+          >
             <Github />
           </Link>
           <Spacer x={0.5} />
-          <Link color href="https://twitter.com/Elsolo244" target="_blank">
+          <Link
+            color
+            href="https://twitter.com/Elsolo244"
+            target="_blank"
+            name="Twitter"
+          >
             <Twitter />
           </Link>
         </Grid>
