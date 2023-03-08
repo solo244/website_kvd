@@ -45,6 +45,11 @@ const skills = [
     link: "https://www.chaijs.com/",
   },
   {
+    title: "Craft CMS",
+    progress: 1,
+    link: "https://craftcms.com/",
+  },
+  {
     title: "CSS3",
     progress: 100,
     link: "https://www.w3schools.com/css/",
