@@ -6,6 +6,7 @@ import Emoji from "@geist-ui/react-icons/emoji";
 import Map from "@geist-ui/react-icons/map";
 import Sidebar from "@geist-ui/react-icons/sidebar";
 import Box from "@geist-ui/react-icons/box";
+import Coffee from "@geist-ui/react-icons/coffee";
 import Drop from "@geist-ui/react-icons/droplet";
 
 const codings = [
@@ -16,6 +17,13 @@ const codings = [
   //   description: "An in browser app to run your very own TTRPG.",
   //   icon: Box,
   // },
+  {
+    title: "Marikoo",
+    link: "https://www.marikoo.be/",
+    linktext: "Visit this website",
+    description: "A catering business for delicious snacks & deserts.",
+    icon: Coffee,
+  },
   {
     title: "Weebit",
     link: "https://www.weebit.be/",
@@ -61,7 +69,7 @@ const codings = [
   {
     title: "MS-FE",
     link: "https://solo244.github.io/ms-fe/",
-    linktext: "Took a look at this project",
+    linktext: "Explore this project",
     description: "How Michael Scott embodies my life as front-end developer",
     icon: Emoji,
   },
