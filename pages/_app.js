@@ -1,5 +1,6 @@
 // Dependencies
 import { useState, useEffect } from "react";
+import Head from "next/head";
 // Styles
 import { CssBaseline, GeistProvider } from "@geist-ui/react";
 import Sun from "@geist-ui/react-icons/sun";
@@ -21,16 +22,21 @@ const App = ({ Component, pageProps }) => {
   });
 
   return (
-    <GeistProvider themeType={themeType}>
-      <CssBaseline />
-      <div
-        style={{ position: "absolute", top: "20px", right: "20px" }}
-        onClick={() => switchThemes()}
-      >
-        {themeType === "dark" ? <Sun /> : <Moon />}
-      </div>
-      <Component {...pageProps} />
-    </GeistProvider>
+    <>
+      <Head>
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
+      </Head>
+      <GeistProvider themeType={themeType}>
+        <CssBaseline />
+        <div
+          style={{ position: "absolute", top: "20px", right: "20px" }}
+          onClick={() => switchThemes()}
+        >
+          {themeType === "dark" ? <Sun /> : <Moon />}
+        </div>
+        <Component {...pageProps} />
+      </GeistProvider>
+    </>
   );
 };
 
