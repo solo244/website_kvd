@@ -6,7 +6,7 @@ const skills = [
   },
   {
     title: "Algolia",
-    progress: 1,
+    progress: 20,
     link: "https://www.algolia.com/",
   },
   {
@@ -16,12 +16,12 @@ const skills = [
   },
   {
     title: "Apollo",
-    progress: 1,
+    progress: 10,
     link: "https://www.apollographql.com/",
   },
   {
     title: "Astro",
-    progress: 1,
+    progress: 10,
     link: "https://astro.build/",
   },
   {
@@ -36,12 +36,12 @@ const skills = [
   },
   {
     title: "Bun",
-    progress: 1,
+    progress: 20,
     link: "https://bun.sh/",
   },
   {
     title: "Chai",
-    progress: 80,
+    progress: 100,
     link: "https://www.chaijs.com/",
   },
   {
@@ -61,7 +61,7 @@ const skills = [
   },
   {
     title: "Deno",
-    progress: 1,
+    progress: 20,
     link: "https://deno.land/",
   },
   {
@@ -71,22 +71,22 @@ const skills = [
   },
   {
     title: "Drupal",
-    progress: 80,
+    progress: 60,
     link: "https://www.drupal.org/",
   },
   {
     title: "Electron",
-    progress: 80,
+    progress: 100,
     link: "https://www.electronjs.org/",
   },
   {
     title: "Eleventy",
-    progress: 80,
+    progress: 100,
     link: "https://www.11ty.dev/",
   },
   {
     title: "Emotion",
-    progress: 1,
+    progress: 20,
     link: "https://emotion.sh/docs/introduction",
   },
   {
@@ -101,7 +101,7 @@ const skills = [
   },
   {
     title: "Figma",
-    progress: 70,
+    progress: 100,
     link: "https://www.figma.com/",
   },
   {
@@ -116,7 +116,7 @@ const skills = [
   },
   {
     title: "Forestry",
-    progress: 80,
+    progress: 100,
     link: "https://forestry.io/",
   },
   {
@@ -131,7 +131,7 @@ const skills = [
   },
   {
     title: "GraphQL",
-    progress: 1,
+    progress: 20,
     link: "https://graphql.org/",
   },
   {
@@ -156,7 +156,7 @@ const skills = [
   },
   {
     title: "Jest",
-    progress: 10,
+    progress: 40,
     link: "https://jestjs.io/",
   },
   {
@@ -171,17 +171,17 @@ const skills = [
   },
   {
     title: "Mocha",
-    progress: 80,
+    progress: 100,
     link: "https://mochajs.org/",
   },
   {
     title: "MobX",
-    progress: 1,
+    progress: 10,
     link: "https://mobx.js.org/README.html",
   },
   {
     title: "Mollie",
-    progress: 1,
+    progress: 40,
     link: "https://www.mollie.com/en",
   },
   {
@@ -191,17 +191,17 @@ const skills = [
   },
   {
     title: "Netlify CMS",
-    progress: 80,
+    progress: 100,
     link: "https://www.netlifycms.org/",
   },
   {
     title: "Next",
-    progress: 90,
+    progress: 100,
     link: "https://nextjs.org/",
   },
   {
     title: "Nhost",
-    progress: 10,
+    progress: 20,
     link: "https://nhost.io/",
   },
   {
@@ -211,7 +211,7 @@ const skills = [
   },
   {
     title: "PostCSS",
-    progress: 50,
+    progress: 100,
     link: "https://postcss.org/",
   },
   {
@@ -220,8 +220,13 @@ const skills = [
     link: "https://preactjs.com/",
   },
   {
+    title: "Pnpm",
+    progress: 100,
+    link: "https://pnpm.io/",
+  },
+  {
     title: "Prisma",
-    progress: 1,
+    progress: 20,
     link: "https://www.prisma.io/",
   },
   {
@@ -286,7 +291,7 @@ const skills = [
   },
   {
     title: "Sentry IO",
-    progress: 20,
+    progress: 90,
     link: "https://sentry.io/welcome/",
   },
   {
@@ -306,7 +311,7 @@ const skills = [
   },
   {
     title: "Storybook",
-    progress: 60,
+    progress: 90,
     link: "https://storybook.js.org/",
   },
   {
@@ -321,12 +326,12 @@ const skills = [
   },
   {
     title: "Supabase",
-    progress: 90,
+    progress: 100,
     link: "https://app.supabase.io/",
   },
   {
     title: "Stripe",
-    progress: 50,
+    progress: 100,
     link: "https://stripe.com",
   },
   {
@@ -341,7 +346,7 @@ const skills = [
   },
   {
     title: "Tailwind",
-    progress: 80,
+    progress: 100,
     link: "https://tailwindcss.com/",
   },
   {
@@ -351,7 +356,7 @@ const skills = [
   },
   {
     title: "ThreeJS",
-    progress: 1,
+    progress: 40,
     link: "https://threejs.org/",
   },
   {
@@ -371,27 +376,27 @@ const skills = [
   },
   {
     title: "Vercel",
-    progress: 70,
+    progress: 100,
     link: "https://vercel.com",
   },
   {
     title: "Vite",
-    progress: 1,
+    progress: 60,
     link: "https://vitejs.dev/",
   },
   {
     title: "Vue",
-    progress: 1,
+    progress: 20,
     link: "https://vuejs.org/",
   },
   {
     title: "Webpack",
-    progress: 90,
+    progress: 100,
     link: "https://webpack.js.org/",
   },
   {
     title: "Websockets",
-    progress: 40,
+    progress: 90,
     link: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket",
   },
   {
