@@ -28,10 +28,14 @@ const Header = () => {
               <NextLink href={link.path} key={link.path}>
                 {router.pathname === link.path ? (
                   <Text b type="secondary">
-                    <Link block>{link.label}</Link>
+                    <Link href={link.path} block>
+                      {link.label}
+                    </Link>
                   </Text>
                 ) : (
-                  <Link block>{link.label}</Link>
+                  <Link href={link.path} block>
+                    {link.label}
+                  </Link>
                 )}
               </NextLink>
             ))}
