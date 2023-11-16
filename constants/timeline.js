@@ -108,12 +108,10 @@ const timeline = [
     description: "Got completely obsessed with Dungeons & Dragons.",
     year: "2015",
   },
-
   {
     description: "Extended the family by one cat.",
     year: "2016",
   },
-
   {
     description: "Found a new job at Yappa.",
     year: "2017",
@@ -135,8 +133,12 @@ const timeline = [
     year: "2021",
   },
   {
-    description: "Started working on my very own online application Dyroll.",
+    description: "Started working on my very own online application.",
     year: "2022",
+  },
+  {
+    description: "Adopted our first dog.",
+    year: "2023",
   },
 ];
 
