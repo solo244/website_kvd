@@ -185,6 +185,11 @@ const skills = [
     link: "https://www.mollie.com/en",
   },
   {
+    title: "MongoDB",
+    progress: 70,
+    link: "https://www.mongodb.com/",
+  },
+  {
     title: "Netlify",
     progress: 100,
     link: "https://www.netlify.com/",
