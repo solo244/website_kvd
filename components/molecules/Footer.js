@@ -3,20 +3,16 @@ import React from "react";
 // Config/state
 import get from "../../utils/get";
 // Styles
-import { Link, Grid, Row, Col, Spacer, Text, Divider } from "@geist-ui/react";
+import { Link, Grid, Spacer, Text, Divider } from "@geist-ui/react";
 import Github from "@geist-ui/react-icons/github";
 import Twitter from "@geist-ui/react-icons/twitter";
 
 const Footer = () => {
   return (
     <>
-      <Spacer y={3} />
-      <Row>
-        <Col>
-          <Divider />
-          <Spacer y={2} />
-        </Col>
-      </Row>
+      <Spacer h={2} />
+      <Divider />
+      <Spacer h={2} />
       <Grid.Container gap={2} align="middle">
         <Grid xs={24} sm={7}>
           <Text small>
@@ -35,7 +31,7 @@ const Footer = () => {
           >
             <Github />
           </Link>
-          <Spacer x={0.5} />
+          <Spacer w={0.5} />
           <Link
             color
             href="https://twitter.com/Elsolo244"

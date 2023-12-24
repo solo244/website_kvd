@@ -12,11 +12,11 @@ const Skill = ({ title, progress, link }) => {
       >
         <Card shadow>
           {progress === 100 ? (
-            <Row align="center">
+            <Grid.Container align="middle">
               <Check />
-              <Spacer x={0.5} />
+              <Spacer w={0.5} />
               {title}
-            </Row>
+            </Grid.Container>
           ) : (
             <>
               {title}

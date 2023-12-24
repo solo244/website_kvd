@@ -21,7 +21,7 @@ const Homepage = () => {
       <Grid.Container gap={2} justify="center">
         <Intro />
         <Grid xs={24} sm={10} md={14} style={{ display: "block" }}>
-          <Spacer y={0.5} />
+          <Spacer h={0.5} />
           <Description title="My writing" />
           {writings
             .slice(0, 3)
@@ -37,22 +37,22 @@ const Homepage = () => {
                   />
                 )
             )}
-          <Row justify="end">
+          <Grid.Container justify="end">
             <NextLink href="/writing">
               <Button ghost type="secondary" auto>
                 All writing 📚
               </Button>
             </NextLink>
-          </Row>
+          </Grid.Container>
         </Grid>
       </Grid.Container>
-      <Spacer y={3} />
-      <Grid.Container gap={2} justify="center">
+      <Spacer h={3} />
+      <Grid.Container gap={2}>
         <Griditem
           title="About me"
           link="about"
           linktext="Learn more about me"
-          description="I like designing my own stuff for print"
+          description="More about me and myself"
         >
           <User />
         </Griditem>
@@ -60,7 +60,7 @@ const Homepage = () => {
           title="Coding stuff"
           link="coding"
           linktext="Look at my coding stuff"
-          description="I like designing my own stuff for print"
+          description="I like doing everything with code"
         >
           <Code />
         </Griditem>

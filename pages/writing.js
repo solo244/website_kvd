@@ -23,16 +23,18 @@ const Writing = () => {
 
   return (
     <Layout title="Writing | Ken Van Damme">
-      <Row justify="center">
+      <Grid.Container justify="center">
+        <Spacer h={2} />
         <Text style={{ textAlign: "center", lineHeight: "1" }} h1>
           We can't help everyone, but everyone can help someone.
         </Text>
-      </Row>
-      <Spacer y={2} />
-      <Row justify="center">
+        <Spacer h={2} />
+      </Grid.Container>
+      <Spacer h={2} />
+      <Grid.Container justify="center">
         {categories.map(category => (
           <React.Fragment key={category.link}>
-            <Spacer x={0.2} />
+            <Spacer w={0.2} />
             <Button
               auto
               size="mini"
@@ -43,11 +45,11 @@ const Writing = () => {
             >
               {category.label}
             </Button>
-            <Spacer x={0.2} />
+            <Spacer w={0.2} />
           </React.Fragment>
         ))}
-      </Row>
-      <Spacer y={2} />
+      </Grid.Container>
+      <Spacer h={2} />
       <Text style={{ textAlign: "center" }} h3 type={selected.type}>
         {filtered.length > 0 && (
           <Badge.Anchor>
@@ -61,7 +63,7 @@ const Writing = () => {
           </Badge.Anchor>
         )}
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Grid.Container gap={2} justify="center">
         {filtered.map(writing => (
           <Grid

@@ -14,7 +14,7 @@ const Griditem = ({
 }) => {
   return (
     <Grid xs={24} sm={12} md={8}>
-      <Card shadow>
+      <Card shadow width="100%">
         {children ? (
           <>{children}</>
         ) : (

@@ -7,7 +7,7 @@ import menu from "../../constants/menu";
 // Components
 import Logo from "../../images/logo";
 // Styles
-import { Grid, Link, Row, Col, Spacer, Text } from "@geist-ui/react";
+import { Grid, Link, Spacer, Text } from "@geist-ui/react";
 
 const Header = () => {
   const router = useRouter();
@@ -23,26 +23,24 @@ const Header = () => {
           </NextLink>
         </Grid>
         <Grid xs justify="end">
-          <Row justify="end" align="middle">
-            {menu.map(link => (
-              <NextLink href={link.path} key={link.path}>
-                {router.pathname === link.path ? (
-                  <Text b type="secondary">
-                    <Link href={link.path} block>
-                      {link.label}
-                    </Link>
-                  </Text>
-                ) : (
+          {menu.map(link => (
+            <NextLink href={link.path} key={link.path}>
+              {router.pathname === link.path ? (
+                <Text b type="secondary">
                   <Link href={link.path} block>
                     {link.label}
                   </Link>
-                )}
-              </NextLink>
-            ))}
-          </Row>
+                </Text>
+              ) : (
+                <Link href={link.path} block>
+                  {link.label}
+                </Link>
+              )}
+            </NextLink>
+          ))}
         </Grid>
       </Grid.Container>
-      <Spacer y={3} />
+      <Spacer h={3} />
     </>
   );
 };
