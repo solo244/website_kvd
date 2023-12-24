@@ -2,6 +2,7 @@
 import NextLink from "next/link";
 // Styles
 import { Grid, Text, Button, Link, Tag, Spacer } from "@geist-ui/react";
+import Download from "@geist-ui/react-icons/download";
 
 const Intro = () => {
   return (
@@ -10,7 +11,7 @@ const Intro = () => {
         Lorem all the ipsums
       </Text>
       <Tag>- "Ken Van Damme"</Tag>
-      <Spacer y={0.5} />
+      <Spacer h={0.5} />
       <Text p>
         Webdesigner, webdeveloper, teacher, gamer, moron, realist,
         procrastinator, fast talker, nerd, distracted by pretty colors. As a
@@ -52,10 +53,10 @@ const Intro = () => {
         </NextLink>
         .
       </Text>
-      <Spacer y={1} />
-      <NextLink href="/about">
-        <Button auto type="secondary">
-          More about me 😴
+      <Spacer h={1} />
+      <NextLink href="/images/KenVanDamme-Curriculum Vitae.pdf" target="_blank">
+        <Button auto type="secondary" icon={<Download />}>
+          My CV
         </Button>
       </NextLink>
     </Grid>
