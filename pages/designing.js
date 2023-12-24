@@ -15,7 +15,7 @@ const Designing = () => {
         Whoever said money can't buy happiness simply didn't know where to go
         shopping.
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Grid.Container gap={2} align="middle">
         {designs.map(design => (
           <Griditem

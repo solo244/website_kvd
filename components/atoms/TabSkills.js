@@ -14,7 +14,7 @@ const TabSkills = () => {
         can do - and potentially for you, if you’re looking for new tools,
         techniques etc.
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Text h3>Busy with 🧠</Text>
       <Grid.Container gap={2}>
         {skills.map(
@@ -28,7 +28,7 @@ const TabSkills = () => {
             )
         )}
       </Grid.Container>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Text h3>Done 💪</Text>
       <Grid.Container gap={2}>
         {skills.map(

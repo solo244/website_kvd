@@ -15,7 +15,7 @@ const Coding = () => {
         Comic Sans is never an acceptable font. Unless you are an 8 year old
         girl writing a poem about unicorns.
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Grid.Container gap={2}>
         {codings.map(coding => (
           <Griditem

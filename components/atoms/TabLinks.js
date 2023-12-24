@@ -12,7 +12,7 @@ const TabLinks = () => {
         Here you can find a <strong>hand</strong>ful of useful links that I keep
         coming back to in my job/free time.
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Text h3>You never know when these will come in handy 😉</Text>
       <Grid.Container gap={2}>
         {links.map(

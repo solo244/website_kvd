@@ -10,7 +10,7 @@ const Timeline = () => {
         <Text b>{time.year}: </Text>
         {time.description}
       </Card>
-      <Spacer y={0.5} />
+      <Spacer h={0.5} />
     </div>
   ));
 };

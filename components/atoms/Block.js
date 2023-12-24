@@ -21,18 +21,16 @@ const Block = ({ title, type, intro, link }) => {
             <Text h4 style={{ marginBottom: "0", lineHeight: "1.25" }}>
               {title}
             </Text>
-            <Spacer y={0.5} />
-            <Row>
-              <Tag type={typeStyle}>{type}</Tag>
-            </Row>
-            <Spacer y={0.5} />
+            <Spacer h={0.5} />
+            <Tag type={typeStyle}>{type}</Tag>
+            <Spacer h={0.5} />
             <Text type="secondary" small>
               {intro}
             </Text>
           </Card>
         </Link>
       </NextLink>
-      <Spacer y={1} />
+      <Spacer h={1} />
     </>
   );
 };

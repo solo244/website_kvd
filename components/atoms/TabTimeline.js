@@ -12,7 +12,7 @@ const TabTimeline = () => {
         scroll along the timeline to get to know me intimately and understand
         the inner workings of a mastermind.
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Text h3>Highlights ⭐</Text>
       <Timeline />
     </>

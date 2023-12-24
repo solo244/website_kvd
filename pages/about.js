@@ -17,7 +17,7 @@ const About = () => {
       <Text style={{ textAlign: "center", lineHeight: "1" }} h1>
         I am by far the most me I've ever known
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Tabs initialValue="1">
         <Tabs.Item
           label={

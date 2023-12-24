@@ -40,7 +40,7 @@ const content = (
       these posts are things I tend to Google more than once. Instead of testing
       my luck every time, I'm going to collect them here, for later.
     </Note>
-    <Spacer y={1} />
+    <Spacer h={1} />
     <Text h2>Problem</Text>
     <Text>
       I keep having to select similar elements on a page that have no unique
@@ -59,7 +59,7 @@ const content = (
     <SyntaxHighlighter language="css" style={vscDarkPlus} wrapLines>
       {codeSelector1}
     </SyntaxHighlighter>
-    <Spacer y={1} />
+    <Spacer h={1} />
     <Text h4>
       HTML element with an attribute with that exact value, like "select all
       links that go to my own website"
@@ -67,7 +67,7 @@ const content = (
     <SyntaxHighlighter language="css" style={vscDarkPlus} wrapLines>
       {codeSelector2}
     </SyntaxHighlighter>
-    <Spacer y={1} />
+    <Spacer h={1} />
     <Text h4>
       HTML element with an attribute that start with a value, like "select all
       links that are external"
@@ -75,7 +75,7 @@ const content = (
     <SyntaxHighlighter language="css" style={vscDarkPlus} wrapLines>
       {codeSelector3}
     </SyntaxHighlighter>
-    <Spacer y={1} />
+    <Spacer h={1} />
     <Text h4>
       HTML element with an attribute that ends in a value, like "select all
       images that have the jpg extension"
@@ -83,7 +83,7 @@ const content = (
     <SyntaxHighlighter language="css" style={vscDarkPlus} wrapLines>
       {codeSelector4}
     </SyntaxHighlighter>
-    <Spacer y={1} />
+    <Spacer h={1} />
     <Text h4>
       HTML element with an attribute that contains a certain value, like "select
       all links that are either a phone or email link"

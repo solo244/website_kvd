@@ -16,7 +16,7 @@ const TabSponsorship = () => {
         why don’t you show me that support by hitting the button below ? Much
         appreciated!
       </Text>
-      <Spacer y={2} />
+      <Spacer h={2} />
       <Text h3>Thank you 😊</Text>
       <Grid.Container gap={2}>
         {supports.map(
