@@ -8,15 +8,23 @@ import Sidebar from "@geist-ui/react-icons/sidebar";
 import Box from "@geist-ui/react-icons/box";
 import Coffee from "@geist-ui/react-icons/coffee";
 import Drop from "@geist-ui/react-icons/droplet";
+import MessageCircle from "@geist-ui/react-icons/messageCircle";
 
 const codings = [
-  // {
-  //   title: "Dyroll",
-  //   link: "https://www.dyroll.com/",
-  //   linktext: "Visit this website",
-  //   description: "An in browser app to run your very own TTRPG.",
-  //   icon: Box,
-  // },
+  {
+    title: "Dyroll",
+    link: "https://www.dyroll.com/",
+    linktext: "Visit this website",
+    description: "An in browser app to run your very own TTRPG.",
+    icon: Box,
+  },
+  {
+    title: "Notepal",
+    link: "https://www.notepalenglish.com/",
+    linktext: "Visit this website",
+    description: "The best app for learning English from Spanish.",
+    icon: MessageCircle,
+  },
   {
     title: "Marikoo",
     link: "https://www.marikoo.be/",
@@ -46,20 +54,6 @@ const codings = [
     icon: Map,
   },
   {
-    title: "D&D Stats",
-    link: "https://solo244.github.io/dnd_stats/",
-    linktext: "Explore this project",
-    description: "Statistics for my custom current D&D campaign",
-    icon: BarChart2,
-  },
-  {
-    title: "Homebrew",
-    link: "https://homebrew.kenvandamme.be/",
-    linktext: "Explore this project",
-    description: "Custom rules/info that I use in my D&D games",
-    icon: Heart,
-  },
-  {
     title: "It's United",
     link: "https://www.its-united.com",
     linktext: "Visit this website",
@@ -67,19 +61,33 @@ const codings = [
     icon: Camera,
   },
   {
+    title: "D&D Stats",
+    link: "https://solo244.github.io/dnd_stats/",
+    linktext: "Explore this project",
+    description: "Statistics for my custom current D&D campaign",
+    icon: BarChart2,
+  },
+  // {
+  //   title: "Homebrew",
+  //   link: "https://homebrew.kenvandamme.be/",
+  //   linktext: "Explore this project",
+  //   description: "Custom rules/info that I use in my D&D games",
+  //   icon: Heart,
+  // },
+  {
     title: "MS-FE",
     link: "https://solo244.github.io/ms-fe/",
     linktext: "Explore this project",
     description: "How Michael Scott embodies my life as front-end developer",
     icon: Emoji,
   },
-  {
-    title: "Stalstudio",
-    link: "https://www.stalstudio.be/",
-    linktext: "Visit this website",
-    description: "Stallers are people with a passion for theatre.",
-    icon: Video,
-  },
+  // {
+  //   title: "Stalstudio",
+  //   link: "https://www.stalstudio.be/",
+  //   linktext: "Visit this website",
+  //   description: "Stallers are people with a passion for theatre.",
+  //   icon: Video,
+  // },
 ];
 
 export default codings;
